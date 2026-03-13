@@ -110,7 +110,30 @@ function startLobby(lobbyId) {
     });
 }
 </script>
+<script>
+function forceNextTurn(lobbyId) {
+    if (!confirm('Chuyển lượt thủ công?')) return;
+    
+    fetch(`/debug/next-turn/${lobbyId}`, {
+        method: 'POST',
+        headers: {'Content-Type': 'application/json'}
+    })
+    .then(res => res.json())
+    .then(data => {
+        if (data.success) {
+            alert('✅ Đã chuyển lượt');
+            location.reload();
+        }
+    });
+}
+</script>
 <div class="card">
     <!-- ... existing content ... -->
 </div>
+{% if lobby.status == 'banpick' %}
+<div style="margin-top: 0.5rem; display: flex; gap: 0.5rem;">
+    <a href="{{ url_for('lobby_page', lobby_id=lobby.id) }}" class="btn btn-sm">👁️ Xem</a>
+    <button class="btn btn-sm" onclick="forceNextTurn({{ lobby.id }})">⏭️ Chuyển lượt</button>
+</div>
+{% endif %}
 {% endblock %}
