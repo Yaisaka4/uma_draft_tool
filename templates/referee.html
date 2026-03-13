@@ -82,14 +82,32 @@
 <script>
 function startLobby(lobbyId) {
     if (!confirm('Bắt đầu lobby?')) return;
-    fetch(`/referee/start-lobby/${lobbyId}`, { method: 'POST' })
-        .then(res => res.json())
-        .then(data => {
-            if (data.success) {
-                alert('Bắt đầu sau 10s');
-                setTimeout(() => location.reload(), 1000);
-            }
-        });
+    
+    fetch(`/referee/start-lobby/${lobbyId}`, {
+        method: 'POST',
+        headers: {
+            'Content-Type': 'application/json',
+        },
+        credentials: 'include'  // QUAN TRỌNG: gửi kèm cookie
+    })
+    .then(res => {
+        if (!res.ok) {
+            return res.json().then(err => { throw err; });
+        }
+        return res.json();
+    })
+    .then(data => {
+        if (data.success) {
+            alert('✅ Lobby sẽ bắt đầu sau 10s');
+            setTimeout(() => location.reload(), 1000);
+        } else {
+            alert('❌ ' + (data.error || 'Lỗi không xác định'));
+        }
+    })
+    .catch(error => {
+        console.error('Error:', error);
+        alert('❌ Lỗi: ' + (error.error || 'Không thể kết nối server'));
+    });
 }
 </script>
 <div class="card">
