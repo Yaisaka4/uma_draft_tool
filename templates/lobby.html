@@ -94,12 +94,6 @@
         margin-left: 0.25rem;
     }
     
-    .stats {
-        font-size: 0.8rem;
-        color: #666;
-        margin-top: 0.25rem;
-    }
-    
     .filter-bar {
         display: flex;
         gap: 1rem;
@@ -168,6 +162,48 @@
         opacity: 0.8;
     }
 
+    .team-section {
+        background: rgba(0,0,0,0.8);
+        border-radius: 15px;
+        padding: 1.5rem;
+        color: white;
+        border-left: 4px solid;
+        transition: all 0.3s;
+    }
+
+    .team-section:hover {
+        transform: translateY(-2px);
+        box-shadow: 0 8px 20px rgba(0,0,0,0.3);
+    }
+
+    .team-header {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        margin-bottom: 1rem;
+        padding-bottom: 0.5rem;
+        border-bottom: 2px solid rgba(255,255,255,0.2);
+    }
+
+    .team-seed {
+        font-size: 1.2rem;
+        font-weight: bold;
+    }
+
+    .team-player {
+        background: rgba(255,255,255,0.15);
+        padding: 0.3rem 1rem;
+        border-radius: 20px;
+        font-size: 0.9rem;
+    }
+
+    .pick-list {
+        display: flex;
+        flex-direction: column;
+        gap: 0.75rem;
+        min-height: 150px;
+    }
+
     @keyframes slideIn {
         from {
             transform: translateX(100%);
@@ -215,48 +251,46 @@
         <h3 style="margin: 2rem 0 1rem;">🏆 Picks của 4 Trainer</h3>
         <div style="display: grid; grid-template-columns: repeat(2, 1fr); gap: 1.5rem;">
             <!-- Team 1 (Seed 1) -->
-            <div style="background: linear-gradient(135deg, #667eea 0%, #764ba2 100%); padding: 1.5rem; border-radius: 15px; color: white;">
-                <div style="display: flex; justify-content: space-between; align-items: center; margin-bottom: 1rem;">
-                    <h4>🌟 Seed 1</h4>
-                    <span style="background: white; color: #667eea; padding: 0.25rem 0.75rem; border-radius: 20px;" id="player1Name">Player 1</span>
+            <div class="team-section" style="border-left-color: #667eea;">
+                <div class="team-header">
+                    <span class="team-seed">🌟 Seed 1</span>
+                    <span class="team-player" id="player1Name">Player 1</span>
                 </div>
-                <div id="team1Picks" style="display: flex; flex-direction: column; gap: 0.75rem; min-height: 150px;"></div>
+                <div id="team1Picks" class="pick-list"></div>
             </div>
             
             <!-- Team 2 (Seed 2) -->
-            <div style="background: linear-gradient(135deg, #48bb78 0%, #38a169 100%); padding: 1.5rem; border-radius: 15px; color: white;">
-                <div style="display: flex; justify-content: space-between; align-items: center; margin-bottom: 1rem;">
-                    <h4>🌟 Seed 2</h4>
-                    <span style="background: white; color: #48bb78; padding: 0.25rem 0.75rem; border-radius: 20px;" id="player2Name">Player 2</span>
+            <div class="team-section" style="border-left-color: #48bb78;">
+                <div class="team-header">
+                    <span class="team-seed">🌟 Seed 2</span>
+                    <span class="team-player" id="player2Name">Player 2</span>
                 </div>
-                <div id="team2Picks" style="display: flex; flex-direction: column; gap: 0.75rem; min-height: 150px;"></div>
+                <div id="team2Picks" class="pick-list"></div>
             </div>
             
             <!-- Team 3 (Seed 3) -->
-            <div style="background: linear-gradient(135deg, #fbbf24 0%, #f59e0b 100%); padding: 1.5rem; border-radius: 15px; color: white;">
-                <div style="display: flex; justify-content: space-between; align-items: center; margin-bottom: 1rem;">
-                    <h4>🌟 Seed 3</h4>
-                    <span style="background: white; color: #fbbf24; padding: 0.25rem 0.75rem; border-radius: 20px;" id="player3Name">Player 3</span>
+            <div class="team-section" style="border-left-color: #fbbf24;">
+                <div class="team-header">
+                    <span class="team-seed">🌟 Seed 3</span>
+                    <span class="team-player" id="player3Name">Player 3</span>
                 </div>
-                <div id="team3Picks" style="display: flex; flex-direction: column; gap: 0.75rem; min-height: 150px;"></div>
+                <div id="team3Picks" class="pick-list"></div>
             </div>
             
             <!-- Team 4 (Seed 4) -->
-            <div style="background: linear-gradient(135deg, #f87171 0%, #ef4444 100%); padding: 1.5rem; border-radius: 15px; color: white;">
-                <div style="display: flex; justify-content: space-between; align-items: center; margin-bottom: 1rem;">
-                    <h4>🌟 Seed 4</h4>
-                    <span style="background: white; color: #f87171; padding: 0.25rem 0.75rem; border-radius: 20px;" id="player4Name">Player 4</span>
+            <div class="team-section" style="border-left-color: #f87171;">
+                <div class="team-header">
+                    <span class="team-seed">🌟 Seed 4</span>
+                    <span class="team-player" id="player4Name">Player 4</span>
                 </div>
-                <div id="team4Picks" style="display: flex; flex-direction: column; gap: 0.75rem; min-height: 150px;"></div>
+                <div id="team4Picks" class="pick-list"></div>
             </div>
         </div>
 
         <!-- Hiển thị danh sách seed -->
-        <div style="background: #f7fafc; padding: 1rem; border-radius: 10px; margin-bottom: 1rem;">
-            <h4>🌱 Thứ tự seed (do trọng tài phân):</h4>
-            <div id="seedList" style="display: flex; gap: 1rem; flex-wrap: wrap; margin-top: 0.5rem;">
-                <!-- Sẽ được cập nhật bằng JavaScript -->
-            </div>
+        <div style="background: #f7fafc; padding: 1rem; border-radius: 10px; margin: 2rem 0;">
+            <h4 style="margin-bottom: 1rem;">🌱 Thứ tự seed (do trọng tài phân):</h4>
+            <div id="seedList" style="display: flex; gap: 1rem; flex-wrap: wrap;"></div>
         </div>
 
         <!-- Phần chọn mã nương cho trainer -->
@@ -264,28 +298,31 @@
         <div style="margin-top: 2rem;">
             <h3 style="margin-bottom: 1rem;">📋 Chọn mã nương</h3>
 
-            <!-- Thông tin lượt/seed hiện tại -->
-            <div style="background: #edf2ff; padding: 0.75rem 1rem; border-radius: 10px; margin-bottom: 0.75rem;">
-                <div id="currentTurnInfo" style="font-weight: 600; color: #333;">
-                    <!-- Lượt hiện tại sẽ được JS cập nhật -->
+            <!-- Thông tin lượt hiện tại -->
+            <div style="background: #edf2ff; padding: 1rem; border-radius: 10px; margin-bottom: 1rem;">
+                <div style="display: flex; justify-content: space-between; align-items: center; flex-wrap: wrap; gap: 1rem;">
+                    <div>
+                        <div id="currentTurnInfo" style="font-weight: 600; color: #333; font-size: 1.1rem;"></div>
+                        <div id="yourTurnInfo" style="margin-top: 0.25rem;"></div>
+                    </div>
+                    <div style="background: white; padding: 0.5rem 1rem; border-radius: 20px;">
+                        <span style="color: #666;">Ban: <strong id="myBans">0</strong>/1</span>
+                        <span style="color: #666; margin-left: 1rem;">Pick: <strong id="myPicks">0</strong>/3</span>
+                    </div>
                 </div>
-                <div id="yourTurnInfo" style="margin-top: 0.25rem;"></div>
-                <div style="font-size: 0.85rem; color: #4b5563; margin-top: 0.25rem;">
-                    Ban còn lại: <strong id="myBans">0</strong>/1 – Pick còn lại: <strong id="myPicks">0</strong>/3
-                </div>
-                <div id="mySeed" style="font-size: 0.8rem; color: #6b7280; margin-top: 0.25rem;"></div>
+                <div id="mySeed" style="font-size: 0.9rem; color: #4b5563; margin-top: 0.5rem;"></div>
             </div>
             
             <!-- Thanh tìm kiếm -->
             <input type="text" id="searchInput" class="search-box" 
-                   placeholder="🔍 Tìm kiếm theo tên tiếng Anh hoặc tiếng Nhật...">
+                   placeholder="🔍 Tìm kiếm theo tên...">
             
             <!-- Filter buttons -->
             <div class="filter-bar">
-                <button class="filter-btn active" onclick="filterRarity('all')">Tất cả</button>
-                <button class="filter-btn" onclick="filterRarity(1)">⭐ Rarity 1</button>
-                <button class="filter-btn" onclick="filterRarity(2)">⭐⭐ Rarity 2</button>
-                <button class="filter-btn" onclick="filterRarity(3)">⭐⭐⭐ Rarity 3</button>
+                <button class="filter-btn active" onclick="filterRarity('all', event)">Tất cả</button>
+                <button class="filter-btn" onclick="filterRarity(1, event)">⭐ Rarity 1</button>
+                <button class="filter-btn" onclick="filterRarity(2, event)">⭐⭐ Rarity 2</button>
+                <button class="filter-btn" onclick="filterRarity(3, event)">⭐⭐⭐ Rarity 3</button>
             </div>
             
             <!-- Kết quả đếm -->
@@ -299,50 +336,30 @@
                      data-id="{{ uma.id }}"
                      data-name="{{ uma.name }}"
                      data-name-en="{{ uma.name_en }}"
-                     data-simple-name="{{ uma.simple_name }}"
-                     data-simple-name-en="{{ uma.simple_name_en }}"
                      data-rarity="{{ uma.rarity }}"
                      onclick="selectUma('{{ uma.id }}')">
                     
-                    <!-- Ảnh -->
                     <img src="{{ uma.image }}" 
                          alt="{{ uma.name }}"
                          class="uma-image"
                          onerror="this.onerror=null; this.src='/assets/thumbnails/default.png';">
                     
-                    <!-- Tên -->
-                    <p style="margin-bottom: 0.25rem; font-weight: bold;">{{ uma.simple_name }}</p>
+                    <p style="margin-bottom: 0.25rem; font-weight: bold;">{{ uma.name }}</p>
                     <p style="font-size: 0.8rem; color: #666; margin-bottom: 0.5rem;">{{ uma.name_en }}</p>
                     
-                    <!-- Outfit name -->
-                    {% if uma.outfit_name and uma.outfit_name != 'Default' %}
-                    <p style="font-size: 0.7rem; color: #667eea; font-style: italic;">{{ uma.outfit_name }}</p>
-                    {% endif %}
-                    
-                    <!-- Rarity badge -->
                     <span class="rarity-badge rarity-{{ uma.rarity }}">
                         ⭐ {{ uma.rarity }}
                     </span>
                     
-                    <!-- Running style (theo chuẩn global) -->
                     {% if uma.running_style > 0 %}
                     <span class="style-badge">
-                        {% if uma.running_style == 1 %}
-                            🏃 Leader
-                        {% elif uma.running_style == 2 %}
-                            🏃 Follower
-                        {% elif uma.running_style == 3 %}
-                            🏃 Midfielder
-                        {% elif uma.running_style == 4 %}
-                            🏃 Closer
+                        {% if uma.running_style == 1 %}🏃 Leader
+                        {% elif uma.running_style == 2 %}🏃 Follower
+                        {% elif uma.running_style == 3 %}🏃 Midfielder
+                        {% elif uma.running_style == 4 %}🏃 Closer
                         {% endif %}
                     </span>
                     {% endif %}
-                    
-                    <!-- ID nhỏ -->
-                    <div style="font-size: 0.6rem; color: #999; margin-top: 0.25rem;">
-                        ID: {{ uma.id }}
-                    </div>
                 </div>
                 {% endfor %}
             </div>
@@ -368,97 +385,109 @@
     const lobbyId = {{ lobby.id }};
     let currentState = null;
     let currentRarity = 'all';
-    let currentSearch = '';
+    let lastSocketUpdate = Date.now();
 
     socket.emit('join', {lobby_id: lobbyId});
 
+    socket.on('connect', () => {
+        console.log('Socket connected');
+        lastSocketUpdate = Date.now();
+    });
+
     socket.on('phase_change', (data) => {
+        console.log('Phase change:', data);
         if (data.lobby_id == lobbyId) {
+            lastSocketUpdate = Date.now();
             updateUI(data);
         }
     });
 
     socket.on('lobby_starting', (data) => {
+        console.log('Lobby starting:', data);
         if (data.lobby_id == lobbyId) {
+            lastSocketUpdate = Date.now();
             startCountdown(data.countdown);
         }
     });
 
     socket.on('next_turn', (data) => {
+        console.log('Next turn:', data);
         if (data.lobby_id == lobbyId) {
+            lastSocketUpdate = Date.now();
             const el = document.getElementById('currentTurnInfo');
             if (el) {
-                el.innerHTML =
-                    `Lượt ${data.turn}/4 - ${data.player} (Seed ${data.seed}) - ` +
-                    (data.phase === 'ban' ? '🚫 Ban' : '✅ Pick');
+                el.innerHTML = `Lượt ${data.turn}/4 - ${data.player}`;
             }
             loadState();
         }
     });
 
-    // Thông báo khi ban pick kết thúc
     socket.on('banpick_finished', (data) => {
         if (data.lobby_id == lobbyId) {
-            // Hiển thị thông báo overlay khi kết thúc
-            const notification = document.createElement('div');
-            notification.style.cssText = `
-                position: fixed;
-                top: 50%;
-                left: 50%;
-                transform: translate(-50%, -50%);
-                background: white;
-                padding: 2rem;
-                border-radius: 20px;
-                box-shadow: 0 20px 60px rgba(0,0,0,0.3);
-                text-align: center;
-                z-index: 2000;
-            `;
-            notification.innerHTML = `
-                <h2 style="color: #333; margin-bottom: 1rem;">🏆 Ban Pick Kết Thúc!</h2>
-                <p style="color: #666; margin-bottom: 2rem;">${data.message}</p>
-                <p style="color: #667eea;">Đang chuyển đến trang kết quả...</p>
-            `;
-            document.body.appendChild(notification);
-        }
-    });
-
-    socket.on('redirect_to_result', (data) => {
-        if (data.lobby_id == lobbyId) {
+            lastSocketUpdate = Date.now();
+            showNotification('✅ Ban pick đã kết thúc!', 'success');
             setTimeout(() => {
-                window.location.href = data.url;
-            }, data.delay * 1000);
+                window.location.href = '/';
+            }, 3000);
         }
     });
 
-    // Khi lobby bị xóa bởi admin
     socket.on('lobby_deleted', (data) => {
         if (data.lobby_id == lobbyId) {
-            alert('⚠️ ' + (data.message || 'Lobby đã bị xóa bởi admin'));
+            alert('⚠️ ' + (data.message || 'Lobby đã bị xóa'));
             window.location.href = '/';
         }
     });
 
+    // Polling fallback
+    setInterval(() => {
+        if (Date.now() - lastSocketUpdate > 5000) {
+            console.log('⚠️ Using polling fallback');
+            loadState();
+        }
+    }, 3000);
+
+    function showNotification(message, type) {
+        const notification = document.createElement('div');
+        notification.style.cssText = `
+            position: fixed;
+            top: 20px;
+            right: 20px;
+            background: ${type === 'success' ? '#48bb78' : '#f56565'};
+            color: white;
+            padding: 1rem;
+            border-radius: 10px;
+            box-shadow: 0 4px 12px rgba(0,0,0,0.15);
+            z-index: 1000;
+            animation: slideIn 0.3s ease;
+        `;
+        notification.innerHTML = message;
+        document.body.appendChild(notification);
+        setTimeout(() => notification.remove(), 3000);
+    }
+
     function loadState() {
-        fetch(`/api/lobby/{{ lobby.id }}/state`)
+        fetch(`/api/lobby/${lobbyId}/state`)
             .then(res => res.json())
             .then(data => {
                 currentState = data;
                 updateUI(data);
+                loadTurnInfo();
                 updateUserActions();
             })
-            .catch(error => console.error('Error:', error));
+            .catch(error => console.error('Error loading state:', error));
     }
 
     function updateUI(state) {
-        document.getElementById('statusText').textContent = 'Trạng thái: ' + state.status;
+        const statusEl = document.getElementById('statusText');
+        if (statusEl) statusEl.textContent = 'Trạng thái: ' + state.status;
         
         if (state.status === 'countdown') {
             document.getElementById('countdownUI').style.display = 'block';
             document.getElementById('banpickUI').style.display = 'none';
             
             if (state.timer_end) {
-                const timerEnd = new Date(state.timer_end);
-                updateCountdown(timerEnd);
+                updateCountdown(new Date(state.timer_end));
             }
         } 
         else if (state.status === 'banpick') {
@@ -466,109 +495,14 @@
             document.getElementById('banpickUI').style.display = 'block';
             
             document.getElementById('phase').textContent = 
-                `Phase: ${state.phase} - Team ${state.team} - Round ${state.round}`;
+                `Phase: ${state.phase} - Turn ${state.turn} - Round ${state.round}`;
             
-            // Cập nhật bans và picks
             updateBansPicks(state);
-            loadTurnInfo();
             
             if (state.timer_end) {
-                const timerEnd = new Date(state.timer_end);
-                updateTimer(timerEnd);
+                updateTimer(new Date(state.timer_end));
             }
         }
-    }
-
-    function updateBansPicks(state) {
-        // Tạo map để tra cứu thông tin mã nương
-        const umaMap = {};
-        {% for uma in uma_list %}
-        umaMap['{{ uma.id }}'] = {
-            name: '{{ uma.simple_name }}',
-            name_en: '{{ uma.name_en }}',
-            image: '{{ uma.image }}'
-        };
-        {% endfor %}
-        
-        // Lấy thông tin seed và player names
-        fetch(`/api/lobby/{{ lobby.id }}/turn-info`)
-            .then(res => res.json())
-            .then(info => {
-                // Cập nhật tên player theo seed
-                if (info.all_seeds) {
-                    info.all_seeds.forEach(s => {
-                        const playerNameEl = document.getElementById(`player${s.seed}Name`);
-                        if (playerNameEl) {
-                            playerNameEl.textContent = s.player.split('/').pop() || `Player ${s.seed}`;
-                        }
-                    });
-                }
-            });
-        
-        // Hiển thị bans với ảnh + tên
-        const bansDiv = document.getElementById('bans');
-        if (!state.bans || state.bans.length === 0) {
-            bansDiv.innerHTML = '<span style="color: #999;">Chưa có bans</span>';
-        } else {
-            bansDiv.innerHTML = state.bans.map((id, index) => {
-                const uma = umaMap[id] || { name: id, image: '/assets/thumbnails/default.png' };
-                return `
-                    <div class="uma-pick-item" style="background: #dc2626; color: white;">
-                        <img src="${uma.image}" class="uma-pick-image" onerror="this.src='/assets/thumbnails/default.png'">
-                        <span class="uma-pick-name">${uma.name}</span>
-                        <span class="uma-pick-order">Ban #${index + 1}</span>
-                    </div>
-                `;
-            }).join('');
-        }
-        
-        // Phân picks theo seed - cần lấy thông tin ai pick con nào từ database
-        fetch(`/api/lobby/{{ lobby.id }}/player-actions`)
-            .then(res => res.json())
-            .then(actions => {
-                // Xóa hết picks cũ
-                for (let i = 1; i <= 4; i++) {
-                    const teamDiv = document.getElementById(`team${i}Picks`);
-                    if (teamDiv) {
-                        teamDiv.innerHTML = '';
-                    }
-                }
-                
-                // Sắp xếp actions theo thứ tự
-                actions.sort((a, b) => a.action_order - b.action_order);
-                
-                // Hiển thị picks theo từng player
-                actions.forEach(action => {
-                    if (action.action_type === 'pick') {
-                        const uma = umaMap[action.uma_id] || { 
-                            name: action.uma_id, 
-                            image: '/assets/thumbnails/default.png' 
-                        };
-                        
-                        const pickHtml = `
-                            <div class="uma-pick-item">
-                                <img src="${uma.image}" class="uma-pick-image" onerror="this.src='/assets/thumbnails/default.png'">
-                                <span class="uma-pick-name">${uma.name}</span>
-                                <span class="uma-pick-order">Pick #${action.pick_number}</span>
-                            </div>
-                        `;
-                        
-                        // Thêm vào team tương ứng
-                        const teamDiv = document.getElementById(`team${action.seed}Picks`);
-                        if (teamDiv) {
-                            teamDiv.innerHTML += pickHtml;
-                        }
-                    }
-                });
-                
-                // Thêm placeholder nếu chưa có picks
-                for (let i = 1; i <= 4; i++) {
-                    const teamDiv = document.getElementById(`team${i}Picks`);
-                    if (teamDiv && teamDiv.children.length === 0) {
-                        teamDiv.innerHTML = '<span style="opacity: 0.5;">Chưa có picks</span>';
-                    }
-                }
-            });
     }
 
     function updateTimer(endTime) {
@@ -585,12 +519,7 @@
             
             const seconds = Math.floor(diff / 1000);
             timer.textContent = seconds;
-            
-            if (seconds <= 10) {
-                timer.style.color = '#dc2626';
-            } else {
-                timer.style.color = '#667eea';
-            }
+            timer.style.color = seconds <= 10 ? '#dc2626' : '#667eea';
         }
         
         tick();
@@ -609,8 +538,7 @@
                 return;
             }
             
-            const seconds = Math.floor(diff / 1000);
-            countdownNumber.textContent = seconds;
+            countdownNumber.textContent = Math.floor(diff / 1000);
         }
         
         tick();
@@ -638,88 +566,134 @@
         }, 1000);
     }
 
-    // Lấy thông tin lượt ban/pick đã dùng của user
-    function updateUserActions() {
-        const el = document.getElementById('userActions');
-        if (!el) return;
-
-        fetch(`/api/lobby/{{ lobby.id }}/user-actions`)
+    function updateBansPicks(state) {
+        const umaMap = {};
+        {% for uma in uma_list %}
+        umaMap['{{ uma.id }}'] = {
+            name: '{{ uma.name }}',
+            image: '{{ uma.image }}'
+        };
+        {% endfor %}
+        
+        // Hiển thị bans
+        const bansDiv = document.getElementById('bans');
+        if (!state.bans || state.bans.length === 0) {
+            bansDiv.innerHTML = '<span style="color: #999;">Chưa có bans</span>';
+        } else {
+            bansDiv.innerHTML = state.bans.map((id, index) => {
+                const uma = umaMap[id] || { name: id, image: '/assets/thumbnails/default.png' };
+                return `
+                    <div class="uma-pick-item" style="background: #dc2626; color: white;">
+                        <img src="${uma.image}" class="uma-pick-image" onerror="this.src='/assets/thumbnails/default.png'">
+                        <span class="uma-pick-name">${uma.name}</span>
+                        <span class="uma-pick-order">Ban #${index + 1}</span>
+                    </div>
+                `;
+            }).join('');
+        }
+        
+        // Phân picks theo seed
+        fetch(`/api/lobby/${lobbyId}/turn-info`)
             .then(res => res.json())
-            .then(data => {
-                if (data && data.bans !== undefined && data.picks !== undefined) {
-                    el.textContent = `Lượt đã dùng: Ban (${data.bans}/1) - Pick (${data.picks}/3)`;
+            .then(info => {
+                if (info.all_seeds) {
+                    info.all_seeds.forEach(s => {
+                        const nameEl = document.getElementById(`player${s.seed}Name`);
+                        if (nameEl) nameEl.textContent = s.player;
+                    });
                 }
-            })
-            .catch(() => {});
+            });
+        
+        fetch(`/api/lobby/${lobbyId}/player-actions`)
+            .then(res => res.json())
+            .then(actions => {
+                for (let i = 1; i <= 4; i++) {
+                    document.getElementById(`team${i}Picks`).innerHTML = '';
+                }
+                
+                actions.sort((a, b) => a.action_order - b.action_order);
+                
+                actions.forEach(action => {
+                    if (action.action_type === 'pick') {
+                        const uma = umaMap[action.uma_id] || { 
+                            name: action.uma_id, 
+                            image: '/assets/thumbnails/default.png' 
+                        };
+                        
+                        const pickHtml = `
+                            <div class="uma-pick-item">
+                                <img src="${uma.image}" class="uma-pick-image" onerror="this.src='/assets/thumbnails/default.png'">
+                                <span class="uma-pick-name">${uma.name}</span>
+                                <span class="uma-pick-order">Pick #${action.pick_number}</span>
+                            </div>
+                        `;
+                        
+                        const teamDiv = document.getElementById(`team${action.seed}Picks`);
+                        if (teamDiv) teamDiv.innerHTML += pickHtml;
+                    }
+                });
+                
+                for (let i = 1; i <= 4; i++) {
+                    const teamDiv = document.getElementById(`team${i}Picks`);
+                    if (teamDiv && teamDiv.children.length === 0) {
+                        teamDiv.innerHTML = '<span style="opacity: 0.5;">Chưa có picks</span>';
+                    }
+                }
+            });
     }
 
-    // Cập nhật thông tin lượt/seed (gồm cả seedList)
     function loadTurnInfo() {
-        fetch(`/api/lobby/{{ lobby.id }}/turn-info`)
+        fetch(`/api/lobby/${lobbyId}/turn-info`)
             .then(res => res.json())
             .then(data => {
                 if (!data || data.error) return;
 
-                // Cập nhật thông tin lượt hiện tại
-                const currentTurnInfo = document.getElementById('currentTurnInfo');
-                if (currentTurnInfo) {
-                    let turnText = `Lượt ${data.current_turn}/4 - ${data.current_player}`;
-                    if (data.current_seed) {
-                        turnText += ` (Seed ${data.current_seed})`;
-                    }
-                    currentTurnInfo.innerHTML = turnText;
+                const turnEl = document.getElementById('currentTurnInfo');
+                if (turnEl) {
+                    turnEl.innerHTML = `Lượt ${data.current_turn}/4 - ${data.current_player}`;
                 }
 
-                // Kiểm tra có phải lượt của mình không
-                const yourTurnInfo = document.getElementById('yourTurnInfo');
-                if (yourTurnInfo) {
-                    if (data.is_my_turn) {
-                        yourTurnInfo.innerHTML = '<span style="color: #48bb78;">✅ Đến lượt bạn!</span>';
-                    } else {
-                        yourTurnInfo.innerHTML = '';
-                    }
+                const yourTurnEl = document.getElementById('yourTurnInfo');
+                if (yourTurnEl) {
+                    yourTurnEl.innerHTML = data.is_my_turn ? 
+                        '<span style="color: #48bb78;">✅ Đến lượt bạn!</span>' : '';
                 }
 
-                // Cập nhật lượt còn lại của mình
                 if (data.my_turns) {
-                    const bansEl = document.getElementById('myBans');
-                    const picksEl = document.getElementById('myPicks');
-                    const mySeedEl = document.getElementById('mySeed');
-                    if (bansEl) bansEl.textContent = data.my_turns.remaining_bans;
-                    if (picksEl) picksEl.textContent = data.my_turns.remaining_picks;
-
-                    if (mySeedEl && data.my_turns.seed) {
-                        mySeedEl.innerHTML =
-                            `Seed của bạn: <strong>${data.my_turns.seed}</strong> (Lượt thứ ${data.my_turns.turn_order})`;
-                    }
+                    document.getElementById('myBans').textContent = data.my_turns.remaining_bans;
+                    document.getElementById('myPicks').textContent = data.my_turns.remaining_picks;
                 }
 
-                // Hiển thị danh sách seed
                 const seedList = document.getElementById('seedList');
-                if (seedList && Array.isArray(data.all_seeds)) {
-                    seedList.innerHTML = data.all_seeds
-                        .map(
-                            (s) => `
-                    <div style="background: white; padding: 0.5rem 1rem; border-radius: 20px; border: 2px solid #667eea;">
-                        <strong>Seed ${s.seed}:</strong> ${s.player}
-                    </div>`,
-                        )
-                        .join('');
+                if (seedList && data.all_seeds) {
+                    seedList.innerHTML = data.all_seeds.map(s => `
+                        <div style="background: white; padding: 0.5rem 1rem; border-radius: 20px; border: 2px solid #667eea;">
+                            <strong>Seed ${s.seed}:</strong> ${s.player}
+                        </div>
+                    `).join('');
                 }
-            })
-            .catch(() => {});
+            });
     }
 
-    // Filter functions
-    function filterRarity(rarity, evt) {
+    function updateUserActions() {
+        fetch(`/api/lobby/${lobbyId}/user-actions`)
+            .then(res => res.json())
+            .then(data => {
+                if (data) {
+                    document.getElementById('myBans').textContent = data.remaining_bans;
+                    document.getElementById('myPicks').textContent = data.remaining_picks;
+                }
+            });
+    }
+
+    function filterRarity(rarity, event) {
         currentRarity = rarity;
         
-        // Update active button
         document.querySelectorAll('.filter-btn').forEach(btn => {
             btn.classList.remove('active');
         });
-        if (evt && evt.target) {
-            evt.target.classList.add('active');
+        if (event && event.target) {
+            event.target.classList.add('active');
         }
         
         applyFilters();
@@ -731,21 +705,14 @@
         let visibleCount = 0;
         
         cards.forEach(card => {
-            const name = card.dataset.name.toLowerCase();
-            const nameEn = card.dataset.nameEn.toLowerCase();
-            const simpleName = card.dataset.simpleName.toLowerCase();
-            const simpleNameEn = card.dataset.simpleNameEn.toLowerCase();
+            const name = (card.dataset.name || '').toLowerCase();
+            const nameEn = (card.dataset.nameEn || '').toLowerCase();
             const rarity = parseInt(card.dataset.rarity);
             
-            // Kiểm tra rarity
             const rarityMatch = currentRarity === 'all' || rarity === currentRarity;
-            
-            // Kiểm tra tìm kiếm
             const searchMatch = searchTerm === '' || 
                 name.includes(searchTerm) || 
-                nameEn.includes(searchTerm) ||
-                simpleName.includes(searchTerm) ||
-                simpleNameEn.includes(searchTerm);
+                nameEn.includes(searchTerm);
             
             if (rarityMatch && searchMatch) {
                 card.style.display = '';
@@ -758,11 +725,7 @@
         document.getElementById('resultCount').textContent = `Hiển thị ${visibleCount} mã nương`;
     }
 
-    // Search input handler
-    document.getElementById('searchInput')?.addEventListener('input', function(e) {
-        currentSearch = e.target.value.toLowerCase();
-        applyFilters();
-    });
+    document.getElementById('searchInput')?.addEventListener('input', applyFilters);
 
     function selectUma(umaId) {
         if (!currentState || currentState.status !== 'banpick') {
@@ -772,7 +735,7 @@
         
         const action = currentState.phase;
         
-        fetch(`/api/lobby/{{ lobby.id }}/action`, {
+        fetch(`/api/lobby/${lobbyId}/action`, {
             method: 'POST',
             headers: {'Content-Type': 'application/json'},
             body: JSON.stringify({action: action, uma_id: umaId})
@@ -783,14 +746,12 @@
                 alert(data.error);
             } else {
                 loadState();
-                updateUserActions();
-                loadTurnInfo();
             }
         });
     }
 
-    // Load state ngay khi vào trang
+    // Khởi tạo
     loadState();
-    setInterval(loadState, 1000);
+    setInterval(loadState, 2000);
 </script>
 {% endblock %}
