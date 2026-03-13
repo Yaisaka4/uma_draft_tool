@@ -1,17 +1,8 @@
 {% extends "base.html" %}
 
-{% block title %}Referee Dashboard{% endblock %}
+{% block title %}Referee Panel{% endblock %}
 
 {% block content %}
-<div style="background: linear-gradient(135deg, #2a2a2a, #1a1a1a); padding: 2rem; border-radius: 12px; margin-bottom: 2rem; position: relative; overflow: hidden; border-left: 4px solid var(--f1-red);">
-    <div style="position: absolute; top: -20px; right: 20px; font-size: 8rem; color: rgba(225,6,0,0.1);">
-        <i class="fas fa-whistle"></i>
-    </div>
-    <div style="position: relative; z-index: 2;">
-        <h2 style="color: white; font-size: 2.5rem; margin-bottom: 0.5rem;">RACE DIRECTOR</h2>
-        <p style="color: var(--f1-silver);">Giám sát 4 lobby cùng lúc</p>
-    </div>
-</div>
 <div class="card">
     <!-- Header -->
     <div class="dashboard-header">
@@ -19,9 +10,10 @@
     </div>
 
     <!-- 4 Lobbies Grid -->
+    <h2 style="margin: 1rem 0;">🏁 ACTIVE LOBBIES</h2>
     <div class="grid grid-2" style="margin-bottom: 2rem;">
         {% for lobby in lobbies[:4] %}
-        <div style="background: var(--f1-gray); border-radius: 8px; padding: 1rem; border-left: 4px solid {% if lobby.current_players == lobby.max_players %}#10b981{% else %}#f59e0b{% endif %};">
+        <div class="lobby-card-f1" style="background: var(--f1-gray); border-radius: 8px; padding: 1rem; border-left: 4px solid {% if lobby.current_players == lobby.max_players %}#10b981{% else %}#f59e0b{% endif %};">
             <div style="display: flex; justify-content: space-between; align-items: center; margin-bottom: 1rem;">
                 <h3>{{ lobby.name }}</h3>
                 <span class="badge">{{ lobby.current_players }}/{{ lobby.max_players }}</span>
@@ -37,18 +29,28 @@
                     <i class="fas fa-play"></i> BẮT ĐẦU
                 </button>
             </div>
+            {% elif lobby.status == 'countdown' %}
+            <p style="color: #ffd700;">⏳ COUNTDOWN</p>
             {% elif lobby.status == 'banpick' %}
-            <a href="{{ url_for('lobby_page', lobby_id=lobby.id) }}" class="btn btn-sm">
-                <i class="fas fa-eye"></i> THEO DÕI
-            </a>
+            <div style="display: flex; gap: 0.5rem;">
+                <a href="{{ url_for('lobby_page', lobby_id=lobby.id) }}" class="btn btn-sm">
+                    <i class="fas fa-eye"></i> THEO DÕI
+                </a>
+                <button class="btn btn-sm" onclick="forceNextTurn({{ lobby.id }})">
+                    <i class="fas fa-step-forward"></i> CHUYỂN LƯỢT
+                </button>
+            </div>
             {% endif %}
+        </div>
+        {% else %}
+        <div style="grid-column: 1/-1; text-align: center; padding: 3rem; color: var(--f1-silver);">
+            CHƯA CÓ LOBBY NÀO
         </div>
         {% endfor %}
     </div>
 
     <!-- All Lobbies Table -->
-    <h2 style="margin: 2rem 0 1rem;">TẤT CẢ LOBBIES</h2>
-    
+    <h2 style="margin: 2rem 0 1rem;">📋 TẤT CẢ LOBBIES</h2>
     <div style="overflow-x: auto;">
         <table>
             <thead>
@@ -82,58 +84,28 @@
 <script>
 function startLobby(lobbyId) {
     if (!confirm('Bắt đầu lobby?')) return;
-    
-    fetch(`/referee/start-lobby/${lobbyId}`, {
-        method: 'POST',
-        headers: {
-            'Content-Type': 'application/json',
-        },
-        credentials: 'include'  // QUAN TRỌNG: gửi kèm cookie
-    })
-    .then(res => {
-        if (!res.ok) {
-            return res.json().then(err => { throw err; });
-        }
-        return res.json();
-    })
-    .then(data => {
-        if (data.success) {
-            alert('✅ Lobby sẽ bắt đầu sau 10s');
-            setTimeout(() => location.reload(), 1000);
-        } else {
-            alert('❌ ' + (data.error || 'Lỗi không xác định'));
-        }
-    })
-    .catch(error => {
-        console.error('Error:', error);
-        alert('❌ Lỗi: ' + (error.error || 'Không thể kết nối server'));
-    });
+    fetch(`/referee/start-lobby/${lobbyId}`, { method: 'POST' })
+        .then(res => res.json())
+        .then(data => {
+            if (data.success) {
+                alert('✅ Lobby đã sẵn sàng');
+                setTimeout(() => location.reload(), 1000);
+            } else {
+                alert('❌ ' + (data.error || 'Lỗi'));
+            }
+        });
 }
-</script>
-<script>
+
 function forceNextTurn(lobbyId) {
     if (!confirm('Chuyển lượt thủ công?')) return;
-    
-    fetch(`/debug/next-turn/${lobbyId}`, {
-        method: 'POST',
-        headers: {'Content-Type': 'application/json'}
-    })
-    .then(res => res.json())
-    .then(data => {
-        if (data.success) {
-            alert('✅ Đã chuyển lượt');
-            location.reload();
-        }
-    });
+    fetch(`/debug/next-turn/${lobbyId}`, { method: 'POST' })
+        .then(res => res.json())
+        .then(data => {
+            if (data.success) {
+                alert('✅ Đã chuyển lượt');
+                location.reload();
+            }
+        });
 }
 </script>
-<div class="card">
-    <!-- ... existing content ... -->
-</div>
-{% if lobby.status == 'banpick' %}
-<div style="margin-top: 0.5rem; display: flex; gap: 0.5rem;">
-    <a href="{{ url_for('lobby_page', lobby_id=lobby.id) }}" class="btn btn-sm">👁️ Xem</a>
-    <button class="btn btn-sm" onclick="forceNextTurn({{ lobby.id }})">⏭️ Chuyển lượt</button>
-</div>
-{% endif %}
 {% endblock %}
