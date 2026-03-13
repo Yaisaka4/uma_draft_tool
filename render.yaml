@@ -1,11 +1,12 @@
 services:
   - type: web
     name: uma-draft-tool
-    env: python
+    runtime: python
+    plan: free
     buildCommand: |
+      pip install --upgrade pip
       pip install -r requirements.txt
     startCommand: gunicorn -k eventlet -w 1 app:app
     envVars:
       - key: PYTHON_VERSION
-        value: 3.10.0
-        
+        value: 3.10.12
