@@ -1,0 +1,271 @@
+/* F1 Theme CSS */
+:root {
+    --f1-red: #e10600;
+    --f1-black: #15151e;
+    --f1-dark: #1e1e2c;
+    --f1-gray: #2b2b3a;
+    --f1-light: #f8f8f8;
+    --f1-white: #ffffff;
+    --f1-silver: #c0c0c0;
+    --f1-carbon: #1a1a1a;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Titillium Web', 'Arial Narrow', sans-serif;
+    background: var(--f1-black);
+    color: var(--f1-white);
+    min-height: 100vh;
+    background-image: 
+        linear-gradient(45deg, var(--f1-carbon) 25%, transparent 25%),
+        linear-gradient(-45deg, var(--f1-carbon) 25%, transparent 25%),
+        linear-gradient(45deg, transparent 75%, var(--f1-carbon) 75%),
+        linear-gradient(-45deg, transparent 75%, var(--f1-carbon) 75%);
+    background-size: 20px 20px;
+    background-position: 0 0, 0 10px, 10px -10px, -10px 0px;
+}
+
+/* Navbar F1 Style */
+.navbar {
+    background: var(--f1-black);
+    border-bottom: 3px solid var(--f1-red);
+    padding: 1rem 0;
+    position: sticky;
+    top: 0;
+    z-index: 1000;
+    box-shadow: 0 2px 10px rgba(225, 6, 0, 0.3);
+}
+
+.nav-container {
+    max-width: 1400px;
+    margin: 0 auto;
+    padding: 0 20px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.nav-brand {
+    font-size: 1.8rem;
+    font-weight: 900;
+    color: var(--f1-white);
+    text-decoration: none;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+    position: relative;
+}
+
+.nav-brand::after {
+    content: '';
+    position: absolute;
+    bottom: -5px;
+    left: 0;
+    width: 100%;
+    height: 3px;
+    background: var(--f1-red);
+    transform: scaleX(0);
+    transition: transform 0.3s;
+}
+
+.nav-brand:hover::after {
+    transform: scaleX(1);
+}
+
+.nav-menu {
+    display: flex;
+    gap: 2rem;
+    align-items: center;
+}
+
+.nav-link {
+    color: var(--f1-white);
+    text-decoration: none;
+    font-weight: 600;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    font-size: 0.9rem;
+    padding: 0.5rem 1rem;
+    position: relative;
+    transition: color 0.3s;
+}
+
+.nav-link:hover {
+    color: var(--f1-red);
+}
+
+.nav-link::before {
+    content: '';
+    position: absolute;
+    bottom: 0;
+    left: 50%;
+    width: 0;
+    height: 2px;
+    background: var(--f1-red);
+    transition: all 0.3s;
+    transform: translateX(-50%);
+}
+
+.nav-link:hover::before {
+    width: 80%;
+}
+
+/* Container */
+.container {
+    max-width: 1400px;
+    margin: 2rem auto;
+    padding: 0 20px;
+}
+
+/* Alerts F1 Style */
+.alert {
+    padding: 1rem;
+    margin-bottom: 1rem;
+    border-left: 4px solid;
+    background: var(--f1-dark);
+    color: var(--f1-white);
+    position: relative;
+}
+
+.alert-success {
+    border-left-color: #00ff00;
+}
+
+.alert-error {
+    border-left-color: var(--f1-red);
+}
+
+/* F1 Buttons */
+.btn {
+    display: inline-block;
+    padding: 0.8rem 2rem;
+    background: var(--f1-red);
+    color: var(--f1-white);
+    text-decoration: none;
+    text-transform: uppercase;
+    font-weight: 700;
+    letter-spacing: 1px;
+    border-radius: 0;
+    border: 2px solid var(--f1-red);
+    position: relative;
+    overflow: hidden;
+    transition: all 0.3s;
+    cursor: pointer;
+    font-size: 0.9rem;
+}
+
+.btn:hover {
+    color: var(--f1-red);
+    background: var(--f1-white);
+    transform: translateY(-2px);
+    box-shadow: 0 5px 20px rgba(225, 6, 0, 0.4);
+}
+
+.btn-block {
+    width: 100%;
+    text-align: center;
+}
+
+/* Cards F1 Style */
+.f1-card {
+    background: var(--f1-dark);
+    border-radius: 0;
+    padding: 2rem;
+    box-shadow: 0 10px 30px rgba(225, 6, 0, 0.1);
+    border-left: 4px solid var(--f1-red);
+    position: relative;
+    overflow: hidden;
+}
+
+.f1-card::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    right: 0;
+    width: 100px;
+    height: 100px;
+    background: linear-gradient(135deg, transparent 50%, var(--f1-red) 50%);
+    opacity: 0.1;
+}
+
+.f1-card::after {
+    content: 'F1';
+    position: absolute;
+    bottom: 10px;
+    right: 20px;
+    font-size: 4rem;
+    font-weight: 900;
+    color: var(--f1-red);
+    opacity: 0.05;
+    transform: rotate(-15deg);
+}
+
+/* Inputs & Selects F1 Style */
+.f1-input {
+    width: 100%;
+    padding: 0.75rem;
+    background: var(--f1-gray);
+    border: 2px solid transparent;
+    color: var(--f1-white);
+    font-size: 1rem;
+    transition: all 0.3s;
+}
+
+.f1-input:focus {
+    outline: none;
+    border-color: var(--f1-red);
+    background: var(--f1-black);
+}
+
+.f1-input::placeholder {
+    color: #666;
+}
+
+.f1-select {
+    width: 100%;
+    padding: 0.75rem;
+    background: var(--f1-gray);
+    border: 2px solid transparent;
+    color: var(--f1-white);
+    font-size: 1rem;
+    cursor: pointer;
+}
+
+.f1-select:focus {
+    outline: none;
+    border-color: var(--f1-red);
+}
+
+/* Checkered Flag Pattern */
+.checkered-flag {
+    background-image: 
+        linear-gradient(45deg, var(--f1-red) 25%, transparent 25%),
+        linear-gradient(-45deg, var(--f1-red) 25%, transparent 25%),
+        linear-gradient(45deg, transparent 75%, var(--f1-red) 75%),
+        linear-gradient(-45deg, transparent 75%, var(--f1-red) 75%);
+    background-size: 20px 20px;
+    background-position: 0 0, 0 10px, 10px -10px, -10px 0px;
+    opacity: 0.1;
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    pointer-events: none;
+}
+
+/* Responsive */
+@media (max-width: 768px) {
+    .nav-menu {
+        gap: 1rem;
+    }
+    
+    .nav-brand {
+        font-size: 1.2rem;
+    }
+}
+

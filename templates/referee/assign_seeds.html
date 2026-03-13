@@ -1,0 +1,49 @@
+{% extends "base.html" %}
+
+{% block title %}Phân Seed - Lobby {{ lobby_id }}{% endblock %}
+
+{% block content %}
+<div style="max-width: 600px; margin: 2rem auto;">
+    <div style="background: white; padding: 2rem; border-radius: 20px; box-shadow: 0 20px 60px rgba(0,0,0,0.1);">
+        <h1 style="text-align: center; margin-bottom: 2rem;">Phân Seed Cho Lobby {{ lobby_id }}</h1>
+        
+        <div style="background: #f7fafc; padding: 1rem; border-radius: 10px; margin-bottom: 2rem;">
+            <p style="color: #666;">Seed số thứ tự 1-4, quyết định thứ tự ban pick:</p>
+            <ul style="margin-left: 2rem; color: #666;">
+                <li><strong>Seed 1:</strong> Ban đầu tiên, pick thứ 1,5,9</li>
+                <li><strong>Seed 2:</strong> Ban thứ hai, pick thứ 2,6,10</li>
+                <li><strong>Seed 3:</strong> Ban thứ ba, pick thứ 3,7,11</li>
+                <li><strong>Seed 4:</strong> Ban thứ tư, pick thứ 4,8,12</li>
+            </ul>
+        </div>
+        
+        <form method="POST">
+            <div style="margin-bottom: 2rem;">
+                <h3 style="margin-bottom: 1rem;">Danh sách người chơi:</h3>
+                {% for player in players %}
+                <div style="background: #f7fafc; padding: 1rem; border-radius: 10px; margin-bottom: 1rem;">
+                    <p><strong>{{ player.facebook_link }}</strong></p>
+                    <div style="margin-top: 0.5rem;">
+                        <label for="seed_{{ player.id }}">Seed (1-4):</label>
+                        <select name="seed_{{ player.id }}" id="seed_{{ player.id }}" 
+                                style="width: 100%; padding: 0.5rem; border: 2px solid #e0e0e0; border-radius: 5px; margin-top: 0.5rem;">
+                            <option value="">-- Chọn seed --</option>
+                            <option value="1" {% if existing_seeds.get(player.id) == 1 %}selected{% endif %}>Seed 1 - Ban đầu tiên</option>
+                            <option value="2" {% if existing_seeds.get(player.id) == 2 %}selected{% endif %}>Seed 2 - Ban thứ hai</option>
+                            <option value="3" {% if existing_seeds.get(player.id) == 3 %}selected{% endif %}>Seed 3 - Ban thứ ba</option>
+                            <option value="4" {% if existing_seeds.get(player.id) == 4 %}selected{% endif %}>Seed 4 - Ban thứ tư</option>
+                        </select>
+                    </div>
+                </div>
+                {% endfor %}
+            </div>
+            
+            <div style="display: flex; gap: 1rem;">
+                <button type="submit" class="btn" style="flex: 1;">Lưu phân seed</button>
+                <a href="{{ url_for('referee_page') }}" class="btn" style="flex: 1; background: #9ca3af;">Quay lại</a>
+            </div>
+        </form>
+    </div>
+</div>
+{% endblock %}
+

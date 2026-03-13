@@ -1,0 +1,3778 @@
+{
+  "meta": {
+    "generated": "2026-03-12T00:45:40.250568",
+    "source": "umapyoi+gametora",
+    "version": "1.0"
+  },
+  "characters": [
+    {
+      "id": 10395,
+      "game_id": 1118,
+      "name": "Admire Groove",
+      "name_en": "Admire Groove",
+      "name_jp": "アドマイヤグルーヴ",
+      "thumbnail": "assets/thumbnails/10395.png",
+      "outfits": []
+    },
+    {
+      "id": 5191,
+      "game_id": 1033,
+      "name": "Admire Vega",
+      "name_en": "Admire Vega",
+      "name_jp": "アドマイヤベガ",
+      "thumbnail": "assets/thumbnails/5191.png",
+      "outfits": [
+        {
+          "id": 103302,
+          "name": "[Glacialis Vega]",
+          "gametora_url": "https://gametora.com/umamusume/characters/103302-admire-vega",
+          "icon": "assets/icons/103302.png",
+          "portrait": null,
+          "rarity": 3,
+          "running_style": 4
+        },
+        {
+          "id": 103301,
+          "name": "[Starry Nocturne]",
+          "gametora_url": "https://gametora.com/umamusume/characters/103301-admire-vega",
+          "icon": "assets/icons/103301.png",
+          "portrait": null,
+          "rarity": 3,
+          "running_style": 4
+        }
+      ]
+    },
+    {
+      "id": 5033,
+      "game_id": 1019,
+      "name": "Agnes Digital",
+      "name_en": "Agnes Digital",
+      "name_jp": "アグネスデジタル",
+      "thumbnail": "assets/thumbnails/5033.png",
+      "outfits": [
+        {
+          "id": 101902,
+          "name": "[Agnes​♡​Jiangshi]",
+          "gametora_url": "https://gametora.com/umamusume/characters/101902-agnes-digital",
+          "icon": "assets/icons/101902.png",
+          "portrait": null,
+          "rarity": 3,
+          "running_style": 3
+        },
+        {
+          "id": 101901,
+          "name": "[Super Express! Full Color Special]",
+          "gametora_url": "https://gametora.com/umamusume/characters/101901-agnes-digital",
+          "icon": "assets/icons/101901.png",
+          "portrait": null,
+          "rarity": 3,
+          "running_style": 3
+        }
+      ]
+    },
+    {
+      "id": 5179,
+      "game_id": 1032,
+      "name": "Agnes Tachyon",
+      "name_en": "Agnes Tachyon",
+      "name_jp": "アグネスタキオン",
+      "thumbnail": "assets/thumbnails/5179.png",
+      "outfits": [
+        {
+          "id": 103203,
+          "name": "[Σ Experiment]",
+          "gametora_url": "https://gametora.com/umamusume/characters/103203-agnes-tachyon",
+          "icon": "assets/icons/103203.png",
+          "portrait": null,
+          "rarity": 3,
+          "running_style": 2
+        },
+        {
+          "id": 103202,
+          "name": "[Lunatic Lab]",
+          "gametora_url": "https://gametora.com/umamusume/characters/103202-agnes-tachyon",
+          "icon": "assets/icons/103202.png",
+          "portrait": null,
+          "rarity": 3,
+          "running_style": 2
+        },
+        {
+          "id": 103201,
+          "name": "[Tach​-​nology]",
+          "gametora_url": "https://gametora.com/umamusume/characters/103201-agnes-tachyon",
+          "icon": "assets/icons/103201.png",
+          "portrait": null,
+          "rarity": 1,
+          "running_style": 2
+        }
+      ]
+    },
+    {
+      "id": 5021,
+      "game_id": 1018,
+      "name": "Air Groove",
+      "name_en": "Air Groove",
+      "name_jp": "エアグルーヴ",
+      "thumbnail": "assets/thumbnails/5021.png",
+      "outfits": [
+        {
+          "id": 101802,
+          "name": "[Quercus Civilis]",
+          "gametora_url": "https://gametora.com/umamusume/characters/101802-air-groove",
+          "icon": "assets/icons/101802.png",
+          "portrait": null,
+          "rarity": 3,
+          "running_style": 2
+        },
+        {
+          "id": 101801,
+          "name": "[Empress Road]",
+          "gametora_url": "https://gametora.com/umamusume/characters/101801-air-groove",
+          "icon": "assets/icons/101801.png",
+          "portrait": null,
+          "rarity": 2,
+          "running_style": 2
+        }
+      ]
+    },
+    {
+      "id": 10220,
+      "game_id": 1111,
+      "name": "Air Messiah",
+      "name_en": "Air Messiah",
+      "name_jp": "エアメサイア",
+      "thumbnail": "assets/thumbnails/10220.png",
+      "outfits": [
+        {
+          "id": 111101,
+          "name": "[Inherited Hope]",
+          "gametora_url": "https://gametora.com/umamusume/characters/111101-air-messiah",
+          "icon": "assets/icons/111101.png",
+          "portrait": null,
+          "rarity": 3,
+          "running_style": 3
+        }
+      ]
+    },
+    {
+      "id": 5225,
+      "game_id": 1036,
+      "name": "Air Shakur",
+      "name_en": "Air Shakur",
+      "name_jp": "エアシャカール",
+      "thumbnail": "assets/thumbnails/5225.png",
+      "outfits": [
+        {
+          "id": 103602,
+          "name": "[Belphegor​'​s Prime]",
+          "gametora_url": "https://gametora.com/umamusume/characters/103602-air-shakur",
+          "icon": "assets/icons/103602.png",
+          "portrait": null,
+          "rarity": 3,
+          "running_style": 3
+        },
+        {
+          "id": 103601,
+          "name": "[[unsigned]]",
+          "gametora_url": "https://gametora.com/umamusume/characters/103601-air-shakur",
+          "icon": "assets/icons/103601.png",
+          "portrait": null,
+          "rarity": 3,
+          "running_style": 4
+        }
+      ]
+    },
+    {
+      "id": 10391,
+      "game_id": 1129,
+      "name": "Almond Eye",
+      "name_en": "Almond Eye",
+      "name_jp": "アーモンドアイ",
+      "thumbnail": "assets/thumbnails/10391.png",
+      "outfits": [
+        {
+          "id": 112901,
+          "name": "[The Changer]",
+          "gametora_url": "https://gametora.com/umamusume/characters/112901-almond-eye",
+          "icon": "assets/icons/112901.png",
+          "portrait": null,
+          "rarity": 3,
+          "running_style": 2
+        }
+      ]
+    },
+    {
+      "id": 7518,
+      "game_id": 1087,
+      "name": "Aston Machan",
+      "name_en": "Aston Machan",
+      "name_jp": "アストンマーチャン",
+      "thumbnail": "assets/thumbnails/7518.png",
+      "outfits": [
+        {
+          "id": 108702,
+          "name": "[Everlasting Sweet Treat]",
+          "gametora_url": "https://gametora.com/umamusume/characters/108702-aston-machan",
+          "icon": "assets/icons/108702.png",
+          "portrait": null,
+          "rarity": 3,
+          "running_style": 1
+        },
+        {
+          "id": 108701,
+          "name": "[Flare]",
+          "gametora_url": "https://gametora.com/umamusume/characters/108701-aston-machan",
+          "icon": "assets/icons/108701.png",
+          "portrait": null,
+          "rarity": 3,
+          "running_style": 1
+        }
+      ]
+    },
+    {
+      "id": 5416,
+      "game_id": 1053,
+      "name": "Bamboo Memory",
+      "name_en": "Bamboo Memory",
+      "name_jp": "バンブーメモリー",
+      "thumbnail": "assets/thumbnails/5416.png",
+      "outfits": [
+        {
+          "id": 105302,
+          "name": "[Ultra​☆​Marine]",
+          "gametora_url": "https://gametora.com/umamusume/characters/105302-bamboo-memory",
+          "icon": "assets/icons/105302.png",
+          "portrait": null,
+          "rarity": 3,
+          "running_style": 3
+        },
+        {
+          "id": 105301,
+          "name": "[Ambition of the Black Iron]",
+          "gametora_url": "https://gametora.com/umamusume/characters/105301-bamboo-memory",
+          "icon": "assets/icons/105301.png",
+          "portrait": null,
+          "rarity": 3,
+          "running_style": 3
+        }
+      ]
+    },
+    {
+      "id": 10375,
+      "game_id": 1095,
+      "name": "Believe",
+      "name_en": "Believe",
+      "name_jp": "ビリーヴ",
+      "thumbnail": "assets/thumbnails/10375.png",
+      "outfits": [
+        {
+          "id": 109501,
+          "name": "[精粋]",
+          "gametora_url": "https://gametora.com/umamusume/characters/109501-believe",
+          "icon": "assets/icons/109501.png",
+          "portrait": null,
+          "rarity": 3,
+          "running_style": 2
+        }
+      ]
+    },
+    {
+      "id": 5428,
+      "game_id": 1054,
+      "name": "Biko Pegasus",
+      "name_en": "Biko Pegasus",
+      "name_jp": "ビコーペガサス",
+      "thumbnail": "assets/thumbnails/5428.png",
+      "outfits": [
+        {
+          "id": 105401,
+          "name": "[Gale Pegasus Type Zero]",
+          "gametora_url": "https://gametora.com/umamusume/characters/105401-biko-pegasus",
+          "icon": "assets/icons/105401.png",
+          "portrait": null,
+          "rarity": 2,
+          "running_style": 3
+        }
+      ]
+    },
+    {
+      "id": 5077,
+      "game_id": 1023,
+      "name": "Biwa Hayahide",
+      "name_en": "Biwa Hayahide",
+      "name_jp": "ビワハヤヒデ",
+      "thumbnail": "assets/thumbnails/5077.png",
+      "outfits": [
+        {
+          "id": 102303,
+          "name": "[Engineered Victory]",
+          "gametora_url": "https://gametora.com/umamusume/characters/102303-biwa-hayahide",
+          "icon": "assets/icons/102303.png",
+          "portrait": null,
+          "rarity": 3,
+          "running_style": 2
+        },
+        {
+          "id": 102302,
+          "name": "[Noel Rouge Carol]",
+          "gametora_url": "https://gametora.com/umamusume/characters/102302-biwa-hayahide",
+          "icon": "assets/icons/102302.png",
+          "portrait": null,
+          "rarity": 3,
+          "running_style": 2
+        },
+        {
+          "id": 102301,
+          "name": "[pf​.​Victory Formula​.​.​.]",
+          "gametora_url": "https://gametora.com/umamusume/characters/102301-biwa-hayahide",
+          "icon": "assets/icons/102301.png",
+          "portrait": null,
+          "rarity": 3,
+          "running_style": 2
+        }
+      ]
+    },
+    {
+      "id": 10380,
+      "game_id": 1128,
+      "name": "Blast Onepiece",
+      "name_en": "Blast Onepiece",
+      "name_jp": "ブラストワンピース",
+      "thumbnail": "assets/thumbnails/10380.png",
+      "outfits": []
+    },
+    {
+      "id": 10376,
+      "game_id": 1124,
+      "name": "Bubble Gum Fellow",
+      "name_en": "Bubble Gum Fellow",
+      "name_jp": "バブルガムフェロー",
+      "thumbnail": "assets/thumbnails/10376.png",
+      "outfits": [
+        {
+          "id": 112402,
+          "name": "[暁光]",
+          "gametora_url": "https://gametora.com/umamusume/characters/112402-bubble-gum-fellow",
+          "icon": "assets/icons/112402.png",
+          "portrait": null,
+          "rarity": 3,
+          "running_style": 2
+        },
+        {
+          "id": 112401,
+          "name": "[POPPING!]",
+          "gametora_url": "https://gametora.com/umamusume/characters/112401-bubble-gum-fellow",
+          "icon": "assets/icons/112401.png",
+          "portrait": null,
+          "rarity": 3,
+          "running_style": 2
+        }
+      ]
+    },
+    {
+      "id": 10374,
+      "game_id": 1114,
+      "name": "Buena Vista",
+      "name_en": "Buena Vista",
+      "name_jp": "ブエナビスタ",
+      "thumbnail": "assets/thumbnails/10374.png",
+      "outfits": [
+        {
+          "id": 111401,
+          "name": "[Heroína Inocente]",
+          "gametora_url": "https://gametora.com/umamusume/characters/111401-buena-vista",
+          "icon": "assets/icons/111401.png",
+          "portrait": null,
+          "rarity": 3,
+          "running_style": 4
+        }
+      ]
+    },
+    {
+      "id": 10372,
+      "game_id": 1120,
+      "name": "Calstone Light O",
+      "name_en": "Calstone Light O",
+      "name_jp": "カルストンライトオ",
+      "thumbnail": "assets/thumbnails/10372.png",
+      "outfits": [
+        {
+          "id": 112001,
+          "name": "[One True Path]",
+          "gametora_url": "https://gametora.com/umamusume/characters/112001-calstone-light-o",
+          "icon": "assets/icons/112001.png",
+          "portrait": null,
+          "rarity": 3,
+          "running_style": 1
+        }
+      ]
+    },
+    {
+      "id": 10176,
+      "game_id": 1110,
+      "name": "Cesario",
+      "name_en": "Cesario",
+      "name_jp": "シーザリオ",
+      "thumbnail": "assets/thumbnails/10176.png",
+      "outfits": [
+        {
+          "id": 111002,
+          "name": "[Twinbell Queen]",
+          "gametora_url": "https://gametora.com/umamusume/characters/111002-cesario",
+          "icon": "assets/icons/111002.png",
+          "portrait": null,
+          "rarity": 3,
+          "running_style": 2
+        },
+        {
+          "id": 111001,
+          "name": "[Future Weaver]",
+          "gametora_url": "https://gametora.com/umamusume/characters/111001-cesario",
+          "icon": "assets/icons/111001.png",
+          "portrait": null,
+          "rarity": 3,
+          "running_style": 3
+        }
+      ]
+    },
+    {
+      "id": 7520,
+      "game_id": 1089,
+      "name": "Cheval Grand",
+      "name_en": "Cheval Grand",
+      "name_jp": "シュヴァルグラン",
+      "thumbnail": "assets/thumbnails/7520.png",
+      "outfits": [
+        {
+          "id": 108902,
+          "name": "[夏凪ネイビードロップ]",
+          "gametora_url": "https://gametora.com/umamusume/characters/108902-cheval-grand",
+          "icon": "assets/icons/108902.png",
+          "portrait": null,
+          "rarity": 3,
+          "running_style": 2
+        },
+        {
+          "id": 108901,
+          "name": "[Grand Itinéraire]",
+          "gametora_url": "https://gametora.com/umamusume/characters/108901-cheval-grand",
+          "icon": "assets/icons/108901.png",
+          "portrait": null,
+          "rarity": 3,
+          "running_style": 2
+        }
+      ]
+    },
+    {
+      "id": 10387,
+      "game_id": 1133,
+      "name": "Chrono Genesis",
+      "name_en": "Chrono Genesis",
+      "name_jp": "クロノジェネシス",
+      "thumbnail": "assets/thumbnails/10387.png",
+      "outfits": [
+        {
+          "id": 113301,
+          "name": "[Prismatic Curator]",
+          "gametora_url": "https://gametora.com/umamusume/characters/113301-chrono-genesis",
+          "icon": "assets/icons/113301.png",
+          "portrait": null,
+          "rarity": 3,
+          "running_style": 2
+        }
+      ]
+    },
+    {
+      "id": 7732,
+      "game_id": 1098,
+      "name": "Copano Rickey",
+      "name_en": "Copano Rickey",
+      "name_jp": "コパノリッキー",
+      "thumbnail": "assets/thumbnails/7732.png",
+      "outfits": [
+        {
+          "id": 109802,
+          "name": "[Dazzling ☆ Lucky Wear]",
+          "gametora_url": "https://gametora.com/umamusume/characters/109802-copano-rickey",
+          "icon": "assets/icons/109802.png",
+          "portrait": null,
+          "rarity": 3,
+          "running_style": 1
+        },
+        {
+          "id": 109801,
+          "name": "[Yin​-​yang Bagua ☆ Lucky Costume]",
+          "gametora_url": "https://gametora.com/umamusume/characters/109801-copano-rickey",
+          "icon": "assets/icons/109801.png",
+          "portrait": null,
+          "rarity": 3,
+          "running_style": 2
+        }
+      ]
+    },
+    {
+      "id": 10386,
+      "game_id": 1134,
+      "name": "Curren Bouquetd'or",
+      "name_en": "Curren Bouquetd'or",
+      "name_jp": "カレンブーケドール",
+      "thumbnail": "assets/thumbnails/10386.png",
+      "outfits": []
+    },
+    {
+      "id": 5247,
+      "game_id": 1038,
+      "name": "Curren Chan",
+      "name_en": "Curren Chan",
+      "name_jp": "カレンチャン",
+      "thumbnail": "assets/thumbnails/5247.png",
+      "outfits": [
+        {
+          "id": 103802,
+          "name": "[Ma Chérie]",
+          "gametora_url": "https://gametora.com/umamusume/characters/103802-curren-chan",
+          "icon": "assets/icons/103802.png",
+          "portrait": null,
+          "rarity": 3,
+          "running_style": 2
+        },
+        {
+          "id": 103801,
+          "name": "[Fille Éclair]",
+          "gametora_url": "https://gametora.com/umamusume/characters/103801-curren-chan",
+          "icon": "assets/icons/103801.png",
+          "portrait": null,
+          "rarity": 3,
+          "running_style": 2
+        }
+      ]
+    },
+    {
+      "id": 7947,
+      "game_id": 1085,
+      "name": "Daiichi Ruby",
+      "name_en": "Daiichi Ruby",
+      "name_jp": "ダイイチルビー",
+      "thumbnail": "assets/thumbnails/7947.png",
+      "outfits": [
+        {
+          "id": 108502,
+          "name": "[Flowing Blue]",
+          "gametora_url": "https://gametora.com/umamusume/characters/108502-daiichi-ruby",
+          "icon": "assets/icons/108502.png",
+          "portrait": null,
+          "rarity": 3,
+          "running_style": 3
+        },
+        {
+          "id": 108501,
+          "name": "[Brilliant Red Gemstone]",
+          "gametora_url": "https://gametora.com/umamusume/characters/108501-daiichi-ruby",
+          "icon": "assets/icons/108501.png",
+          "portrait": null,
+          "rarity": 3,
+          "running_style": 3
+        }
+      ]
+    },
+    {
+      "id": 5574,
+      "game_id": 1065,
+      "name": "Daitaku Helios",
+      "name_en": "Daitaku Helios",
+      "name_jp": "ダイタクヘリオス",
+      "thumbnail": "assets/thumbnails/5574.png",
+      "outfits": [
+        {
+          "id": 106502,
+          "name": "[Joyful Jamboree!]",
+          "gametora_url": "https://gametora.com/umamusume/characters/106502-daitaku-helios",
+          "icon": "assets/icons/106502.png",
+          "portrait": null,
+          "rarity": 3,
+          "running_style": 1
+        },
+        {
+          "id": 106501,
+          "name": "[Fun ☆ Fun ☆ Party Night]",
+          "gametora_url": "https://gametora.com/umamusume/characters/106501-daitaku-helios",
+          "icon": "assets/icons/106501.png",
+          "portrait": null,
+          "rarity": 3,
+          "running_style": 2
+        }
+      ]
+    },
+    {
+      "id": 4915,
+      "game_id": 1009,
+      "name": "Daiwa Scarlet",
+      "name_en": "Daiwa Scarlet",
+      "name_jp": "ダイワスカーレット",
+      "thumbnail": "assets/thumbnails/4915.png",
+      "outfits": [
+        {
+          "id": 100902,
+          "name": "[Scarlet Nuit Étoilée]",
+          "gametora_url": "https://gametora.com/umamusume/characters/100902-daiwa-scarlet",
+          "icon": "assets/icons/100902.png",
+          "portrait": null,
+          "rarity": 3,
+          "running_style": 1
+        },
+        {
+          "id": 100901,
+          "name": "[Top of Blue]",
+          "gametora_url": "https://gametora.com/umamusume/characters/100901-daiwa-scarlet",
+          "icon": "assets/icons/100901.png",
+          "portrait": null,
+          "rarity": 2,
+          "running_style": 2
+        }
+      ]
+    },
+    {
+      "id": 10291,
+      "game_id": 1092,
+      "name": "Dantsu Flame",
+      "name_en": "Dantsu Flame",
+      "name_jp": "ダンツフレーム",
+      "thumbnail": "assets/thumbnails/10291.png",
+      "outfits": [
+        {
+          "id": 109201,
+          "name": "[Center ◎ Spotlight]",
+          "gametora_url": "https://gametora.com/umamusume/characters/109201-dantsu-flame",
+          "icon": "assets/icons/109201.png",
+          "portrait": null,
+          "rarity": 3,
+          "running_style": 2
+        }
+      ]
+    },
+    {
+      "id": 10231,
+      "game_id": 1112,
+      "name": "Daring Heart",
+      "name_en": "Daring Heart",
+      "name_jp": "デアリングハート",
+      "thumbnail": "assets/thumbnails/10231.png",
+      "outfits": []
+    },
+    {
+      "id": 7817,
+      "game_id": 1075,
+      "name": "Daring Tact",
+      "name_en": "Daring Tact",
+      "name_jp": "デアリングタクト",
+      "thumbnail": "assets/thumbnails/7817.png",
+      "outfits": []
+    },
+    {
+      "id": 10373,
+      "game_id": 1119,
+      "name": "Dream Journey",
+      "name_en": "Dream Journey",
+      "name_jp": "ドリームジャーニー",
+      "thumbnail": "assets/thumbnails/10373.png",
+      "outfits": [
+        {
+          "id": 111902,
+          "name": "[雪白の夢路]",
+          "gametora_url": "https://gametora.com/umamusume/characters/111902-dream-journey",
+          "icon": "assets/icons/111902.png",
+          "portrait": null,
+          "rarity": 3,
+          "running_style": 4
+        },
+        {
+          "id": 111901,
+          "name": "[Dreamland Memento]",
+          "gametora_url": "https://gametora.com/umamusume/characters/111901-dream-journey",
+          "icon": "assets/icons/111901.png",
+          "portrait": null,
+          "rarity": 3,
+          "running_style": 4
+        }
+      ]
+    },
+    {
+      "id": 9928,
+      "game_id": 1108,
+      "name": "Duramente",
+      "name_en": "Duramente",
+      "name_jp": "ドゥラメンテ",
+      "thumbnail": "assets/thumbnails/9928.png",
+      "outfits": [
+        {
+          "id": 110801,
+          "name": "[Red in Black]",
+          "gametora_url": "https://gametora.com/umamusume/characters/110801-duramente",
+          "icon": "assets/icons/110801.png",
+          "portrait": null,
+          "rarity": 3,
+          "running_style": 4
+        }
+      ]
+    },
+    {
+      "id": 10371,
+      "game_id": 1121,
+      "name": "Durandal",
+      "name_en": "Durandal",
+      "name_jp": "デュランダル",
+      "thumbnail": "assets/thumbnails/10371.png",
+      "outfits": [
+        {
+          "id": 112101,
+          "name": "[Chevalier Fidèle]",
+          "gametora_url": "https://gametora.com/umamusume/characters/112101-durandal",
+          "icon": "assets/icons/112101.png",
+          "portrait": null,
+          "rarity": 3,
+          "running_style": 4
+        }
+      ]
+    },
+    {
+      "id": 5236,
+      "game_id": 1037,
+      "name": "Eishin Flash",
+      "name_en": "Eishin Flash",
+      "name_jp": "エイシンフラッシュ",
+      "thumbnail": "assets/thumbnails/5236.png",
+      "outfits": [
+        {
+          "id": 103703,
+          "name": "[Reines Plätschern]",
+          "gametora_url": "https://gametora.com/umamusume/characters/103703-eishin-flash",
+          "icon": "assets/icons/103703.png",
+          "portrait": null,
+          "rarity": 3,
+          "running_style": 3
+        },
+        {
+          "id": 103702,
+          "name": "[Collect​・​Chocolatier]",
+          "gametora_url": "https://gametora.com/umamusume/characters/103702-eishin-flash",
+          "icon": "assets/icons/103702.png",
+          "portrait": null,
+          "rarity": 3,
+          "running_style": 3
+        },
+        {
+          "id": 103701,
+          "name": "[Meisterschaft]",
+          "gametora_url": "https://gametora.com/umamusume/characters/103701-eishin-flash",
+          "icon": "assets/icons/103701.png",
+          "portrait": null,
+          "rarity": 3,
+          "running_style": 3
+        }
+      ]
+    },
+    {
+      "id": 4974,
+      "game_id": 1014,
+      "name": "El Condor Pasa",
+      "name_en": "El Condor Pasa",
+      "name_jp": "エルコンドルパサー",
+      "thumbnail": "assets/thumbnails/4974.png",
+      "outfits": [
+        {
+          "id": 101402,
+          "name": "[Kukulkan Monk]",
+          "gametora_url": "https://gametora.com/umamusume/characters/101402-el-condor-pasa",
+          "icon": "assets/icons/101402.png",
+          "portrait": null,
+          "rarity": 3,
+          "running_style": 3
+        },
+        {
+          "id": 101401,
+          "name": "[El ☆ Numero 1]",
+          "gametora_url": "https://gametora.com/umamusume/characters/101401-el-condor-pasa",
+          "icon": "assets/icons/101401.png",
+          "portrait": null,
+          "rarity": 2,
+          "running_style": 2
+        }
+      ]
+    },
+    {
+      "id": 10410,
+      "game_id": 1141,
+      "name": "Epiphaneia",
+      "name_en": "Epiphaneia",
+      "name_jp": "エピファネイア",
+      "thumbnail": "assets/thumbnails/10410.png",
+      "outfits": []
+    },
+    {
+      "id": 10280,
+      "game_id": 1081,
+      "name": "Espoir City",
+      "name_en": "Espoir City",
+      "name_jp": "エスポワールシチー",
+      "thumbnail": "assets/thumbnails/10280.png",
+      "outfits": [
+        {
+          "id": 108101,
+          "name": "[Red Devil Gear]",
+          "gametora_url": "https://gametora.com/umamusume/characters/108101-espoir-city",
+          "icon": "assets/icons/108101.png",
+          "portrait": null,
+          "rarity": 3,
+          "running_style": 2
+        }
+      ]
+    },
+    {
+      "id": 10392,
+      "game_id": 1127,
+      "name": "Fenomeno",
+      "name_en": "Fenomeno",
+      "name_jp": "フェノーメノ",
+      "thumbnail": "assets/thumbnails/10392.png",
+      "outfits": [
+        {
+          "id": 112701,
+          "name": "[Black Flame of Righteousness]",
+          "gametora_url": "https://gametora.com/umamusume/characters/112701-fenomeno",
+          "icon": "assets/icons/112701.png",
+          "portrait": null,
+          "rarity": 3,
+          "running_style": 2
+        }
+      ]
+    },
+    {
+      "id": 5066,
+      "game_id": 1022,
+      "name": "Fine Motion",
+      "name_en": "Fine Motion",
+      "name_jp": "ファインモーション",
+      "thumbnail": "assets/thumbnails/5066.png",
+      "outfits": [
+        {
+          "id": 102202,
+          "name": "[Titania]",
+          "gametora_url": "https://gametora.com/umamusume/characters/102202-fine-motion",
+          "icon": "assets/icons/102202.png",
+          "portrait": null,
+          "rarity": 3,
+          "running_style": 2
+        },
+        {
+          "id": 102201,
+          "name": "[Noble Seamair]",
+          "gametora_url": "https://gametora.com/umamusume/characters/102201-fine-motion",
+          "icon": "assets/icons/102201.png",
+          "portrait": null,
+          "rarity": 3,
+          "running_style": 2
+        }
+      ]
+    },
+    {
+      "id": 10404,
+      "game_id": 1138,
+      "name": "Forever Young",
+      "name_en": "Forever Young",
+      "name_jp": "フォーエバーヤング",
+      "thumbnail": "assets/thumbnails/10404.png",
+      "outfits": []
+    },
+    {
+      "id": 4868,
+      "game_id": 1005,
+      "name": "Fuji Kiseki",
+      "name_en": "Fuji Kiseki",
+      "name_jp": "フジキセキ",
+      "thumbnail": "assets/thumbnails/4868.png",
+      "outfits": [
+        {
+          "id": 100502,
+          "name": "[Succès Étoile]",
+          "gametora_url": "https://gametora.com/umamusume/characters/100502-fuji-kiseki",
+          "icon": "assets/icons/100502.png",
+          "portrait": null,
+          "rarity": 3,
+          "running_style": 2
+        },
+        {
+          "id": 100501,
+          "name": "[Shooting Star Revue]",
+          "gametora_url": "https://gametora.com/umamusume/characters/100501-fuji-kiseki",
+          "icon": "assets/icons/100501.png",
+          "portrait": null,
+          "rarity": 3,
+          "running_style": 2
+        }
+      ]
+    },
+    {
+      "id": 10258,
+      "game_id": 1079,
+      "name": "Furioso",
+      "name_en": "Furioso",
+      "name_jp": "フリオーソ",
+      "thumbnail": "assets/thumbnails/10258.png",
+      "outfits": [
+        {
+          "id": 107901,
+          "name": "[Triumphant Return of the Auspicious Star]",
+          "gametora_url": "https://gametora.com/umamusume/characters/107901-furioso",
+          "icon": "assets/icons/107901.png",
+          "portrait": null,
+          "rarity": 3,
+          "running_style": 2
+        }
+      ]
+    },
+    {
+      "id": 10337,
+      "game_id": 1116,
+      "name": "Gentildonna",
+      "name_en": "Gentildonna",
+      "name_jp": "ジェンティルドンナ",
+      "thumbnail": "assets/thumbnails/10337.png",
+      "outfits": [
+        {
+          "id": 111601,
+          "name": "[Regina dei Fiori]",
+          "gametora_url": "https://gametora.com/umamusume/characters/111601-gentildonna",
+          "icon": "assets/icons/111601.png",
+          "portrait": null,
+          "rarity": 3,
+          "running_style": 2
+        }
+      ]
+    },
+    {
+      "id": 5269,
+      "game_id": 1040,
+      "name": "Gold City",
+      "name_en": "Gold City",
+      "name_jp": "ゴールドシチー",
+      "thumbnail": "assets/thumbnails/5269.png",
+      "outfits": [
+        {
+          "id": 104003,
+          "name": "[Boho Flare]",
+          "gametora_url": "https://gametora.com/umamusume/characters/104003-gold-city",
+          "icon": "assets/icons/104003.png",
+          "portrait": null,
+          "rarity": 3,
+          "running_style": 3
+        },
+        {
+          "id": 104002,
+          "name": "[Akizakura Danzatrice]",
+          "gametora_url": "https://gametora.com/umamusume/characters/104002-gold-city",
+          "icon": "assets/icons/104002.png",
+          "portrait": null,
+          "rarity": 3,
+          "running_style": 3
+        },
+        {
+          "id": 104001,
+          "name": "[Authentic 1928]",
+          "gametora_url": "https://gametora.com/umamusume/characters/104001-gold-city",
+          "icon": "assets/icons/104001.png",
+          "portrait": null,
+          "rarity": 3,
+          "running_style": 3
+        }
+      ]
+    },
+    {
+      "id": 4891,
+      "game_id": 1007,
+      "name": "Gold Ship",
+      "name_en": "Gold Ship",
+      "name_jp": "ゴールドシップ",
+      "thumbnail": "assets/thumbnails/4891.png",
+      "outfits": [
+        {
+          "id": 100703,
+          "name": "[La Mode 564]",
+          "gametora_url": "https://gametora.com/umamusume/characters/100703-gold-ship",
+          "icon": "assets/icons/100703.png",
+          "portrait": null,
+          "rarity": 3,
+          "running_style": 4
+        },
+        {
+          "id": 100702,
+          "name": "[Run! Fun! Watergun!]",
+          "gametora_url": "https://gametora.com/umamusume/characters/100702-gold-ship",
+          "icon": "assets/icons/100702.png",
+          "portrait": null,
+          "rarity": 3,
+          "running_style": 4
+        },
+        {
+          "id": 100701,
+          "name": "[Red Strife]",
+          "gametora_url": "https://gametora.com/umamusume/characters/100701-gold-ship",
+          "icon": "assets/icons/100701.png",
+          "portrait": null,
+          "rarity": 2,
+          "running_style": 4
+        }
+      ]
+    },
+    {
+      "id": 10389,
+      "game_id": 1131,
+      "name": "Gran Alegria",
+      "name_en": "Gran Alegria",
+      "name_jp": "グランアレグリア",
+      "thumbnail": "assets/thumbnails/10389.png",
+      "outfits": [
+        {
+          "id": 113101,
+          "name": "[sMile My Way!]",
+          "gametora_url": "https://gametora.com/umamusume/characters/113101-gran-alegria",
+          "icon": "assets/icons/113101.png",
+          "portrait": null,
+          "rarity": 3,
+          "running_style": 3
+        }
+      ]
+    },
+    {
+      "id": 4939,
+      "game_id": 1011,
+      "name": "Grass Wonder",
+      "name_en": "Grass Wonder",
+      "name_jp": "グラスワンダー",
+      "thumbnail": "assets/thumbnails/4939.png",
+      "outfits": [
+        {
+          "id": 101103,
+          "name": "[Honor of the Azure Flame]",
+          "gametora_url": "https://gametora.com/umamusume/characters/101103-grass-wonder",
+          "icon": "assets/icons/101103.png",
+          "portrait": null,
+          "rarity": 3,
+          "running_style": 3
+        },
+        {
+          "id": 101102,
+          "name": "[Saint Jade Healer]",
+          "gametora_url": "https://gametora.com/umamusume/characters/101102-grass-wonder",
+          "icon": "assets/icons/101102.png",
+          "portrait": null,
+          "rarity": 3,
+          "running_style": 3
+        },
+        {
+          "id": 101101,
+          "name": "[Rock​-​piercing Blue]",
+          "gametora_url": "https://gametora.com/umamusume/characters/101101-grass-wonder",
+          "icon": "assets/icons/101101.png",
+          "portrait": null,
+          "rarity": 2,
+          "running_style": 3
+        }
+      ]
+    },
+    {
+      "id": 5404,
+      "game_id": 1052,
+      "name": "Haru Urara",
+      "name_en": "Haru Urara",
+      "name_jp": "ハルウララ",
+      "thumbnail": "assets/thumbnails/5404.png",
+      "outfits": [
+        {
+          "id": 105202,
+          "name": "[First Urara ♪ Saku Sakura]",
+          "gametora_url": "https://gametora.com/umamusume/characters/105202-haru-urara",
+          "icon": "assets/icons/105202.png",
+          "portrait": null,
+          "rarity": 3,
+          "running_style": 3
+        },
+        {
+          "id": 105201,
+          "name": "[Uraran First Prize ♪]",
+          "gametora_url": "https://gametora.com/umamusume/characters/105201-haru-urara",
+          "icon": "assets/icons/105201.png",
+          "portrait": null,
+          "rarity": 1,
+          "running_style": 3
+        }
+      ]
+    },
+    {
+      "id": 5134,
+      "game_id": 1028,
+      "name": "Hishi Akebono",
+      "name_en": "Hishi Akebono",
+      "name_jp": "ヒシアケボノ",
+      "thumbnail": "assets/thumbnails/5134.png",
+      "outfits": [
+        {
+          "id": 102802,
+          "name": "[Magic Night Garland]",
+          "gametora_url": "https://gametora.com/umamusume/characters/102802-hishi-akebono",
+          "icon": "assets/icons/102802.png",
+          "portrait": null,
+          "rarity": 3,
+          "running_style": 2
+        },
+        {
+          "id": 102801,
+          "name": "[Bono ☆ Alla Moda]",
+          "gametora_url": "https://gametora.com/umamusume/characters/102801-hishi-akebono",
+          "icon": "assets/icons/102801.png",
+          "portrait": null,
+          "rarity": 3,
+          "running_style": 2
+        }
+      ]
+    },
+    {
+      "id": 4951,
+      "game_id": 1012,
+      "name": "Hishi Amazon",
+      "name_en": "Hishi Amazon",
+      "name_jp": "ヒシアマゾン",
+      "thumbnail": "assets/thumbnails/4951.png",
+      "outfits": [
+        {
+          "id": 101202,
+          "name": "[Hungry Veil]",
+          "gametora_url": "https://gametora.com/umamusume/characters/101202-hishi-amazon",
+          "icon": "assets/icons/101202.png",
+          "portrait": null,
+          "rarity": 3,
+          "running_style": 4
+        },
+        {
+          "id": 101201,
+          "name": "[Amazoness Lapis]",
+          "gametora_url": "https://gametora.com/umamusume/characters/101201-hishi-amazon",
+          "icon": "assets/icons/101201.png",
+          "portrait": null,
+          "rarity": 3,
+          "running_style": 4
+        }
+      ]
+    },
+    {
+      "id": 8739,
+      "game_id": 1106,
+      "name": "Hishi Miracle",
+      "name_en": "Hishi Miracle",
+      "name_jp": "ヒシミラクル",
+      "thumbnail": "assets/thumbnails/8739.png",
+      "outfits": [
+        {
+          "id": 110602,
+          "name": "[ハッピー・リトル・ノーツ]",
+          "gametora_url": "https://gametora.com/umamusume/characters/110602-hishi-miracle",
+          "icon": "assets/icons/110602.png",
+          "portrait": null,
+          "rarity": 3,
+          "running_style": 3
+        },
+        {
+          "id": 110601,
+          "name": "[Miracle Make​-​up!]",
+          "gametora_url": "https://gametora.com/umamusume/characters/110601-hishi-miracle",
+          "icon": "assets/icons/110601.png",
+          "portrait": null,
+          "rarity": 3,
+          "running_style": 3
+        }
+      ]
+    },
+    {
+      "id": 7878,
+      "game_id": 1099,
+      "name": "Hokko Tarumae",
+      "name_en": "Hokko Tarumae",
+      "name_jp": "ホッコータルマエ",
+      "thumbnail": "assets/thumbnails/7878.png",
+      "outfits": [
+        {
+          "id": 109902,
+          "name": "[Pastel Marine Locodol]",
+          "gametora_url": "https://gametora.com/umamusume/characters/109902-hokko-tarumae",
+          "icon": "assets/icons/109902.png",
+          "portrait": null,
+          "rarity": 3,
+          "running_style": 2
+        },
+        {
+          "id": 109901,
+          "name": "[Star​・​Light​・​Ship]",
+          "gametora_url": "https://gametora.com/umamusume/characters/109901-hokko-tarumae",
+          "icon": "assets/icons/109901.png",
+          "portrait": null,
+          "rarity": 3,
+          "running_style": 2
+        }
+      ]
+    },
+    {
+      "id": 5554,
+      "game_id": 1063,
+      "name": "Ikuno Dictus",
+      "name_en": "Ikuno Dictus",
+      "name_jp": "イクノディクタス",
+      "thumbnail": "assets/thumbnails/5554.png",
+      "outfits": [
+        {
+          "id": 106302,
+          "name": "[逍遥、整然たる路を]",
+          "gametora_url": "https://gametora.com/umamusume/characters/106302-ikuno-dictus",
+          "icon": "assets/icons/106302.png",
+          "portrait": null,
+          "rarity": 3,
+          "running_style": 2
+        },
+        {
+          "id": 106301,
+          "name": "[Mantle of Steel]",
+          "gametora_url": "https://gametora.com/umamusume/characters/106301-ikuno-dictus",
+          "icon": "assets/icons/106301.png",
+          "portrait": null,
+          "rarity": 2,
+          "running_style": 2
+        }
+      ]
+    },
+    {
+      "id": 5202,
+      "game_id": 1034,
+      "name": "Inari One",
+      "name_en": "Inari One",
+      "name_jp": "イナリワン",
+      "thumbnail": "assets/thumbnails/5202.png",
+      "outfits": [
+        {
+          "id": 103402,
+          "name": "[Fields of Gold]",
+          "gametora_url": "https://gametora.com/umamusume/characters/103402-inari-one",
+          "icon": "assets/icons/103402.png",
+          "portrait": null,
+          "rarity": 3,
+          "running_style": 4
+        },
+        {
+          "id": 103401,
+          "name": "[Inari Yukari Edomurasaki]",
+          "gametora_url": "https://gametora.com/umamusume/characters/103401-inari-one",
+          "icon": "assets/icons/103401.png",
+          "portrait": null,
+          "rarity": 3,
+          "running_style": 4
+        }
+      ]
+    },
+    {
+      "id": 5168,
+      "game_id": 1031,
+      "name": "Ines Fujin",
+      "name_en": "Ines Fujin",
+      "name_jp": "アイネスフウジン",
+      "thumbnail": "assets/thumbnails/5168.png",
+      "outfits": [
+        {
+          "id": 103103,
+          "name": "[Hello Hello Island]",
+          "gametora_url": "https://gametora.com/umamusume/characters/103103-ines-fujin",
+          "icon": "assets/icons/103103.png",
+          "portrait": null,
+          "rarity": 3,
+          "running_style": 1
+        },
+        {
+          "id": 103102,
+          "name": "[MELTY GIFT]",
+          "gametora_url": "https://gametora.com/umamusume/characters/103102-ines-fujin",
+          "icon": "assets/icons/103102.png",
+          "portrait": null,
+          "rarity": 3,
+          "running_style": 1
+        },
+        {
+          "id": 103101,
+          "name": "[All​-​time Fever]",
+          "gametora_url": "https://gametora.com/umamusume/characters/103101-ines-fujin",
+          "icon": "assets/icons/103101.png",
+          "portrait": null,
+          "rarity": 3,
+          "running_style": 1
+        }
+      ]
+    },
+    {
+      "id": 8707,
+      "game_id": 1094,
+      "name": "Jungle Pocket",
+      "name_en": "Jungle Pocket",
+      "name_jp": "ジャングルポケット",
+      "thumbnail": "assets/thumbnails/8707.png",
+      "outfits": [
+        {
+          "id": 109401,
+          "name": "[Ruler​'​s Battle Cry]",
+          "gametora_url": "https://gametora.com/umamusume/characters/109401-jungle-pocket",
+          "icon": "assets/icons/109401.png",
+          "portrait": null,
+          "rarity": 3,
+          "running_style": 3
+        }
+      ]
+    },
+    {
+      "id": 7948,
+      "game_id": 1093,
+      "name": "K.S. Miracle",
+      "name_en": "K.S. Miracle",
+      "name_jp": "ケイエスミラクル",
+      "thumbnail": "assets/thumbnails/7948.png",
+      "outfits": [
+        {
+          "id": 109302,
+          "name": "[秋日色アンダンテ]",
+          "gametora_url": "https://gametora.com/umamusume/characters/109302-ksmiracle",
+          "icon": "assets/icons/109302.png",
+          "portrait": null,
+          "rarity": 3,
+          "running_style": 2
+        },
+        {
+          "id": 109301,
+          "name": "[Prism]",
+          "gametora_url": "https://gametora.com/umamusume/characters/109301-ksmiracle",
+          "icon": "assets/icons/109301.png",
+          "portrait": null,
+          "rarity": 3,
+          "running_style": 2
+        }
+      ]
+    },
+    {
+      "id": 8719,
+      "game_id": 1104,
+      "name": "Katsuragi Ace",
+      "name_en": "Katsuragi Ace",
+      "name_jp": "カツラギエース",
+      "thumbnail": "assets/thumbnails/8719.png",
+      "outfits": [
+        {
+          "id": 110402,
+          "name": "[Pen Name: Ink Dragon]",
+          "gametora_url": "https://gametora.com/umamusume/characters/110402-katsuragi-ace",
+          "icon": "assets/icons/110402.png",
+          "portrait": null,
+          "rarity": 3,
+          "running_style": 1
+        },
+        {
+          "id": 110401,
+          "name": "[Dragon Rising to the Top]",
+          "gametora_url": "https://gametora.com/umamusume/characters/110401-katsuragi-ace",
+          "icon": "assets/icons/110401.png",
+          "portrait": null,
+          "rarity": 3,
+          "running_style": 1
+        }
+      ]
+    },
+    {
+      "id": 5258,
+      "game_id": 1039,
+      "name": "Kawakami Princess",
+      "name_en": "Kawakami Princess",
+      "name_jp": "カワカミプリンセス",
+      "thumbnail": "assets/thumbnails/5258.png",
+      "outfits": [
+        {
+          "id": 103902,
+          "name": "[Suikan Beauty]",
+          "gametora_url": "https://gametora.com/umamusume/characters/103902-kawakami-princess",
+          "icon": "assets/icons/103902.png",
+          "portrait": null,
+          "rarity": 3,
+          "running_style": 3
+        },
+        {
+          "id": 103901,
+          "name": "[Princess of Pink]",
+          "gametora_url": "https://gametora.com/umamusume/characters/103901-kawakami-princess",
+          "icon": "assets/icons/103901.png",
+          "portrait": null,
+          "rarity": 3,
+          "running_style": 3
+        }
+      ]
+    },
+    {
+      "id": 5497,
+      "game_id": 1061,
+      "name": "King Halo",
+      "name_en": "King Halo",
+      "name_jp": "キングヘイロー",
+      "thumbnail": "assets/thumbnails/5497.png",
+      "outfits": [
+        {
+          "id": 106103,
+          "name": "[Evergreen Identity]",
+          "gametora_url": "https://gametora.com/umamusume/characters/106103-king-halo",
+          "icon": "assets/icons/106103.png",
+          "portrait": null,
+          "rarity": 3,
+          "running_style": 3
+        },
+        {
+          "id": 106102,
+          "name": "[Noble White Cheer Attire]",
+          "gametora_url": "https://gametora.com/umamusume/characters/106102-king-halo",
+          "icon": "assets/icons/106102.png",
+          "portrait": null,
+          "rarity": 3,
+          "running_style": 3
+        },
+        {
+          "id": 106101,
+          "name": "[King of Emeralds]",
+          "gametora_url": "https://gametora.com/umamusume/characters/106101-king-halo",
+          "icon": "assets/icons/106101.png",
+          "portrait": null,
+          "rarity": 1,
+          "running_style": 3
+        }
+      ]
+    },
+    {
+      "id": 10400,
+      "game_id": 1137,
+      "name": "Kiseki",
+      "name_en": "Kiseki",
+      "name_jp": "キセキ",
+      "thumbnail": "assets/thumbnails/10400.png",
+      "outfits": [
+        {
+          "id": 113701,
+          "name": "[Miracle Author]",
+          "gametora_url": "https://gametora.com/umamusume/characters/113701-kiseki",
+          "icon": "assets/icons/113701.png",
+          "portrait": null,
+          "rarity": 3,
+          "running_style": 1
+        }
+      ]
+    },
+    {
+      "id": 5603,
+      "game_id": 1068,
+      "name": "Kitasan Black",
+      "name_en": "Kitasan Black",
+      "name_jp": "キタサンブラック",
+      "thumbnail": "assets/thumbnails/5603.png",
+      "outfits": [
+        {
+          "id": 106803,
+          "name": "[Final Bloom]",
+          "gametora_url": "https://gametora.com/umamusume/characters/106803-kitasan-black",
+          "icon": "assets/icons/106803.png",
+          "portrait": null,
+          "rarity": 3,
+          "running_style": 1
+        },
+        {
+          "id": 106802,
+          "name": "[Jubilant Star​・​Auspicious Crane]",
+          "gametora_url": "https://gametora.com/umamusume/characters/106802-kitasan-black",
+          "icon": "assets/icons/106802.png",
+          "portrait": null,
+          "rarity": 3,
+          "running_style": 1
+        },
+        {
+          "id": 106801,
+          "name": "[Crowning Ooban]",
+          "gametora_url": "https://gametora.com/umamusume/characters/106801-kitasan-black",
+          "icon": "assets/icons/106801.png",
+          "portrait": null,
+          "rarity": 3,
+          "running_style": 1
+        }
+      ]
+    },
+    {
+      "id": 10409,
+      "game_id": 1142,
+      "name": "Logotype",
+      "name_en": "Logotype",
+      "name_jp": "ロゴタイプ",
+      "thumbnail": "assets/thumbnails/10409.png",
+      "outfits": []
+    },
+    {
+      "id": 10388,
+      "game_id": 1132,
+      "name": "Loves Only You",
+      "name_en": "Loves Only You",
+      "name_jp": "ラヴズオンリーユー",
+      "thumbnail": "assets/thumbnails/10388.png",
+      "outfits": [
+        {
+          "id": 113201,
+          "name": "[9927 Wishes]",
+          "gametora_url": "https://gametora.com/umamusume/characters/113201-loves-only-you",
+          "icon": "assets/icons/113201.png",
+          "portrait": null,
+          "rarity": 3,
+          "running_style": 3
+        }
+      ]
+    },
+    {
+      "id": 10390,
+      "game_id": 1130,
+      "name": "Lucky Lilac",
+      "name_en": "Lucky Lilac",
+      "name_jp": "ラッキーライラック",
+      "thumbnail": "assets/thumbnails/10390.png",
+      "outfits": []
+    },
+    {
+      "id": 5100,
+      "game_id": 1025,
+      "name": "Manhattan Cafe",
+      "name_en": "Manhattan Cafe",
+      "name_jp": "マンハッタンカフェ",
+      "thumbnail": "assets/thumbnails/5100.png",
+      "outfits": [
+        {
+          "id": 102502,
+          "name": "[Willow​-​Green Evening]",
+          "gametora_url": "https://gametora.com/umamusume/characters/102502-manhattan-cafe",
+          "icon": "assets/icons/102502.png",
+          "portrait": null,
+          "rarity": 3,
+          "running_style": 4
+        },
+        {
+          "id": 102501,
+          "name": "[Creeping Black]",
+          "gametora_url": "https://gametora.com/umamusume/characters/102501-manhattan-cafe",
+          "icon": "assets/icons/102501.png",
+          "portrait": null,
+          "rarity": 3,
+          "running_style": 3
+        }
+      ]
+    },
+    {
+      "id": 10403,
+      "game_id": 1140,
+      "name": "Marche Lorraine",
+      "name_en": "Marche Lorraine",
+      "name_jp": "マルシュロレーヌ",
+      "thumbnail": "assets/thumbnails/10403.png",
+      "outfits": []
+    },
+    {
+      "id": 4844,
+      "game_id": 1004,
+      "name": "Maruzensky",
+      "name_en": "Maruzensky",
+      "name_jp": "マルゼンスキー",
+      "thumbnail": "assets/thumbnails/4844.png",
+      "outfits": [
+        {
+          "id": 100403,
+          "name": "[Auspicious Maiden of Divine Speed]",
+          "gametora_url": "https://gametora.com/umamusume/characters/100403-maruzensky",
+          "icon": "assets/icons/100403.png",
+          "portrait": null,
+          "rarity": 3,
+          "running_style": 1
+        },
+        {
+          "id": 100402,
+          "name": "[Blasting Off ☆ Summer Night]",
+          "gametora_url": "https://gametora.com/umamusume/characters/100402-maruzensky",
+          "icon": "assets/icons/100402.png",
+          "portrait": null,
+          "rarity": 3,
+          "running_style": 1
+        },
+        {
+          "id": 100401,
+          "name": "[Rouge Formula]",
+          "gametora_url": "https://gametora.com/umamusume/characters/100401-maruzensky",
+          "icon": "assets/icons/100401.png",
+          "portrait": null,
+          "rarity": 3,
+          "running_style": 1
+        }
+      ]
+    },
+    {
+      "id": 5440,
+      "game_id": 1055,
+      "name": "Marvelous Sunday",
+      "name_en": "Marvelous Sunday",
+      "name_jp": "マーベラスサンデー",
+      "thumbnail": "assets/thumbnails/5440.png",
+      "outfits": [
+        {
+          "id": 105502,
+          "name": "[Trick ☆ Ribonetta]",
+          "gametora_url": "https://gametora.com/umamusume/characters/105502-marvelous-sunday",
+          "icon": "assets/icons/105502.png",
+          "portrait": null,
+          "rarity": 3,
+          "running_style": 3
+        },
+        {
+          "id": 105501,
+          "name": "[☆Sparkling​★​Dazzling​☆​Exciting​∞​Marvelous∞]",
+          "gametora_url": "https://gametora.com/umamusume/characters/105501-marvelous-sunday",
+          "icon": "assets/icons/105501.png",
+          "portrait": null,
+          "rarity": 3,
+          "running_style": 3
+        }
+      ]
+    },
+    {
+      "id": 5544,
+      "game_id": 1062,
+      "name": "Matikanetannhauser",
+      "name_en": "Matikanetannhauser",
+      "name_jp": "マチカネタンホイザ",
+      "thumbnail": "assets/thumbnails/5544.png",
+      "outfits": [
+        {
+          "id": 106202,
+          "name": "[Blue Turbulence]",
+          "gametora_url": "https://gametora.com/umamusume/characters/106202-matikanetannhauser",
+          "icon": "assets/icons/106202.png",
+          "portrait": null,
+          "rarity": 3,
+          "running_style": 3
+        },
+        {
+          "id": 106201,
+          "name": "[Pan​~​Paka​~​Tiru​~​Toto]",
+          "gametora_url": "https://gametora.com/umamusume/characters/106201-matikanetannhauser",
+          "icon": "assets/icons/106201.png",
+          "portrait": null,
+          "rarity": 2,
+          "running_style": 3
+        }
+      ]
+    },
+    {
+      "id": 5451,
+      "game_id": 1056,
+      "name": "Matikane​fukukitaru",
+      "name_en": "Matikane​fukukitaru",
+      "name_jp": "マチカネフクキタル",
+      "thumbnail": "assets/thumbnails/5451.png",
+      "outfits": [
+        {
+          "id": 105602,
+          "name": "[Good Omen​・​First Storm]",
+          "gametora_url": "https://gametora.com/umamusume/characters/105602-matikanefukukitaru",
+          "icon": "assets/icons/105602.png",
+          "portrait": null,
+          "rarity": 3,
+          "running_style": 3
+        },
+        {
+          "id": 105601,
+          "name": "[Rising Luck ☆ Flood of Happiness]",
+          "gametora_url": "https://gametora.com/umamusume/characters/105601-matikanefukukitaru",
+          "icon": "assets/icons/105601.png",
+          "portrait": null,
+          "rarity": 1,
+          "running_style": 3
+        }
+      ]
+    },
+    {
+      "id": 5088,
+      "game_id": 1024,
+      "name": "Mayano Top Gun",
+      "name_en": "Mayano Top Gun",
+      "name_jp": "マヤノトップガン",
+      "thumbnail": "assets/thumbnails/5088.png",
+      "outfits": [
+        {
+          "id": 102403,
+          "name": "[Rocking​☆​MewMeow]",
+          "gametora_url": "https://gametora.com/umamusume/characters/102403-mayano-top-gun",
+          "icon": "assets/icons/102403.png",
+          "portrait": null,
+          "rarity": 3,
+          "running_style": 1
+        },
+        {
+          "id": 102402,
+          "name": "[Sunlight Bouquet]",
+          "gametora_url": "https://gametora.com/umamusume/characters/102402-mayano-top-gun",
+          "icon": "assets/icons/102402.png",
+          "portrait": null,
+          "rarity": 3,
+          "running_style": 2
+        },
+        {
+          "id": 102401,
+          "name": "[Scramble ☆ Zone]",
+          "gametora_url": "https://gametora.com/umamusume/characters/102401-mayano-top-gun",
+          "icon": "assets/icons/102401.png",
+          "portrait": null,
+          "rarity": 2,
+          "running_style": 1
+        }
+      ]
+    },
+    {
+      "id": 5463,
+      "game_id": 1058,
+      "name": "Meisho Doto",
+      "name_en": "Meisho Doto",
+      "name_jp": "メイショウドトウ",
+      "thumbnail": "assets/thumbnails/5463.png",
+      "outfits": [
+        {
+          "id": 105802,
+          "name": "[Dot​-​o​'​-​Lantern]",
+          "gametora_url": "https://gametora.com/umamusume/characters/105802-meisho-doto",
+          "icon": "assets/icons/105802.png",
+          "portrait": null,
+          "rarity": 3,
+          "running_style": 2
+        },
+        {
+          "id": 105801,
+          "name": "[Blue​/​Raging]",
+          "gametora_url": "https://gametora.com/umamusume/characters/105801-meisho-doto",
+          "icon": "assets/icons/105801.png",
+          "portrait": null,
+          "rarity": 3,
+          "running_style": 2
+        }
+      ]
+    },
+    {
+      "id": 5528,
+      "game_id": 1071,
+      "name": "Mejiro Ardan",
+      "name_en": "Mejiro Ardan",
+      "name_jp": "メジロアルダン",
+      "thumbnail": "assets/thumbnails/5528.png",
+      "outfits": [
+        {
+          "id": 107102,
+          "name": "[Neige Émeraude]",
+          "gametora_url": "https://gametora.com/umamusume/characters/107102-mejiro-ardan",
+          "icon": "assets/icons/107102.png",
+          "portrait": null,
+          "rarity": 3,
+          "running_style": 2
+        },
+        {
+          "id": 107101,
+          "name": "[Clinochlore Line]",
+          "gametora_url": "https://gametora.com/umamusume/characters/107101-mejiro-ardan",
+          "icon": "assets/icons/107101.png",
+          "portrait": null,
+          "rarity": 3,
+          "running_style": 2
+        }
+      ]
+    },
+    {
+      "id": 7260,
+      "game_id": 1074,
+      "name": "Mejiro Bright",
+      "name_en": "Mejiro Bright",
+      "name_jp": "メジロブライト",
+      "thumbnail": "assets/thumbnails/7260.png",
+      "outfits": [
+        {
+          "id": 107402,
+          "name": "[Starry Snow Lolita]",
+          "gametora_url": "https://gametora.com/umamusume/characters/107402-mejiro-bright",
+          "icon": "assets/icons/107402.png",
+          "portrait": null,
+          "rarity": 3,
+          "running_style": 3
+        },
+        {
+          "id": 107401,
+          "name": "[Brunissage Line]",
+          "gametora_url": "https://gametora.com/umamusume/characters/107401-mejiro-bright",
+          "icon": "assets/icons/107401.png",
+          "portrait": null,
+          "rarity": 3,
+          "running_style": 3
+        }
+      ]
+    },
+    {
+      "id": 5474,
+      "game_id": 1059,
+      "name": "Mejiro Dober",
+      "name_en": "Mejiro Dober",
+      "name_jp": "メジロドーベル",
+      "thumbnail": "assets/thumbnails/5474.png",
+      "outfits": [
+        {
+          "id": 105902,
+          "name": "[Vacances Saphir]",
+          "gametora_url": "https://gametora.com/umamusume/characters/105902-mejiro-dober",
+          "icon": "assets/icons/105902.png",
+          "portrait": null,
+          "rarity": 3,
+          "running_style": 3
+        },
+        {
+          "id": 105901,
+          "name": "[Twisted Line]",
+          "gametora_url": "https://gametora.com/umamusume/characters/105901-mejiro-dober",
+          "icon": "assets/icons/105901.png",
+          "portrait": null,
+          "rarity": 3,
+          "running_style": 3
+        }
+      ]
+    },
+    {
+      "id": 4962,
+      "game_id": 1013,
+      "name": "Mejiro McQueen",
+      "name_en": "Mejiro McQueen",
+      "name_jp": "メジロマックイーン",
+      "thumbnail": "assets/thumbnails/4962.png",
+      "outfits": [
+        {
+          "id": 101303,
+          "name": "[Fair Lady of the Waves]",
+          "gametora_url": "https://gametora.com/umamusume/characters/101303-mejiro-mcqueen",
+          "icon": "assets/icons/101303.png",
+          "portrait": null,
+          "rarity": 3,
+          "running_style": 2
+        },
+        {
+          "id": 101302,
+          "name": "[End of Sky]",
+          "gametora_url": "https://gametora.com/umamusume/characters/101302-mejiro-mcqueen",
+          "icon": "assets/icons/101302.png",
+          "portrait": null,
+          "rarity": 3,
+          "running_style": 2
+        },
+        {
+          "id": 101301,
+          "name": "[Elegance Line]",
+          "gametora_url": "https://gametora.com/umamusume/characters/101301-mejiro-mcqueen",
+          "icon": "assets/icons/101301.png",
+          "portrait": null,
+          "rarity": 3,
+          "running_style": 2
+        }
+      ]
+    },
+    {
+      "id": 5564,
+      "game_id": 1064,
+      "name": "Mejiro Palmer",
+      "name_en": "Mejiro Palmer",
+      "name_jp": "メジロパーマー",
+      "thumbnail": "assets/thumbnails/5564.png",
+      "outfits": [
+        {
+          "id": 106402,
+          "name": "[Warm​-​Hearted Reindeer]",
+          "gametora_url": "https://gametora.com/umamusume/characters/106402-mejiro-palmer",
+          "icon": "assets/icons/106402.png",
+          "portrait": null,
+          "rarity": 3,
+          "running_style": 1
+        },
+        {
+          "id": 106401,
+          "name": "[Line Breakthrough]",
+          "gametora_url": "https://gametora.com/umamusume/characters/106401-mejiro-palmer",
+          "icon": "assets/icons/106401.png",
+          "portrait": null,
+          "rarity": 3,
+          "running_style": 1
+        }
+      ]
+    },
+    {
+      "id": 8332,
+      "game_id": 1086,
+      "name": "Mejiro Ramonu",
+      "name_en": "Mejiro Ramonu",
+      "name_jp": "メジロラモーヌ",
+      "thumbnail": "assets/thumbnails/8332.png",
+      "outfits": [
+        {
+          "id": 108602,
+          "name": "[Untouchable Eden]",
+          "gametora_url": "https://gametora.com/umamusume/characters/108602-mejiro-ramonu",
+          "icon": "assets/icons/108602.png",
+          "portrait": null,
+          "rarity": 3,
+          "running_style": 2
+        },
+        {
+          "id": 108601,
+          "name": "[Onyx Line]",
+          "gametora_url": "https://gametora.com/umamusume/characters/108601-mejiro-ramonu",
+          "icon": "assets/icons/108601.png",
+          "portrait": null,
+          "rarity": 3,
+          "running_style": 2
+        }
+      ]
+    },
+    {
+      "id": 5122,
+      "game_id": 1027,
+      "name": "Mejiro Ryan",
+      "name_en": "Mejiro Ryan",
+      "name_jp": "メジロライアン",
+      "thumbnail": "assets/thumbnails/5122.png",
+      "outfits": [
+        {
+          "id": 102702,
+          "name": "[Marguerite​・​Latte]",
+          "gametora_url": "https://gametora.com/umamusume/characters/102702-mejiro-ryan",
+          "icon": "assets/icons/102702.png",
+          "portrait": null,
+          "rarity": 3,
+          "running_style": 2
+        },
+        {
+          "id": 102701,
+          "name": "[Straight Line]",
+          "gametora_url": "https://gametora.com/umamusume/characters/102701-mejiro-ryan",
+          "icon": "assets/icons/102701.png",
+          "portrait": null,
+          "rarity": 1,
+          "running_style": 3
+        }
+      ]
+    },
+    {
+      "id": 5111,
+      "game_id": 1026,
+      "name": "Mihono Bourbon",
+      "name_en": "Mihono Bourbon",
+      "name_jp": "ミホノブルボン",
+      "thumbnail": "assets/thumbnails/5111.png",
+      "outfits": [
+        {
+          "id": 102602,
+          "name": "[Code Glaçage]",
+          "gametora_url": "https://gametora.com/umamusume/characters/102602-mihono-bourbon",
+          "icon": "assets/icons/102602.png",
+          "portrait": null,
+          "rarity": 3,
+          "running_style": 1
+        },
+        {
+          "id": 102601,
+          "name": "[MB​-​19890425]",
+          "gametora_url": "https://gametora.com/umamusume/characters/102601-mihono-bourbon",
+          "icon": "assets/icons/102601.png",
+          "portrait": null,
+          "rarity": 3,
+          "running_style": 1
+        }
+      ]
+    },
+    {
+      "id": 5623,
+      "game_id": 1057,
+      "name": "Mr. C.B.",
+      "name_en": "Mr. C.B.",
+      "name_jp": "ミスターシービー",
+      "thumbnail": "assets/thumbnails/5623.png",
+      "outfits": [
+        {
+          "id": 105702,
+          "name": "[Dazzling Kabuki Flower]",
+          "gametora_url": "https://gametora.com/umamusume/characters/105702-mr-cb",
+          "icon": "assets/icons/105702.png",
+          "portrait": null,
+          "rarity": 3,
+          "running_style": 4
+        },
+        {
+          "id": 105701,
+          "name": "[Clear Bliss]",
+          "gametora_url": "https://gametora.com/umamusume/characters/105701-mr-cb",
+          "icon": "assets/icons/105701.png",
+          "portrait": null,
+          "rarity": 3,
+          "running_style": 4
+        }
+      ]
+    },
+    {
+      "id": 5371,
+      "game_id": 1049,
+      "name": "Nakayama Festa",
+      "name_en": "Nakayama Festa",
+      "name_jp": "ナカヤマフェスタ",
+      "thumbnail": "assets/thumbnails/5371.png",
+      "outfits": [
+        {
+          "id": 104902,
+          "name": "[祝祭遊戯]",
+          "gametora_url": "https://gametora.com/umamusume/characters/104902-nakayama-festa",
+          "icon": "assets/icons/104902.png",
+          "portrait": null,
+          "rarity": 3,
+          "running_style": 3
+        },
+        {
+          "id": 104901,
+          "name": "[Dramatic Turnabout]",
+          "gametora_url": "https://gametora.com/umamusume/characters/104901-nakayama-festa",
+          "icon": "assets/icons/104901.png",
+          "portrait": null,
+          "rarity": 3,
+          "running_style": 3
+        }
+      ]
+    },
+    {
+      "id": 4997,
+      "game_id": 1016,
+      "name": "Narita Brian",
+      "name_en": "Narita Brian",
+      "name_jp": "ナリタブライアン",
+      "thumbnail": "assets/thumbnails/4997.png",
+      "outfits": [
+        {
+          "id": 101602,
+          "name": "[Hungry Wolf]",
+          "gametora_url": "https://gametora.com/umamusume/characters/101602-narita-brian",
+          "icon": "assets/icons/101602.png",
+          "portrait": null,
+          "rarity": 3,
+          "running_style": 2
+        },
+        {
+          "id": 101601,
+          "name": "[Maverick]",
+          "gametora_url": "https://gametora.com/umamusume/characters/101601-narita-brian",
+          "icon": "assets/icons/101601.png",
+          "portrait": null,
+          "rarity": 3,
+          "running_style": 2
+        }
+      ]
+    },
+    {
+      "id": 5382,
+      "game_id": 1050,
+      "name": "Narita Taishin",
+      "name_en": "Narita Taishin",
+      "name_jp": "ナリタタイシン",
+      "thumbnail": "assets/thumbnails/5382.png",
+      "outfits": [
+        {
+          "id": 105003,
+          "name": "[Stray Light Override]",
+          "gametora_url": "https://gametora.com/umamusume/characters/105003-narita-taishin",
+          "icon": "assets/icons/105003.png",
+          "portrait": null,
+          "rarity": 3,
+          "running_style": 4
+        },
+        {
+          "id": 105002,
+          "name": "[Difference Engineer]",
+          "gametora_url": "https://gametora.com/umamusume/characters/105002-narita-taishin",
+          "icon": "assets/icons/105002.png",
+          "portrait": null,
+          "rarity": 3,
+          "running_style": 4
+        },
+        {
+          "id": 105001,
+          "name": "[Nevertheless]",
+          "gametora_url": "https://gametora.com/umamusume/characters/105001-narita-taishin",
+          "icon": "assets/icons/105001.png",
+          "portrait": null,
+          "rarity": 3,
+          "running_style": 4
+        }
+      ]
+    },
+    {
+      "id": 7426,
+      "game_id": 1077,
+      "name": "Narita Top Road",
+      "name_en": "Narita Top Road",
+      "name_jp": "ナリタトップロード",
+      "thumbnail": "assets/thumbnails/7426.png",
+      "outfits": [
+        {
+          "id": 107702,
+          "name": "[Celestial Road]",
+          "gametora_url": "https://gametora.com/umamusume/characters/107702-narita-top-road",
+          "icon": "assets/icons/107702.png",
+          "portrait": null,
+          "rarity": 3,
+          "running_style": 2
+        },
+        {
+          "id": 107701,
+          "name": "[The Proud Road]",
+          "gametora_url": "https://gametora.com/umamusume/characters/107701-narita-top-road",
+          "icon": "assets/icons/107701.png",
+          "portrait": null,
+          "rarity": 3,
+          "running_style": 2
+        }
+      ]
+    },
+    {
+      "id": 8730,
+      "game_id": 1105,
+      "name": "Neo Universe",
+      "name_en": "Neo Universe",
+      "name_jp": "ネオユニヴァース",
+      "thumbnail": "assets/thumbnails/8730.png",
+      "outfits": [
+        {
+          "id": 110502,
+          "name": "[Like “ZEER”]",
+          "gametora_url": "https://gametora.com/umamusume/characters/110502-neo-universe",
+          "icon": "assets/icons/110502.png",
+          "portrait": null,
+          "rarity": 3,
+          "running_style": 3
+        },
+        {
+          "id": 110501,
+          "name": "[Universe​-​Naut]",
+          "gametora_url": "https://gametora.com/umamusume/characters/110501-neo-universe",
+          "icon": "assets/icons/110501.png",
+          "portrait": null,
+          "rarity": 3,
+          "running_style": 3
+        }
+      ]
+    },
+    {
+      "id": 5485,
+      "game_id": 1060,
+      "name": "Nice Nature",
+      "name_en": "Nice Nature",
+      "name_jp": "ナイスネイチャ",
+      "thumbnail": "assets/thumbnails/5485.png",
+      "outfits": [
+        {
+          "id": 106003,
+          "name": "[Converging Wishes]",
+          "gametora_url": "https://gametora.com/umamusume/characters/106003-nice-nature",
+          "icon": "assets/icons/106003.png",
+          "portrait": null,
+          "rarity": 3,
+          "running_style": 3
+        },
+        {
+          "id": 106002,
+          "name": "[RUN​＆​WIN]",
+          "gametora_url": "https://gametora.com/umamusume/characters/106002-nice-nature",
+          "icon": "assets/icons/106002.png",
+          "portrait": null,
+          "rarity": 3,
+          "running_style": 3
+        },
+        {
+          "id": 106001,
+          "name": "[Poinsettia Ribbon]",
+          "gametora_url": "https://gametora.com/umamusume/characters/106001-nice-nature",
+          "icon": "assets/icons/106001.png",
+          "portrait": null,
+          "rarity": 1,
+          "running_style": 3
+        }
+      ]
+    },
+    {
+      "id": 5393,
+      "game_id": 1051,
+      "name": "Nishino Flower",
+      "name_en": "Nishino Flower",
+      "name_jp": "ニシノフラワー",
+      "thumbnail": "assets/thumbnails/5393.png",
+      "outfits": [
+        {
+          "id": 105102,
+          "name": "[Sweet Juneberry]",
+          "gametora_url": "https://gametora.com/umamusume/characters/105102-nishino-flower",
+          "icon": "assets/icons/105102.png",
+          "portrait": null,
+          "rarity": 3,
+          "running_style": 2
+        },
+        {
+          "id": 105101,
+          "name": "[Tiered Petal]",
+          "gametora_url": "https://gametora.com/umamusume/characters/105101-nishino-flower",
+          "icon": "assets/icons/105101.png",
+          "portrait": null,
+          "rarity": 3,
+          "running_style": 2
+        }
+      ]
+    },
+    {
+      "id": 10302,
+      "game_id": 1096,
+      "name": "No Reason",
+      "name_en": "No Reason",
+      "name_jp": "ノーリーズン",
+      "thumbnail": "assets/thumbnails/10302.png",
+      "outfits": [
+        {
+          "id": 109601,
+          "name": "[Swift Crimson Armor]",
+          "gametora_url": "https://gametora.com/umamusume/characters/109601-no-reason",
+          "icon": "assets/icons/109601.png",
+          "portrait": null,
+          "rarity": 3,
+          "running_style": 3
+        }
+      ]
+    },
+    {
+      "id": 9909,
+      "game_id": 1082,
+      "name": "North Flight",
+      "name_en": "North Flight",
+      "name_jp": "ノースフライト",
+      "thumbnail": "assets/thumbnails/9909.png",
+      "outfits": [
+        {
+          "id": 108201,
+          "name": "[Looking Fly!]",
+          "gametora_url": "https://gametora.com/umamusume/characters/108201-north-flight",
+          "icon": "assets/icons/108201.png",
+          "portrait": null,
+          "rarity": 3,
+          "running_style": 2
+        }
+      ]
+    },
+    {
+      "id": 4879,
+      "game_id": 1006,
+      "name": "Oguri Cap",
+      "name_en": "Oguri Cap",
+      "name_jp": "オグリキャップ",
+      "thumbnail": "assets/thumbnails/4879.png",
+      "outfits": [
+        {
+          "id": 100603,
+          "name": "[Cinderella Gray]",
+          "gametora_url": "https://gametora.com/umamusume/characters/100603-oguri-cap",
+          "icon": "assets/icons/100603.png",
+          "portrait": null,
+          "rarity": 3,
+          "running_style": 2
+        },
+        {
+          "id": 100602,
+          "name": "[Miraculous White Star]",
+          "gametora_url": "https://gametora.com/umamusume/characters/100602-oguri-cap",
+          "icon": "assets/icons/100602.png",
+          "portrait": null,
+          "rarity": 3,
+          "running_style": 3
+        },
+        {
+          "id": 100601,
+          "name": "[Starlight Beat]",
+          "gametora_url": "https://gametora.com/umamusume/characters/100601-oguri-cap",
+          "icon": "assets/icons/100601.png",
+          "portrait": null,
+          "rarity": 3,
+          "running_style": 3
+        }
+      ]
+    },
+    {
+      "id": 10325,
+      "game_id": 1115,
+      "name": "Orfevre",
+      "name_en": "Orfevre",
+      "name_jp": "オルフェーヴル",
+      "thumbnail": "assets/thumbnails/10325.png",
+      "outfits": [
+        {
+          "id": 111501,
+          "name": "[Total Dominion]",
+          "gametora_url": "https://gametora.com/umamusume/characters/111501-orfevre",
+          "icon": "assets/icons/111501.png",
+          "portrait": null,
+          "rarity": 3,
+          "running_style": 4
+        }
+      ]
+    },
+    {
+      "id": 10396,
+      "game_id": 1136,
+      "name": "Red Desire",
+      "name_en": "Red Desire",
+      "name_jp": "レッドディザイア",
+      "thumbnail": "assets/thumbnails/10396.png",
+      "outfits": []
+    },
+    {
+      "id": 10209,
+      "game_id": 1109,
+      "name": "Rhein Kraft",
+      "name_en": "Rhein Kraft",
+      "name_jp": "ラインクラフト",
+      "thumbnail": "assets/thumbnails/10209.png",
+      "outfits": [
+        {
+          "id": 110902,
+          "name": "[Eternal Fairytale]",
+          "gametora_url": "https://gametora.com/umamusume/characters/110902-rhein-kraft",
+          "icon": "assets/icons/110902.png",
+          "portrait": null,
+          "rarity": 3,
+          "running_style": 2
+        },
+        {
+          "id": 110901,
+          "name": "[Dream Successor]",
+          "gametora_url": "https://gametora.com/umamusume/characters/110901-rhein-kraft",
+          "icon": "assets/icons/110901.png",
+          "portrait": null,
+          "rarity": 3,
+          "running_style": 2
+        }
+      ]
+    },
+    {
+      "id": 5156,
+      "game_id": 1030,
+      "name": "Rice Shower",
+      "name_en": "Rice Shower",
+      "name_jp": "ライスシャワー",
+      "thumbnail": "assets/thumbnails/5156.png",
+      "outfits": [
+        {
+          "id": 103003,
+          "name": "[Yummy Dreamy Fairy]",
+          "gametora_url": "https://gametora.com/umamusume/characters/103003-rice-shower",
+          "icon": "assets/icons/103003.png",
+          "portrait": null,
+          "rarity": 3,
+          "running_style": 2
+        },
+        {
+          "id": 103002,
+          "name": "[Make up Vampire!]",
+          "gametora_url": "https://gametora.com/umamusume/characters/103002-rice-shower",
+          "icon": "assets/icons/103002.png",
+          "portrait": null,
+          "rarity": 3,
+          "running_style": 2
+        },
+        {
+          "id": 103001,
+          "name": "[Rose Dream]",
+          "gametora_url": "https://gametora.com/umamusume/characters/103001-rice-shower",
+          "icon": "assets/icons/103001.png",
+          "portrait": null,
+          "rarity": 3,
+          "running_style": 2
+        }
+      ]
+    },
+    {
+      "id": 10407,
+      "game_id": 1144,
+      "name": "Rose Kingdom",
+      "name_en": "Rose Kingdom",
+      "name_jp": "ローズキングダム",
+      "thumbnail": "assets/thumbnails/10407.png",
+      "outfits": []
+    },
+    {
+      "id": 10105,
+      "game_id": 1103,
+      "name": "Royce and Royce",
+      "name_en": "Royce and Royce",
+      "name_jp": "ロイスアンドロイス",
+      "thumbnail": "assets/thumbnails/10105.png",
+      "outfits": [
+        {
+          "id": 110301,
+          "name": "[Inspiring Genius]",
+          "gametora_url": "https://gametora.com/umamusume/characters/110301-royce-and-royce",
+          "icon": "assets/icons/110301.png",
+          "portrait": null,
+          "rarity": 2,
+          "running_style": 2
+        }
+      ]
+    },
+    {
+      "id": 10405,
+      "game_id": 1145,
+      "name": "Rulership",
+      "name_en": "Rulership",
+      "name_jp": "ルーラーシップ",
+      "thumbnail": "assets/thumbnails/10405.png",
+      "outfits": []
+    },
+    {
+      "id": 5280,
+      "game_id": 1041,
+      "name": "Sakura Bakushin O",
+      "name_en": "Sakura Bakushin O",
+      "name_jp": "サクラバクシンオー",
+      "thumbnail": "assets/thumbnails/5280.png",
+      "outfits": [
+        {
+          "id": 104102,
+          "name": "[Red​-​Hot Leader]",
+          "gametora_url": "https://gametora.com/umamusume/characters/104102-sakura-bakushin-o",
+          "icon": "assets/icons/104102.png",
+          "portrait": null,
+          "rarity": 3,
+          "running_style": 1
+        },
+        {
+          "id": 104101,
+          "name": "[Sakura, Forward!]",
+          "gametora_url": "https://gametora.com/umamusume/characters/104101-sakura-bakushin-o",
+          "icon": "assets/icons/104101.png",
+          "portrait": null,
+          "rarity": 1,
+          "running_style": 2
+        }
+      ]
+    },
+    {
+      "id": 10382,
+      "game_id": 1126,
+      "name": "Sakura Chitose O",
+      "name_en": "Sakura Chitose O",
+      "name_jp": "サクラチトセオー",
+      "thumbnail": "assets/thumbnails/10382.png",
+      "outfits": []
+    },
+    {
+      "id": 5509,
+      "game_id": 1069,
+      "name": "Sakura Chiyono O",
+      "name_en": "Sakura Chiyono O",
+      "name_jp": "サクラチヨノオー",
+      "thumbnail": "assets/thumbnails/5509.png",
+      "outfits": [
+        {
+          "id": 106902,
+          "name": "[Fleur Enneigée]",
+          "gametora_url": "https://gametora.com/umamusume/characters/106902-sakura-chiyono-o",
+          "icon": "assets/icons/106902.png",
+          "portrait": null,
+          "rarity": 3,
+          "running_style": 2
+        },
+        {
+          "id": 106901,
+          "name": "[Hinoshita Kaisan​・​Hana Akari]",
+          "gametora_url": "https://gametora.com/umamusume/characters/106901-sakura-chiyono-o",
+          "icon": "assets/icons/106901.png",
+          "portrait": null,
+          "rarity": 3,
+          "running_style": 2
+        }
+      ]
+    },
+    {
+      "id": 7515,
+      "game_id": 1076,
+      "name": "Sakura Laurel",
+      "name_en": "Sakura Laurel",
+      "name_jp": "サクラローレル",
+      "thumbnail": "assets/thumbnails/7515.png",
+      "outfits": [
+        {
+          "id": 107602,
+          "name": "[Nouvelle Pousse]",
+          "gametora_url": "https://gametora.com/umamusume/characters/107602-sakura-laurel",
+          "icon": "assets/icons/107602.png",
+          "portrait": null,
+          "rarity": 3,
+          "running_style": 3
+        },
+        {
+          "id": 107601,
+          "name": "[Saisir le Rêve]",
+          "gametora_url": "https://gametora.com/umamusume/characters/107601-sakura-laurel",
+          "icon": "assets/icons/107601.png",
+          "portrait": null,
+          "rarity": 3,
+          "running_style": 3
+        }
+      ]
+    },
+    {
+      "id": 7519,
+      "game_id": 1088,
+      "name": "Satono Crown",
+      "name_en": "Satono Crown",
+      "name_jp": "サトノクラウン",
+      "thumbnail": "assets/thumbnails/7519.png",
+      "outfits": [
+        {
+          "id": 108802,
+          "name": "[晴島花麗]",
+          "gametora_url": "https://gametora.com/umamusume/characters/108802-satono-crown",
+          "icon": "assets/icons/108802.png",
+          "portrait": null,
+          "rarity": 3,
+          "running_style": 3
+        },
+        {
+          "id": 108801,
+          "name": "[Emerald Journey]",
+          "gametora_url": "https://gametora.com/umamusume/characters/108801-satono-crown",
+          "icon": "assets/icons/108801.png",
+          "portrait": null,
+          "rarity": 3,
+          "running_style": 3
+        }
+      ]
+    },
+    {
+      "id": 5593,
+      "game_id": 1067,
+      "name": "Satono Diamond",
+      "name_en": "Satono Diamond",
+      "name_jp": "サトノダイヤモンド",
+      "thumbnail": "assets/thumbnails/5593.png",
+      "outfits": [
+        {
+          "id": 106703,
+          "name": "[Chevalier Bleu]",
+          "gametora_url": "https://gametora.com/umamusume/characters/106703-satono-diamond",
+          "icon": "assets/icons/106703.png",
+          "portrait": null,
+          "rarity": 3,
+          "running_style": 3
+        },
+        {
+          "id": 106702,
+          "name": "[Floral Star​・​Prosperous Green]",
+          "gametora_url": "https://gametora.com/umamusume/characters/106702-satono-diamond",
+          "icon": "assets/icons/106702.png",
+          "portrait": null,
+          "rarity": 3,
+          "running_style": 3
+        },
+        {
+          "id": 106701,
+          "name": "[Natural Brilliance]",
+          "gametora_url": "https://gametora.com/umamusume/characters/106701-satono-diamond",
+          "icon": "assets/icons/106701.png",
+          "portrait": null,
+          "rarity": 3,
+          "running_style": 3
+        }
+      ]
+    },
+    {
+      "id": 5292,
+      "game_id": 1042,
+      "name": "Seeking the Pearl",
+      "name_en": "Seeking the Pearl",
+      "name_jp": "シーキングザパール",
+      "thumbnail": "assets/thumbnails/5292.png",
+      "outfits": [
+        {
+          "id": 104202,
+          "name": "[Be​♪​Witched]",
+          "gametora_url": "https://gametora.com/umamusume/characters/104202-seeking-the-pearl",
+          "icon": "assets/icons/104202.png",
+          "portrait": null,
+          "rarity": 3,
+          "running_style": 2
+        },
+        {
+          "id": 104201,
+          "name": "[Rocket ☆ Star]",
+          "gametora_url": "https://gametora.com/umamusume/characters/104201-seeking-the-pearl",
+          "icon": "assets/icons/104201.png",
+          "portrait": null,
+          "rarity": 3,
+          "running_style": 2
+        }
+      ]
+    },
+    {
+      "id": 5044,
+      "game_id": 1020,
+      "name": "Seiun Sky",
+      "name_en": "Seiun Sky",
+      "name_jp": "セイウンスカイ",
+      "thumbnail": "assets/thumbnails/5044.png",
+      "outfits": [
+        {
+          "id": 102002,
+          "name": "[Soirée de Chaton]",
+          "gametora_url": "https://gametora.com/umamusume/characters/102002-seiun-sky",
+          "icon": "assets/icons/102002.png",
+          "portrait": null,
+          "rarity": 3,
+          "running_style": 1
+        },
+        {
+          "id": 102001,
+          "name": "[Blue Cloud Thumbing]",
+          "gametora_url": "https://gametora.com/umamusume/characters/102001-seiun-sky",
+          "icon": "assets/icons/102001.png",
+          "portrait": null,
+          "rarity": 3,
+          "running_style": 1
+        }
+      ]
+    },
+    {
+      "id": 5303,
+      "game_id": 1043,
+      "name": "Shinko Windy",
+      "name_en": "Shinko Windy",
+      "name_jp": "シンコウウインディ",
+      "thumbnail": "assets/thumbnails/5303.png",
+      "outfits": [
+        {
+          "id": 104301,
+          "name": "[Wicked Punk]",
+          "gametora_url": "https://gametora.com/umamusume/characters/104301-shinko-windy",
+          "icon": "assets/icons/104301.png",
+          "portrait": null,
+          "rarity": 3,
+          "running_style": 2
+        }
+      ]
+    },
+    {
+      "id": 4536,
+      "game_id": 1002,
+      "name": "Silence Suzuka",
+      "name_en": "Silence Suzuka",
+      "name_jp": "サイレンススズカ",
+      "thumbnail": "assets/thumbnails/4536.png",
+      "outfits": [
+        {
+          "id": 100202,
+          "name": "[Emerald Among the Waves]",
+          "gametora_url": "https://gametora.com/umamusume/characters/100202-silence-suzuka",
+          "icon": "assets/icons/100202.png",
+          "portrait": null,
+          "rarity": 3,
+          "running_style": 1
+        },
+        {
+          "id": 100201,
+          "name": "[Silent Innocence]",
+          "gametora_url": "https://gametora.com/umamusume/characters/100201-silence-suzuka",
+          "icon": "assets/icons/100201.png",
+          "portrait": null,
+          "rarity": 3,
+          "running_style": 1
+        }
+      ]
+    },
+    {
+      "id": 5519,
+      "game_id": 1070,
+      "name": "Sirius Symboli",
+      "name_en": "Sirius Symboli",
+      "name_jp": "シリウスシンボリ",
+      "thumbnail": "assets/thumbnails/5519.png",
+      "outfits": [
+        {
+          "id": 107002,
+          "name": "[Louve Stellaire]",
+          "gametora_url": "https://gametora.com/umamusume/characters/107002-sirius-symboli",
+          "icon": "assets/icons/107002.png",
+          "portrait": null,
+          "rarity": 3,
+          "running_style": 3
+        },
+        {
+          "id": 107001,
+          "name": "[Féroce]",
+          "gametora_url": "https://gametora.com/umamusume/characters/107001-sirius-symboli",
+          "icon": "assets/icons/107001.png",
+          "portrait": null,
+          "rarity": 3,
+          "running_style": 2
+        }
+      ]
+    },
+    {
+      "id": 5337,
+      "game_id": 1046,
+      "name": "Smart Falcon",
+      "name_en": "Smart Falcon",
+      "name_jp": "スマートファルコン",
+      "thumbnail": "assets/thumbnails/5337.png",
+      "outfits": [
+        {
+          "id": 104603,
+          "name": "[Luminous ☆ Twirler]",
+          "gametora_url": "https://gametora.com/umamusume/characters/104603-smart-falcon",
+          "icon": "assets/icons/104603.png",
+          "portrait": null,
+          "rarity": 3,
+          "running_style": 1
+        },
+        {
+          "id": 104602,
+          "name": "[Twilight Triumph]",
+          "gametora_url": "https://gametora.com/umamusume/characters/104602-smart-falcon",
+          "icon": "assets/icons/104602.png",
+          "portrait": null,
+          "rarity": 3,
+          "running_style": 1
+        },
+        {
+          "id": 104601,
+          "name": "[Absolute ☆ LOVE]",
+          "gametora_url": "https://gametora.com/umamusume/characters/104601-smart-falcon",
+          "icon": "assets/icons/104601.png",
+          "portrait": null,
+          "rarity": 3,
+          "running_style": 1
+        }
+      ]
+    },
+    {
+      "id": 9808,
+      "game_id": 1102,
+      "name": "Sounds of Earth",
+      "name_en": "Sounds of Earth",
+      "name_jp": "サウンズオブアース",
+      "thumbnail": "assets/thumbnails/9808.png",
+      "outfits": [
+        {
+          "id": 110202,
+          "name": "[Sonata alla Menta]",
+          "gametora_url": "https://gametora.com/umamusume/characters/110202-sounds-of-earth",
+          "icon": "assets/icons/110202.png",
+          "portrait": null,
+          "rarity": 3,
+          "running_style": 2
+        },
+        {
+          "id": 110201,
+          "name": "[Ritmo Della Terra]",
+          "gametora_url": "https://gametora.com/umamusume/characters/110201-sounds-of-earth",
+          "icon": "assets/icons/110201.png",
+          "portrait": null,
+          "rarity": 3,
+          "running_style": 3
+        }
+      ]
+    },
+    {
+      "id": 4737,
+      "game_id": 1001,
+      "name": "Special Week",
+      "name_en": "Special Week",
+      "name_jp": "スペシャルウィーク",
+      "thumbnail": "assets/thumbnails/4737.png",
+      "outfits": [
+        {
+          "id": 100103,
+          "name": "[Supreme Commander of the Rising Sun]",
+          "gametora_url": "https://gametora.com/umamusume/characters/100103-special-week",
+          "icon": "assets/icons/100103.png",
+          "portrait": null,
+          "rarity": 3,
+          "running_style": 3
+        },
+        {
+          "id": 100102,
+          "name": "[Hopping ♪ Vitamin Heart]",
+          "gametora_url": "https://gametora.com/umamusume/characters/100102-special-week",
+          "icon": "assets/icons/100102.png",
+          "portrait": null,
+          "rarity": 3,
+          "running_style": 3
+        },
+        {
+          "id": 100101,
+          "name": "[Special Dreamer]",
+          "gametora_url": "https://gametora.com/umamusume/characters/100101-special-week",
+          "icon": "assets/icons/100101.png",
+          "portrait": null,
+          "rarity": 3,
+          "running_style": 3
+        }
+      ]
+    },
+    {
+      "id": 10393,
+      "game_id": 1135,
+      "name": "Stay Gold",
+      "name_en": "Stay Gold",
+      "name_jp": "ステイゴールド",
+      "thumbnail": "assets/thumbnails/10393.png",
+      "outfits": [
+        {
+          "id": 113501,
+          "name": "[Sunlit Outsider]",
+          "gametora_url": "https://gametora.com/umamusume/characters/113501-stay-gold",
+          "icon": "assets/icons/113501.png",
+          "portrait": null,
+          "rarity": 3,
+          "running_style": 3
+        }
+      ]
+    },
+    {
+      "id": 10313,
+      "game_id": 1097,
+      "name": "Still in Love",
+      "name_en": "Still in Love",
+      "name_jp": "スティルインラブ",
+      "thumbnail": "assets/thumbnails/10313.png",
+      "outfits": [
+        {
+          "id": 109701,
+          "name": "[Scarlet Vow Raiment]",
+          "gametora_url": "https://gametora.com/umamusume/characters/109701-still-in-love",
+          "icon": "assets/icons/109701.png",
+          "portrait": null,
+          "rarity": 3,
+          "running_style": 3
+        }
+      ]
+    },
+    {
+      "id": 5325,
+      "game_id": 1045,
+      "name": "Super Creek",
+      "name_en": "Super Creek",
+      "name_jp": "スーパークリーク",
+      "thumbnail": "assets/thumbnails/5325.png",
+      "outfits": [
+        {
+          "id": 104503,
+          "name": "[Flowery Shadow Amongst the Gentle Rain]",
+          "gametora_url": "https://gametora.com/umamusume/characters/104503-super-creek",
+          "icon": "assets/icons/104503.png",
+          "portrait": null,
+          "rarity": 3,
+          "running_style": 2
+        },
+        {
+          "id": 104502,
+          "name": "[Chiffon Ribbon Mummy]",
+          "gametora_url": "https://gametora.com/umamusume/characters/104502-super-creek",
+          "icon": "assets/icons/104502.png",
+          "portrait": null,
+          "rarity": 3,
+          "running_style": 2
+        },
+        {
+          "id": 104501,
+          "name": "[Murmuring Stream]",
+          "gametora_url": "https://gametora.com/umamusume/characters/104501-super-creek",
+          "icon": "assets/icons/104501.png",
+          "portrait": null,
+          "rarity": 2,
+          "running_style": 2
+        }
+      ]
+    },
+    {
+      "id": 5314,
+      "game_id": 1044,
+      "name": "Sweep Tosho",
+      "name_en": "Sweep Tosho",
+      "name_jp": "スイープトウショウ",
+      "thumbnail": "assets/thumbnails/5314.png",
+      "outfits": [
+        {
+          "id": 104402,
+          "name": "[Realize​・​Rune]",
+          "gametora_url": "https://gametora.com/umamusume/characters/104402-sweep-tosho",
+          "icon": "assets/icons/104402.png",
+          "portrait": null,
+          "rarity": 3,
+          "running_style": 4
+        },
+        {
+          "id": 104401,
+          "name": "[Platanus Witch]",
+          "gametora_url": "https://gametora.com/umamusume/characters/104401-sweep-tosho",
+          "icon": "assets/icons/104401.png",
+          "portrait": null,
+          "rarity": 3,
+          "running_style": 4
+        }
+      ]
+    },
+    {
+      "id": 7730,
+      "game_id": 1083,
+      "name": "Symboli Kris S",
+      "name_en": "Symboli Kris S",
+      "name_jp": "シンボリクリスエス",
+      "thumbnail": "assets/thumbnails/7730.png",
+      "outfits": [
+        {
+          "id": 108302,
+          "name": "[Jetblack Automaton]",
+          "gametora_url": "https://gametora.com/umamusume/characters/108302-symboli-kris-s",
+          "icon": "assets/icons/108302.png",
+          "portrait": null,
+          "rarity": 3,
+          "running_style": 3
+        },
+        {
+          "id": 108301,
+          "name": "[Onyx Soldier]",
+          "gametora_url": "https://gametora.com/umamusume/characters/108301-symboli-kris-s",
+          "icon": "assets/icons/108301.png",
+          "portrait": null,
+          "rarity": 3,
+          "running_style": 3
+        }
+      ]
+    },
+    {
+      "id": 5009,
+      "game_id": 1017,
+      "name": "Symboli Rudolf",
+      "name_en": "Symboli Rudolf",
+      "name_jp": "シンボリルドルフ",
+      "thumbnail": "assets/thumbnails/5009.png",
+      "outfits": [
+        {
+          "id": 101702,
+          "name": "[Archer of the White Moon]",
+          "gametora_url": "https://gametora.com/umamusume/characters/101702-symboli-rudolf",
+          "icon": "assets/icons/101702.png",
+          "portrait": null,
+          "rarity": 3,
+          "running_style": 2
+        },
+        {
+          "id": 101701,
+          "name": "[Road of Emperor]",
+          "gametora_url": "https://gametora.com/umamusume/characters/101701-symboli-rudolf",
+          "icon": "assets/icons/101701.png",
+          "portrait": null,
+          "rarity": 3,
+          "running_style": 2
+        }
+      ]
+    },
+    {
+      "id": 4986,
+      "game_id": 1015,
+      "name": "T.M. Opera O",
+      "name_en": "T.M. Opera O",
+      "name_jp": "テイエムオペラオー",
+      "thumbnail": "assets/thumbnails/4986.png",
+      "outfits": [
+        {
+          "id": 101502,
+          "name": "[Blue Dazzle]",
+          "gametora_url": "https://gametora.com/umamusume/characters/101502-tm-opera-o",
+          "icon": "assets/icons/101502.png",
+          "portrait": null,
+          "rarity": 3,
+          "running_style": 2
+        },
+        {
+          "id": 101501,
+          "name": "[O Sole So]",
+          "gametora_url": "https://gametora.com/umamusume/characters/101501-tm-opera-o",
+          "icon": "assets/icons/101501.png",
+          "portrait": null,
+          "rarity": 3,
+          "running_style": 2
+        }
+      ]
+    },
+    {
+      "id": 4927,
+      "game_id": 1010,
+      "name": "Taiki Shuttle",
+      "name_en": "Taiki Shuttle",
+      "name_jp": "タイキシャトル",
+      "thumbnail": "assets/thumbnails/4927.png",
+      "outfits": [
+        {
+          "id": 101003,
+          "name": "[Baa Baa Patisserie]",
+          "gametora_url": "https://gametora.com/umamusume/characters/101003-taiki-shuttle",
+          "icon": "assets/icons/101003.png",
+          "portrait": null,
+          "rarity": 3,
+          "running_style": 2
+        },
+        {
+          "id": 101002,
+          "name": "[Bubblegum ☆ Memories]",
+          "gametora_url": "https://gametora.com/umamusume/characters/101002-taiki-shuttle",
+          "icon": "assets/icons/101002.png",
+          "portrait": null,
+          "rarity": 3,
+          "running_style": 2
+        },
+        {
+          "id": 101001,
+          "name": "[Wild Frontier]",
+          "gametora_url": "https://gametora.com/umamusume/characters/101001-taiki-shuttle",
+          "icon": "assets/icons/101001.png",
+          "portrait": null,
+          "rarity": 3,
+          "running_style": 2
+        }
+      ]
+    },
+    {
+      "id": 5055,
+      "game_id": 1021,
+      "name": "Tamamo Cross",
+      "name_en": "Tamamo Cross",
+      "name_jp": "タマモクロス",
+      "thumbnail": "assets/thumbnails/5055.png",
+      "outfits": [
+        {
+          "id": 102102,
+          "name": "[Ferocious Thunder]",
+          "gametora_url": "https://gametora.com/umamusume/characters/102102-tamamo-cross",
+          "icon": "assets/icons/102102.png",
+          "portrait": null,
+          "rarity": 3,
+          "running_style": 2
+        },
+        {
+          "id": 102101,
+          "name": "[With Lightning Speed]",
+          "gametora_url": "https://gametora.com/umamusume/characters/102101-tamamo-cross",
+          "icon": "assets/icons/102101.png",
+          "portrait": null,
+          "rarity": 3,
+          "running_style": 4
+        }
+      ]
+    },
+    {
+      "id": 7731,
+      "game_id": 1084,
+      "name": "Tanino Gimlet",
+      "name_en": "Tanino Gimlet",
+      "name_jp": "タニノギムレット",
+      "thumbnail": "assets/thumbnails/7731.png",
+      "outfits": [
+        {
+          "id": 108402,
+          "name": "[With a Twist]",
+          "gametora_url": "https://gametora.com/umamusume/characters/108402-tanino-gimlet",
+          "icon": "assets/icons/108402.png",
+          "portrait": null,
+          "rarity": 3,
+          "running_style": 4
+        },
+        {
+          "id": 108401,
+          "name": "[Embodiment of Keravnos]",
+          "gametora_url": "https://gametora.com/umamusume/characters/108401-tanino-gimlet",
+          "icon": "assets/icons/108401.png",
+          "portrait": null,
+          "rarity": 3,
+          "running_style": 4
+        }
+      ]
+    },
+    {
+      "id": 8748,
+      "game_id": 1107,
+      "name": "Tap Dance City",
+      "name_en": "Tap Dance City",
+      "name_jp": "タップダンスシチー",
+      "thumbnail": "assets/thumbnails/8748.png",
+      "outfits": [
+        {
+          "id": 110702,
+          "name": "[Tap! Tap! Tap!]",
+          "gametora_url": "https://gametora.com/umamusume/characters/110702-tap-dance-city",
+          "icon": "assets/icons/110702.png",
+          "portrait": null,
+          "rarity": 3,
+          "running_style": 1
+        },
+        {
+          "id": 110701,
+          "name": "[GLITTER!]",
+          "gametora_url": "https://gametora.com/umamusume/characters/110701-tap-dance-city",
+          "icon": "assets/icons/110701.png",
+          "portrait": null,
+          "rarity": 3,
+          "running_style": 1
+        }
+      ]
+    },
+    {
+      "id": 4550,
+      "game_id": 1003,
+      "name": "Tokai Teio",
+      "name_en": "Tokai Teio",
+      "name_jp": "トウカイテイオー",
+      "thumbnail": "assets/thumbnails/4550.png",
+      "outfits": [
+        {
+          "id": 100303,
+          "name": "[Dream Butterfly of Purple Clouds]",
+          "gametora_url": "https://gametora.com/umamusume/characters/100303-tokai-teio",
+          "icon": "assets/icons/100303.png",
+          "portrait": null,
+          "rarity": 3,
+          "running_style": 2
+        },
+        {
+          "id": 100302,
+          "name": "[Beyond the Horizon]",
+          "gametora_url": "https://gametora.com/umamusume/characters/100302-tokai-teio",
+          "icon": "assets/icons/100302.png",
+          "portrait": null,
+          "rarity": 3,
+          "running_style": 2
+        },
+        {
+          "id": 100301,
+          "name": "[Top of Joyful]",
+          "gametora_url": "https://gametora.com/umamusume/characters/100301-tokai-teio",
+          "icon": "assets/icons/100301.png",
+          "portrait": null,
+          "rarity": 3,
+          "running_style": 2
+        }
+      ]
+    },
+    {
+      "id": 5360,
+      "game_id": 1048,
+      "name": "Tosen Jordan",
+      "name_en": "Tosen Jordan",
+      "name_jp": "トーセンジョーダン",
+      "thumbnail": "assets/thumbnails/5360.png",
+      "outfits": [
+        {
+          "id": 104803,
+          "name": "[Highkey ☆ Hallowed]",
+          "gametora_url": "https://gametora.com/umamusume/characters/104803-tosen-jordan",
+          "icon": "assets/icons/104803.png",
+          "portrait": null,
+          "rarity": 3,
+          "running_style": 3
+        },
+        {
+          "id": 104802,
+          "name": "[Aurore​☆​Vacances]",
+          "gametora_url": "https://gametora.com/umamusume/characters/104802-tosen-jordan",
+          "icon": "assets/icons/104802.png",
+          "portrait": null,
+          "rarity": 3,
+          "running_style": 3
+        },
+        {
+          "id": 104801,
+          "name": "[Pop ☆ Joker]",
+          "gametora_url": "https://gametora.com/umamusume/characters/104801-tosen-jordan",
+          "icon": "assets/icons/104801.png",
+          "portrait": null,
+          "rarity": 3,
+          "running_style": 2
+        }
+      ]
+    },
+    {
+      "id": 10269,
+      "game_id": 1080,
+      "name": "Transcend",
+      "name_en": "Transcend",
+      "name_jp": "トランセンド",
+      "thumbnail": "assets/thumbnails/10269.png",
+      "outfits": [
+        {
+          "id": 108002,
+          "name": "[宵闇ネオカグラ]",
+          "gametora_url": "https://gametora.com/umamusume/characters/108002-transcend",
+          "icon": "assets/icons/108002.png",
+          "portrait": null,
+          "rarity": 3,
+          "running_style": 1
+        },
+        {
+          "id": 108001,
+          "name": "[ZOKU​-​ZOKU GIZMO]",
+          "gametora_url": "https://gametora.com/umamusume/characters/108001-transcend",
+          "icon": "assets/icons/108001.png",
+          "portrait": null,
+          "rarity": 3,
+          "running_style": 1
+        }
+      ]
+    },
+    {
+      "id": 7553,
+      "game_id": 1073,
+      "name": "Tsurumaru Tsuyoshi",
+      "name_en": "Tsurumaru Tsuyoshi",
+      "name_jp": "ツルマルツヨシ",
+      "thumbnail": "assets/thumbnails/7553.png",
+      "outfits": [
+        {
+          "id": 107301,
+          "name": "[Dream Bold, Stand Tall, Tsuyoshi!]",
+          "gametora_url": "https://gametora.com/umamusume/characters/107301-tsurumaru-tsuyoshi",
+          "icon": "assets/icons/107301.png",
+          "portrait": null,
+          "rarity": 2,
+          "running_style": 2
+        }
+      ]
+    },
+    {
+      "id": 5584,
+      "game_id": 1066,
+      "name": "Twin Turbo",
+      "name_en": "Twin Turbo",
+      "name_jp": "ツインターボ",
+      "thumbnail": "assets/thumbnails/5584.png",
+      "outfits": [
+        {
+          "id": 106601,
+          "name": "[Blast Mode! Turbo Engine]",
+          "gametora_url": "https://gametora.com/umamusume/characters/106601-twin-turbo",
+          "icon": "assets/icons/106601.png",
+          "portrait": null,
+          "rarity": 1,
+          "running_style": 1
+        }
+      ]
+    },
+    {
+      "id": 10002,
+      "game_id": 1090,
+      "name": "Verxina",
+      "name_en": "Verxina",
+      "name_jp": "ヴィルシーナ",
+      "thumbnail": "assets/thumbnails/10002.png",
+      "outfits": [
+        {
+          "id": 109001,
+          "name": "[Le Beau Sommet]",
+          "gametora_url": "https://gametora.com/umamusume/characters/109001-verxina",
+          "icon": "assets/icons/109001.png",
+          "portrait": null,
+          "rarity": 3,
+          "running_style": 1
+        }
+      ]
+    },
+    {
+      "id": 10408,
+      "game_id": 1143,
+      "name": "Victoire Pisa",
+      "name_en": "Victoire Pisa",
+      "name_jp": "ヴィクトワールピサ",
+      "thumbnail": "assets/thumbnails/10408.png",
+      "outfits": []
+    },
+    {
+      "id": 10013,
+      "game_id": 1091,
+      "name": "Vivlos",
+      "name_en": "Vivlos",
+      "name_jp": "ヴィブロス",
+      "thumbnail": "assets/thumbnails/10013.png",
+      "outfits": [
+        {
+          "id": 109102,
+          "name": "[Éclat d​'​été]",
+          "gametora_url": "https://gametora.com/umamusume/characters/109102-vivlos",
+          "icon": "assets/icons/109102.png",
+          "portrait": null,
+          "rarity": 3,
+          "running_style": 3
+        },
+        {
+          "id": 109101,
+          "name": "[Voyage Étincelant]",
+          "gametora_url": "https://gametora.com/umamusume/characters/109101-vivlos",
+          "icon": "assets/icons/109101.png",
+          "portrait": null,
+          "rarity": 3,
+          "running_style": 3
+        }
+      ]
+    },
+    {
+      "id": 4903,
+      "game_id": 1008,
+      "name": "Vodka",
+      "name_en": "Vodka",
+      "name_jp": "ウオッカ",
+      "thumbnail": "assets/thumbnails/4903.png",
+      "outfits": [
+        {
+          "id": 100802,
+          "name": "[Unfreezable Firewater]",
+          "gametora_url": "https://gametora.com/umamusume/characters/100802-vodka",
+          "icon": "assets/icons/100802.png",
+          "portrait": null,
+          "rarity": 3,
+          "running_style": 3
+        },
+        {
+          "id": 100801,
+          "name": "[Wild Top Gear]",
+          "gametora_url": "https://gametora.com/umamusume/characters/100801-vodka",
+          "icon": "assets/icons/100801.png",
+          "portrait": null,
+          "rarity": 2,
+          "running_style": 3
+        }
+      ]
+    },
+    {
+      "id": 10348,
+      "game_id": 1117,
+      "name": "Win Variation",
+      "name_en": "Win Variation",
+      "name_jp": "ウインバリアシオン",
+      "thumbnail": "assets/thumbnails/10348.png",
+      "outfits": [
+        {
+          "id": 111701,
+          "name": "[Dramatic Tutu]",
+          "gametora_url": "https://gametora.com/umamusume/characters/111701-win-variation",
+          "icon": "assets/icons/111701.png",
+          "portrait": null,
+          "rarity": 3,
+          "running_style": 4
+        }
+      ]
+    },
+    {
+      "id": 5213,
+      "game_id": 1035,
+      "name": "Winning Ticket",
+      "name_en": "Winning Ticket",
+      "name_jp": "ウイニングチケット",
+      "thumbnail": "assets/thumbnails/5213.png",
+      "outfits": [
+        {
+          "id": 103503,
+          "name": "[Glorious Coat]",
+          "gametora_url": "https://gametora.com/umamusume/characters/103503-winning-ticket",
+          "icon": "assets/icons/103503.png",
+          "portrait": null,
+          "rarity": 3,
+          "running_style": 3
+        },
+        {
+          "id": 103502,
+          "name": "[Dream Deliverer]",
+          "gametora_url": "https://gametora.com/umamusume/characters/103502-winning-ticket",
+          "icon": "assets/icons/103502.png",
+          "portrait": null,
+          "rarity": 3,
+          "running_style": 3
+        },
+        {
+          "id": 103501,
+          "name": "[Go To Winning!]",
+          "gametora_url": "https://gametora.com/umamusume/characters/103501-winning-ticket",
+          "icon": "assets/icons/103501.png",
+          "portrait": null,
+          "rarity": 1,
+          "running_style": 3
+        }
+      ]
+    },
+    {
+      "id": 7879,
+      "game_id": 1100,
+      "name": "Wonder Acute",
+      "name_en": "Wonder Acute",
+      "name_jp": "ワンダーアキュート",
+      "thumbnail": "assets/thumbnails/7879.png",
+      "outfits": [
+        {
+          "id": 110002,
+          "name": "[柔灯・湯の香の装い]",
+          "gametora_url": "https://gametora.com/umamusume/characters/110002-wonder-acute",
+          "icon": "assets/icons/110002.png",
+          "portrait": null,
+          "rarity": 3,
+          "running_style": 2
+        },
+        {
+          "id": 110001,
+          "name": "[Butterfly Sting]",
+          "gametora_url": "https://gametora.com/umamusume/characters/110001-wonder-acute",
+          "icon": "assets/icons/110001.png",
+          "portrait": null,
+          "rarity": 3,
+          "running_style": 2
+        }
+      ]
+    },
+    {
+      "id": 5535,
+      "game_id": 1072,
+      "name": "Yaeno Muteki",
+      "name_en": "Yaeno Muteki",
+      "name_jp": "ヤエノムテキ",
+      "thumbnail": "assets/thumbnails/5535.png",
+      "outfits": [
+        {
+          "id": 107202,
+          "name": "[Black General, Zen]",
+          "gametora_url": "https://gametora.com/umamusume/characters/107202-yaeno-muteki",
+          "icon": "assets/icons/107202.png",
+          "portrait": null,
+          "rarity": 3,
+          "running_style": 2
+        },
+        {
+          "id": 107201,
+          "name": "[Attack of the Four White Meteors]",
+          "gametora_url": "https://gametora.com/umamusume/characters/107201-yaeno-muteki",
+          "icon": "assets/icons/107201.png",
+          "portrait": null,
+          "rarity": 3,
+          "running_style": 2
+        }
+      ]
+    },
+    {
+      "id": 7517,
+      "game_id": 1078,
+      "name": "Yamanin Zephyr",
+      "name_en": "Yamanin Zephyr",
+      "name_jp": "ヤマニンゼファー",
+      "thumbnail": "assets/thumbnails/7517.png",
+      "outfits": [
+        {
+          "id": 107802,
+          "name": "[Sugary Wind]",
+          "gametora_url": "https://gametora.com/umamusume/characters/107802-yamanin-zephyr",
+          "icon": "assets/icons/107802.png",
+          "portrait": null,
+          "rarity": 3,
+          "running_style": 2
+        },
+        {
+          "id": 107801,
+          "name": "[Fluttertail Spirit]",
+          "gametora_url": "https://gametora.com/umamusume/characters/107801-yamanin-zephyr",
+          "icon": "assets/icons/107801.png",
+          "portrait": null,
+          "rarity": 3,
+          "running_style": 2
+        }
+      ]
+    },
+    {
+      "id": 5145,
+      "game_id": 1029,
+      "name": "Yukino Bijin",
+      "name_en": "Yukino Bijin",
+      "name_jp": "ユキノビジン",
+      "thumbnail": "assets/thumbnails/5145.png",
+      "outfits": [
+        {
+          "id": 102902,
+          "name": "[Snowy Girl of Tea and Cake]",
+          "gametora_url": "https://gametora.com/umamusume/characters/102902-yukino-bijin",
+          "icon": "assets/icons/102902.png",
+          "portrait": null,
+          "rarity": 3,
+          "running_style": 2
+        },
+        {
+          "id": 102901,
+          "name": "[Cute Sweet Flower of Mutsu]",
+          "gametora_url": "https://gametora.com/umamusume/characters/102901-yukino-bijin",
+          "icon": "assets/icons/102901.png",
+          "portrait": null,
+          "rarity": 3,
+          "running_style": 2
+        }
+      ]
+    },
+    {
+      "id": 5348,
+      "game_id": 1047,
+      "name": "Zenno Rob Roy",
+      "name_en": "Zenno Rob Roy",
+      "name_jp": "ゼンノロブロイ",
+      "thumbnail": "assets/thumbnails/5348.png",
+      "outfits": [
+        {
+          "id": 104702,
+          "name": "[Inlaid Stories]",
+          "gametora_url": "https://gametora.com/umamusume/characters/104702-zenno-rob-roy",
+          "icon": "assets/icons/104702.png",
+          "portrait": null,
+          "rarity": 3,
+          "running_style": 2
+        },
+        {
+          "id": 104701,
+          "name": "[Heroic Author]",
+          "gametora_url": "https://gametora.com/umamusume/characters/104701-zenno-rob-roy",
+          "icon": "assets/icons/104701.png",
+          "portrait": null,
+          "rarity": 3,
+          "running_style": 2
+        }
+      ]
+    },
+    {
+      "id": 5641,
+      "game_id": 9004,
+      "name": "Aoi Kiryuin",
+      "name_en": "Aoi Kiryuin",
+      "name_jp": "桐生院葵",
+      "thumbnail": "assets/thumbnails/5641.png",
+      "outfits": []
+    },
+    {
+      "id": 7076,
+      "game_id": 2002,
+      "name": "Bitter Glasse",
+      "name_en": "Bitter Glasse",
+      "name_jp": "ビターグラッセ",
+      "thumbnail": "assets/thumbnails/7076.png",
+      "outfits": []
+    },
+    {
+      "id": 8698,
+      "game_id": 9042,
+      "name": "Byerley Turk",
+      "name_en": "Byerley Turk",
+      "name_jp": "バイアリーターク",
+      "thumbnail": "assets/thumbnails/8698.png",
+      "outfits": []
+    },
+    {
+      "id": 10401,
+      "game_id": 1139,
+      "name": "Casino Drive",
+      "name_en": "Casino Drive",
+      "name_jp": "カジノドライヴ",
+      "thumbnail": "assets/thumbnails/10401.png",
+      "outfits": []
+    },
+    {
+      "id": 8682,
+      "game_id": 9040,
+      "name": "Darley Arabian",
+      "name_en": "Darley Arabian",
+      "name_jp": "ダーレーアラビアン",
+      "thumbnail": "assets/thumbnails/8682.png",
+      "outfits": []
+    },
+    {
+      "id": 5668,
+      "game_id": 9003,
+      "name": "Etsuko Otonashi",
+      "name_en": "Etsuko Otonashi",
+      "name_jp": "乙名史悦子",
+      "thumbnail": "assets/thumbnails/5668.png",
+      "outfits": []
+    },
+    {
+      "id": 8690,
+      "game_id": 9041,
+      "name": "Godolphin Barb",
+      "name_en": "Godolphin Barb",
+      "name_jp": "ゴドルフィンバルブ",
+      "thumbnail": "assets/thumbnails/8690.png",
+      "outfits": []
+    },
+    {
+      "id": 10383,
+      "game_id": 9048,
+      "name": "Haiseiko",
+      "name_en": "Haiseiko",
+      "name_jp": "ハイセイコー",
+      "thumbnail": "assets/thumbnails/10383.png",
+      "outfits": []
+    },
+    {
+      "id": 5632,
+      "game_id": 2001,
+      "name": "Happy Meek",
+      "name_en": "Happy Meek",
+      "name_jp": "ハッピーミーク",
+      "thumbnail": "assets/thumbnails/5632.png",
+      "outfits": []
+    },
+    {
+      "id": 10399,
+      "game_id": 9050,
+      "name": "Kiyoko Hoshina",
+      "name_en": "Kiyoko Hoshina",
+      "name_jp": "保科健子",
+      "thumbnail": "assets/thumbnails/10399.png",
+      "outfits": []
+    },
+    {
+      "id": 7949,
+      "game_id": 9008,
+      "name": "Light Hello",
+      "name_en": "Light Hello",
+      "name_jp": "ライトハロー",
+      "thumbnail": "assets/thumbnails/7949.png",
+      "outfits": []
+    },
+    {
+      "id": 7077,
+      "game_id": 2003,
+      "name": "Little Cocon",
+      "name_en": "Little Cocon",
+      "name_jp": "リトルココン",
+      "thumbnail": "assets/thumbnails/7077.png",
+      "outfits": []
+    },
+    {
+      "id": 9799,
+      "game_id": 9043,
+      "name": "Mei Satake",
+      "name_en": "Mei Satake",
+      "name_jp": "佐岳メイ",
+      "thumbnail": "assets/thumbnails/9799.png",
+      "outfits": []
+    },
+    {
+      "id": 9781,
+      "game_id": 2006,
+      "name": "Rigantona",
+      "name_en": "Rigantona",
+      "name_jp": "リガントーナ",
+      "thumbnail": "assets/thumbnails/9781.png",
+      "outfits": []
+    },
+    {
+      "id": 7078,
+      "game_id": 9006,
+      "name": "Riko Kashimoto",
+      "name_en": "Riko Kashimoto",
+      "name_jp": "樫本理子",
+      "thumbnail": "assets/thumbnails/7078.png",
+      "outfits": []
+    },
+    {
+      "id": 10370,
+      "game_id": 9044,
+      "name": "Ryoka Tsurugi",
+      "name_en": "Ryoka Tsurugi",
+      "name_jp": "都留岐涼花",
+      "thumbnail": "assets/thumbnails/10370.png",
+      "outfits": []
+    },
+    {
+      "id": 10385,
+      "game_id": 9046,
+      "name": "Saint Lite",
+      "name_en": "Saint Lite",
+      "name_jp": "セントライト",
+      "thumbnail": "assets/thumbnails/10385.png",
+      "outfits": []
+    },
+    {
+      "id": 5659,
+      "game_id": 9005,
+      "name": "Sasami Anshinzawa",
+      "name_en": "Sasami Anshinzawa",
+      "name_jp": "安心沢刺々美",
+      "thumbnail": "assets/thumbnails/5659.png",
+      "outfits": []
+    },
+    {
+      "id": 10360,
+      "game_id": 2007,
+      "name": "Sonon Elfie",
+      "name_en": "Sonon Elfie",
+      "name_jp": "ソノンエルフィー",
+      "thumbnail": "assets/thumbnails/10360.png",
+      "outfits": []
+    },
+    {
+      "id": 10384,
+      "game_id": 9047,
+      "name": "Speed Symboli",
+      "name_en": "Speed Symboli",
+      "name_jp": "スピードシンボリ",
+      "thumbnail": "assets/thumbnails/10384.png",
+      "outfits": []
+    },
+    {
+      "id": 5613,
+      "game_id": 9001,
+      "name": "Tazuna Hayakawa",
+      "name_en": "Tazuna Hayakawa",
+      "name_jp": "駿川たづな",
+      "thumbnail": "assets/thumbnails/5613.png",
+      "outfits": []
+    },
+    {
+      "id": 9790,
+      "game_id": 2005,
+      "name": "Venus Paques",
+      "name_en": "Venus Paques",
+      "name_jp": "ヴェニュスパーク",
+      "thumbnail": "assets/thumbnails/9790.png",
+      "outfits": []
+    },
+    {
+      "id": 10398,
+      "game_id": 9051,
+      "name": "Yunohana Bloom",
+      "name_en": "Yunohana Bloom",
+      "name_jp": "ユノハナブルーム",
+      "thumbnail": "assets/thumbnails/10398.png",
+      "outfits": []
+    }
+  ]
+}

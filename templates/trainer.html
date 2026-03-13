@@ -1,0 +1,82 @@
+{% extends "base.html" %}
+
+{% block title %}Trainer Dashboard{% endblock %}
+
+{% block content %}
+<div style="background: linear-gradient(135deg, #1a1a1a, #0a0a0a); padding: 2rem; border-radius: 12px; margin-bottom: 2rem; position: relative; overflow: hidden; border-left: 4px solid var(--f1-red);">
+    <div style="position: absolute; top: -20px; right: 20px; font-size: 8rem; color: rgba(225,6,0,0.1); transform: rotate(15deg);">
+        <i class="fas fa-helmet-safety"></i>
+    </div>
+    <div style="position: relative; z-index: 2;">
+        <h2 style="color: white; font-size: 2.5rem; margin-bottom: 0.5rem;">DRIVER'S ROOM</h2>
+        <p style="color: var(--f1-silver);">Chuẩn bị cho cuộc đua</p>
+    </div>
+</div>
+
+<div class="card">
+    <!-- Header -->
+    <div class="dashboard-header">
+        <h1><i class="fas fa-user" style="color: var(--f1-red); margin-right: 10px;"></i> TRAINER DASHBOARD</h1>
+    </div>
+
+    <!-- Profile -->
+    <div style="background: var(--f1-gray); padding: 1rem; border-radius: 8px; margin-bottom: 2rem; display: flex; align-items: center; gap: 1rem;">
+        <div style="width: 50px; height: 50px; border-radius: 50%; background: var(--f1-light); display: flex; align-items: center; justify-content: center;">
+            {% if user.image_path %}
+            <img src="{{ url_for('static', filename=user.image_path.replace('static/', '')) }}" style="width: 50px; height: 50px; border-radius: 50%; object-fit: cover;">
+            {% else %}
+            <i class="fas fa-user" style="color: var(--f1-silver);"></i>
+            {% endif %}
+        </div>
+        <div style="flex: 1;">
+            <h3>{{ user.display_name or 'Trainer' }}</h3>
+            <p style="color: var(--f1-silver); font-size: 0.9rem;">{{ user.facebook_link }}</p>
+        </div>
+        {% if not user.image_path %}
+        <a href="{{ url_for('upload_image') }}" class="btn btn-sm">UPLOAD ẢNH</a>
+        {% endif %}
+    </div>
+
+    <!-- Current Lobby -->
+    {% if lobby %}
+    <div style="background: var(--f1-red); padding: 1rem; border-radius: 8px; margin-bottom: 2rem;">
+        <div style="display: flex; justify-content: space-between; align-items: center; flex-wrap: wrap; gap: 1rem;">
+            <div>
+                <h3 style="color: white;">{{ lobby.name }}</h3>
+                <p style="color: rgba(255,255,255,0.8);">{{ lobby.current_players }}/{{ lobby.max_players }} • {{ lobby.status }}</p>
+            </div>
+            <div style="display: flex; gap: 0.5rem;">
+                <a href="{{ url_for('lobby_page', lobby_id=lobby.id) }}" class="btn" style="background: white; color: var(--f1-red);">
+                    VÀO LOBBY
+                </a>
+                <form method="POST" action="{{ url_for('leave_lobby') }}">
+                    <button type="submit" class="btn" style="background: rgba(0,0,0,0.3);">RỜI</button>
+                </form>
+            </div>
+        </div>
+    </div>
+    {% else %}
+    <!-- Available Lobbies -->
+    <h2 style="margin-bottom: 1rem;">LOBBIES ĐANG CHỜ</h2>
+    <div class="grid grid-3">
+        {% for lobby in available_lobbies %}
+        <div style="background: var(--f1-gray); padding: 1rem; border-radius: 8px;">
+            <h3 style="margin-bottom: 0.5rem;">{{ lobby.name }}</h3>
+            <p style="color: var(--f1-silver); margin-bottom: 1rem;">{{ lobby.current_players }}/{{ lobby.max_players }}</p>
+            <form method="POST" action="{{ url_for('join_lobby', lobby_id=lobby.id) }}">
+                <button type="submit" class="btn btn-red" style="width: 100%;">THAM GIA</button>
+            </form>
+        </div>
+        {% else %}
+        <div style="grid-column: 1/-1; text-align: center; padding: 3rem; color: var(--f1-silver);">
+            KHÔNG CÓ LOBBY NÀO ĐANG CHỜ
+        </div>
+        {% endfor %}
+    </div>
+    {% endif %}
+</div>
+<div class="card">
+    <!-- ... existing content ... -->
+</div>
+{% endblock %}
+

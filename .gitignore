@@ -1,0 +1,32 @@
+# Python
+__pycache__/
+*.py[cod]
+*.db
+*.sqlite
+*.sqlite3
+venv/
+env/
+.env
+
+# Flask
+instance/
+.webassets-cache
+
+# IDE
+.vscode/
+.idea/
+
+# Uploads
+static/uploads/*
+
+# Database
+*.db
+*.db-journal
+
+# Logs
+*.log
+*.log.*
+
+# OS
+.DS_Store
+Thumbs.db

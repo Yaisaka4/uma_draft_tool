@@ -1,0 +1,48 @@
+{% extends "base.html" %}
+
+{% block title %}Login{% endblock %}
+
+{% block content %}
+<div style="max-width: 400px; margin: 2rem auto;">
+    <!-- Pit Lane Banner -->
+    <div style="background: linear-gradient(135deg, var(--f1-red), #990000); padding: 1.5rem; border-radius: 12px 12px 0 0; text-align: center; position: relative; overflow: hidden;">
+        <div style="position: absolute; top: 0; left: 0; right: 0; bottom: 0; background: repeating-linear-gradient(45deg, transparent, transparent 10px, rgba(255,255,255,0.1) 10px, rgba(255,255,255,0.1) 20px);"></div>
+        <i class="fas fa-flag-checkered" style="font-size: 3rem; color: white; position: relative; z-index: 2;"></i>
+        <h2 style="color: white; margin-top: 0.5rem; position: relative; z-index: 2;">PIT LANE ENTRY</h2>
+    </div>
+<div style="max-width: 400px; margin: 2rem auto;">
+    <div class="card">
+        <div style="text-align: center; margin-bottom: 2rem;">
+            <i class="fas fa-flag-checkered" style="font-size: 3rem; color: var(--f1-red);"></i>
+            <h1 style="margin-top: 1rem;">F1 UMAMUSUME</h1>
+            <p style="color: var(--f1-silver);">Banpick System</p>
+        </div>
+        
+        <form method="POST">
+            <div style="margin-bottom: 1.5rem;">
+                <label>Facebook Link</label>
+                <input type="url" name="facebook_link" placeholder="https://facebook.com/..." required>
+            </div>
+            
+            <div style="margin-bottom: 2rem;">
+                <label>Vai trò</label>
+                <select name="role">
+                    <option value="trainer">Trainer</option>
+                    <option value="referee">Referee</option>
+                    <option value="admin">Admin</option>
+                </select>
+            </div>
+            
+            <button type="submit" class="btn btn-red" style="width: 100%;">ĐĂNG NHẬP</button>
+        </form>
+        
+        <div style="margin-top: 2rem; padding: 1rem; background: var(--f1-gray); border-radius: 4px; color: var(--f1-silver); font-size: 0.9rem;">
+            <p><i class="fas fa-info-circle"></i> Lần đầu đăng nhập sẽ tự động tạo tài khoản</p>
+        </div>
+    </div>
+</div>
+<div class="card" style="border-radius: 0 0 12px 12px; margin-top: 0;">
+        <!-- ... existing form ... -->
+    </div>
+</div>
+{% endblock %}

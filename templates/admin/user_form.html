@@ -1,0 +1,73 @@
+{% extends "base.html" %}
+
+{% block title %}{{ 'Sửa' if action == 'edit' else 'Thêm' }} User{% endblock %}
+
+{% block content %}
+<div style="max-width: 500px; margin: 0 auto;">
+    <div class="card">
+        <h1 style="margin-bottom: 2rem;">
+            <i class="fas fa-{{ 'edit' if action == 'edit' else 'plus' }}" style="color: var(--f1-red); margin-right: 10px;"></i>
+            {{ 'SỬA' if action == 'edit' else 'THÊM' }} USER
+        </h1>
+        
+        <form method="POST">
+            <div style="margin-bottom: 1.5rem;">
+                <label>Facebook Link</label>
+                <input type="url" name="facebook_link" value="{{ user.facebook_link if user else '' }}" 
+                       {% if action == 'add' %}required{% endif %}
+                       {% if action == 'edit' %}readonly{% endif %}
+                       style="background: {% if action == 'edit' %}var(--f1-light);{% endif %}">
+                {% if action == 'edit' %}
+                <small style="color: var(--f1-silver);">Không thể sửa Facebook link</small>
+                {% endif %}
+            </div>
+            
+            <div style="margin-bottom: 1.5rem;">
+                <label>Tên hiển thị</label>
+                <input type="text" name="display_name" value="{{ user.display_name if user else '' }}" required>
+            </div>
+            
+            <div style="margin-bottom: 1.5rem;">
+                <label>Vai trò</label>
+                <select name="role" id="roleSelect" required>
+                    <option value="">-- Chọn vai trò --</option>
+                    <option value="admin" {% if user and user.role == 'admin' %}selected{% endif %}>Admin</option>
+                    <option value="referee" {% if user and user.role == 'referee' %}selected{% endif %}>Referee</option>
+                    <option value="trainer" {% if user and user.role == 'trainer' %}selected{% endif %}>Trainer</option>
+                </select>
+            </div>
+            
+            <div id="lobbyField" style="margin-bottom: 1.5rem; display: none;">
+                <label>Phân vào lobby</label>
+                <select name="lobby_id">
+                    <option value="">-- Chưa phân lobby --</option>
+                    {% for lobby in lobbies %}
+                    <option value="{{ lobby.id }}" {% if user and user.lobby_id == lobby.id %}selected{% endif %}>
+                        {{ lobby.name }}
+                    </option>
+                    {% endfor %}
+                </select>
+            </div>
+            
+            <div style="display: flex; gap: 1rem;">
+                <button type="submit" class="btn btn-red" style="flex: 2;">
+                    {{ 'CẬP NHẬT' if action == 'edit' else 'THÊM MỚI' }}
+                </button>
+                <a href="{{ url_for('admin_users') }}" class="btn" style="flex: 1;">HỦY</a>
+            </div>
+        </form>
+    </div>
+</div>
+
+<script>
+const roleSelect = document.getElementById('roleSelect');
+const lobbyField = document.getElementById('lobbyField');
+
+function toggleLobbyField() {
+    lobbyField.style.display = roleSelect.value === 'trainer' ? 'block' : 'none';
+}
+
+roleSelect.addEventListener('change', toggleLobbyField);
+toggleLobbyField();
+</script>
+{% endblock %}

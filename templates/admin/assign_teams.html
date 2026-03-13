@@ -1,0 +1,41 @@
+{% extends "base.html" %}
+
+{% block title %}Phân Team - Lobby {{ lobby_id }}{% endblock %}
+
+{% block content %}
+<div style="max-width: 600px; margin: 2rem auto;">
+    <div style="background: white; padding: 2rem; border-radius: 20px; box-shadow: 0 20px 60px rgba(0,0,0,0.1);">
+        <h1 style="text-align: center; margin-bottom: 2rem;">Phân Team Cho Lobby {{ lobby_id }}</h1>
+        
+        <form method="POST">
+            <div style="margin-bottom: 2rem;">
+                <h3 style="margin-bottom: 1rem;">Danh sách người chơi:</h3>
+                {% for player in players %}
+                <div style="background: #f7fafc; padding: 1rem; border-radius: 10px; margin-bottom: 1rem;">
+                    <p><strong>{{ player.facebook_link }}</strong></p>
+                    <div style="display: flex; gap: 2rem; margin-top: 0.5rem;">
+                        <label>
+                            <input type="radio" name="user_{{ player.id }}" value="1" 
+                                   {% if existing_teams.get(player.id) == 1 %}checked{% endif %} required>
+                            🔵 Team 1
+                        </label>
+                        <label>
+                            <input type="radio" name="user_{{ player.id }}" value="2"
+                                   {% if existing_teams.get(player.id) == 2 %}checked{% endif %}>
+                            🔴 Team 2
+                        </label>
+                    </div>
+                </div>
+                {% else %}
+                <p style="color: #666;">Chưa có người chơi nào trong lobby này.</p>
+                {% endfor %}
+            </div>
+            
+            <div style="display: flex; gap: 1rem;">
+                <button type="submit" class="btn" style="flex: 1;">Lưu phân team</button>
+                <a href="{{ url_for('lobby_page', lobby_id=lobby_id) }}" class="btn" style="flex: 1; background: #9ca3af;">Hủy</a>
+            </div>
+        </form>
+    </div>
+</div>
+{% endblock %}

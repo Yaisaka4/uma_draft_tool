@@ -1,0 +1,465 @@
+{% extends "base.html" %}
+
+{% block title %}Kết Quả Ban Pick - Lobby {{ lobby.name }}{% endblock %}
+
+{% block content %}
+<script src="https://cdnjs.cloudflare.com/ajax/libs/html2canvas/1.4.1/html2canvas.min.js"></script>
+<style>
+    .result-container {
+        max-width: 1200px;
+        margin: 0 auto;
+    }
+    
+    /* Khu vực kết quả dạng ảnh */
+    .result-image {
+        background: linear-gradient(135deg, #1a1a2e 0%, #16213e 100%);
+        padding: 3rem;
+        border-radius: 30px;
+        box-shadow: 0 30px 60px rgba(0,0,0,0.3);
+        color: white;
+        margin-bottom: 2rem;
+        position: relative;
+        overflow: hidden;
+    }
+    
+    /* Hiệu ứng nền */
+    .result-image::before {
+        content: '';
+        position: absolute;
+        top: -50%;
+        right: -50%;
+        width: 200%;
+        height: 200%;
+        background: radial-gradient(circle, rgba(255,255,255,0.1) 0%, transparent 70%);
+        animation: rotate 20s linear infinite;
+    }
+    
+    @keyframes rotate {
+        from { transform: rotate(0deg); }
+        to { transform: rotate(360deg); }
+    }
+    
+    /* Header */
+    .result-header {
+        text-align: center;
+        margin-bottom: 3rem;
+        position: relative;
+        z-index: 1;
+    }
+    
+    .result-header h1 {
+        font-size: 3rem;
+        margin-bottom: 0.5rem;
+        background: linear-gradient(135deg, #ffd700, #ffa500);
+        -webkit-background-clip: text;
+        -webkit-text-fill-color: transparent;
+        text-shadow: 0 0 30px rgba(255,215,0,0.3);
+    }
+    
+    .result-header p {
+        color: #a0a0a0;
+        font-size: 1.2rem;
+    }
+    
+    /* Bans Section */
+    .bans-section {
+        background: rgba(220, 38, 38, 0.2);
+        border: 2px solid rgba(220, 38, 38, 0.5);
+        border-radius: 20px;
+        padding: 2rem;
+        margin-bottom: 3rem;
+        position: relative;
+        z-index: 1;
+        backdrop-filter: blur(10px);
+    }
+    
+    .bans-section h2 {
+        color: #ff6b6b;
+        margin-bottom: 1.5rem;
+        display: flex;
+        align-items: center;
+        gap: 1rem;
+        font-size: 2rem;
+    }
+    
+    .bans-grid {
+        display: grid;
+        grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
+        gap: 1.5rem;
+    }
+    
+    .ban-card {
+        background: rgba(0, 0, 0, 0.3);
+        border-radius: 15px;
+        padding: 1rem;
+        display: flex;
+        align-items: center;
+        gap: 1rem;
+        border: 1px solid rgba(220, 38, 38, 0.5);
+        backdrop-filter: blur(5px);
+    }
+    
+    .ban-image {
+        width: 60px;
+        height: 60px;
+        border-radius: 50%;
+        object-fit: cover;
+        border: 3px solid #ff6b6b;
+        box-shadow: 0 0 20px rgba(255,107,107,0.5);
+    }
+    
+    .ban-info {
+        flex: 1;
+    }
+    
+    .ban-name {
+        font-weight: bold;
+        font-size: 1rem;
+        margin-bottom: 0.25rem;
+        color: white;
+    }
+    
+    .ban-by {
+        color: #ff6b6b;
+        font-size: 0.8rem;
+    }
+    
+    /* Picks Section */
+    .picks-section {
+        position: relative;
+        z-index: 1;
+    }
+    
+    .picks-section h2 {
+        color: #4ade80;
+        margin-bottom: 2rem;
+        display: flex;
+        align-items: center;
+        gap: 1rem;
+        font-size: 2rem;
+    }
+    
+    .picks-grid {
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        gap: 2rem;
+    }
+    
+    .team-card {
+        background: rgba(255, 255, 255, 0.1);
+        border-radius: 20px;
+        padding: 1.5rem;
+        backdrop-filter: blur(10px);
+        border: 1px solid rgba(255,255,255,0.2);
+        transition: all 0.3s ease;
+    }
+    
+    .team-card:hover {
+        transform: translateY(-5px);
+        box-shadow: 0 20px 40px rgba(0,0,0,0.4);
+    }
+    
+    .team-header {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        margin-bottom: 1.5rem;
+        padding-bottom: 1rem;
+        border-bottom: 2px solid rgba(255,255,255,0.2);
+    }
+    
+    .team-seed {
+        font-size: 1.2rem;
+        font-weight: bold;
+        color: #ffd700;
+    }
+    
+    .team-player {
+        background: rgba(255,255,255,0.15);
+        padding: 0.5rem 1rem;
+        border-radius: 20px;
+        font-size: 0.9rem;
+        color: #a0a0a0;
+    }
+    
+    .pick-list {
+        display: flex;
+        flex-direction: column;
+        gap: 1rem;
+    }
+    
+    .pick-item {
+        background: rgba(255, 255, 255, 0.05);
+        border-radius: 12px;
+        padding: 0.75rem;
+        display: flex;
+        align-items: center;
+        gap: 1rem;
+        border: 1px solid rgba(255,255,255,0.1);
+        transition: all 0.3s ease;
+    }
+    
+    .pick-item:hover {
+        background: rgba(255, 255, 255, 0.1);
+        transform: translateX(5px);
+    }
+    
+    .pick-image {
+        width: 50px;
+        height: 50px;
+        border-radius: 50%;
+        object-fit: cover;
+        border: 2px solid #4ade80;
+        box-shadow: 0 0 15px rgba(74,222,128,0.3);
+    }
+    
+    .pick-info {
+        flex: 1;
+    }
+    
+    .pick-name {
+        font-weight: bold;
+        color: white;
+        margin-bottom: 0.25rem;
+    }
+    
+    .pick-order {
+        color: #4ade80;
+        font-size: 0.8rem;
+    }
+    
+    /* Watermark */
+    .watermark {
+        position: absolute;
+        bottom: 20px;
+        right: 20px;
+        opacity: 0.2;
+        font-size: 3rem;
+        font-weight: bold;
+        color: white;
+        transform: rotate(-15deg);
+        pointer-events: none;
+        z-index: 0;
+    }
+    
+    /* Action Buttons */
+    .action-buttons {
+        display: flex;
+        gap: 1rem;
+        justify-content: center;
+        margin-top: 2rem;
+        flex-wrap: wrap;
+    }
+    
+    .btn-result {
+        padding: 1rem 2rem;
+        border: none;
+        border-radius: 50px;
+        font-size: 1.1rem;
+        font-weight: bold;
+        cursor: pointer;
+        transition: all 0.3s ease;
+        text-decoration: none;
+        display: inline-flex;
+        align-items: center;
+        gap: 0.5rem;
+        box-shadow: 0 10px 20px rgba(0,0,0,0.2);
+    }
+    
+    .btn-save {
+        background: linear-gradient(135deg, #ffd700, #ffa500);
+        color: #1a1a2e;
+    }
+    
+    .btn-save:hover {
+        transform: translateY(-2px);
+        box-shadow: 0 15px 30px rgba(255,215,0,0.4);
+    }
+    
+    .btn-lobby {
+        background: linear-gradient(135deg, #667eea, #764ba2);
+        color: white;
+    }
+    
+    .btn-lobby:hover {
+        transform: translateY(-2px);
+        box-shadow: 0 15px 30px rgba(102,126,234,0.4);
+    }
+    
+    .btn-home {
+        background: linear-gradient(135deg, #9ca3af, #6b7280);
+        color: white;
+    }
+    
+    .btn-home:hover {
+        transform: translateY(-2px);
+        box-shadow: 0 15px 30px rgba(156,163,175,0.4);
+    }
+    
+    /* Loading overlay */
+    .loading-overlay {
+        position: fixed;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        background: rgba(0,0,0,0.8);
+        display: none;
+        justify-content: center;
+        align-items: center;
+        z-index: 9999;
+    }
+    
+    .loading-spinner {
+        width: 50px;
+        height: 50px;
+        border: 5px solid #f3f3f3;
+        border-top: 5px solid #ffd700;
+        border-radius: 50%;
+        animation: spin 1s linear infinite;
+    }
+    
+    @keyframes spin {
+        0% { transform: rotate(0deg); }
+        100% { transform: rotate(360deg); }
+    }
+</style>
+
+<div class="result-container">
+    <!-- Khu vực kết quả dạng ảnh -->
+    <div id="resultImage" class="result-image">
+        <!-- Watermark -->
+        <div class="watermark">UMAMUSUME</div>
+        
+        <!-- Header -->
+        <div class="result-header">
+            <h1>🏆 KẾT QUẢ BAN PICK 🏆</h1>
+            <p>Lobby: {{ lobby.name }} | {{ now().strftime('%H:%M %d/%m/%Y') }}</p>
+        </div>
+        
+        <!-- Bans Section -->
+        <div class="bans-section">
+            <h2>🚫 MÃ NƯƠNG BỊ BAN</h2>
+            {% if bans %}
+            <div class="bans-grid">
+                {% for ban in bans %}
+                {% set uma = uma_map.get(ban.uma_id|string) %}
+                <div class="ban-card">
+                    <img src="{{ uma.image if uma and uma.image else '/assets/thumbnails/default.png' }}" 
+                         class="ban-image" 
+                         onerror="this.src='/assets/thumbnails/default.png'">
+                    <div class="ban-info">
+                        <div class="ban-name">{{ uma.name if uma else ban.uma_id }}</div>
+                        <div class="ban-by">Bởi: {{ ban.facebook_link.split('/')[-1] }}</div>
+                    </div>
+                </div>
+                {% endfor %}
+            </div>
+            {% else %}
+            <p style="color: #a0a0a0; text-align: center;">Không có mã nương nào bị ban</p>
+            {% endif %}
+        </div>
+        
+        <!-- Picks Section -->
+        <div class="picks-section">
+            <h2>✅ MÃ NƯƠNG ĐƯỢC PICK</h2>
+            <div class="picks-grid">
+                {% for seed in seeds %}
+                <div class="team-card">
+                    <div class="team-header">
+                        <span class="team-seed">🌟 Seed {{ seed.seed_number }}</span>
+                        <span class="team-player">{{ seed.facebook_link.split('/')[-1] }}</span>
+                    </div>
+                    <div class="pick-list">
+                        {% set data = picks_by_seed.get(seed.seed_number) %}
+                        {% set player_picks = data.picks if data else [] %}
+                        {% if player_picks %}
+                            {% for pick in player_picks %}
+                            {% set uma = uma_map.get(pick.uma_id|string) %}
+                            <div class="pick-item">
+                                <img src="{{ uma.image if uma and uma.image else '/assets/thumbnails/default.png' }}" 
+                                     class="pick-image"
+                                     onerror="this.src='/assets/thumbnails/default.png'">
+                                <div class="pick-info">
+                                    <div class="pick-name">{{ uma.name if uma else pick.uma_id }}</div>
+                                    <div class="pick-order">Pick #{{ pick.pick_number }}</div>
+                                </div>
+                            </div>
+                            {% endfor %}
+                        {% else %}
+                            <p style="color: #a0a0a0; text-align: center;">Chưa có picks</p>
+                        {% endif %}
+                    </div>
+                </div>
+                {% endfor %}
+            </div>
+        </div>
+    </div>
+    
+    <!-- Action Buttons -->
+    <div class="action-buttons">
+        <button onclick="saveAsImage()" class="btn-result btn-save">
+            📸 Lưu thành ảnh
+        </button>
+        <a href="{{ url_for('lobby_page', lobby_id=lobby.id) }}" class="btn-result btn-lobby">
+            🔙 Xem lại lobby
+        </a>
+        <a href="{{ url_for('index') }}" class="btn-result btn-home">
+            🏠 Về trang chủ
+        </a>
+    </div>
+</div>
+
+<!-- Loading Overlay -->
+<div id="loadingOverlay" class="loading-overlay">
+    <div class="loading-spinner"></div>
+</div>
+
+<script>
+    function saveAsImage() {
+        const element = document.getElementById('resultImage');
+        const loadingOverlay = document.getElementById('loadingOverlay');
+        
+        // Hiển thị loading
+        loadingOverlay.style.display = 'flex';
+        
+        // Cấu hình html2canvas
+        html2canvas(element, {
+            scale: 2, // Tăng chất lượng ảnh
+            backgroundColor: null,
+            allowTaint: true,
+            useCORS: true,
+            logging: false,
+            windowWidth: element.scrollWidth,
+            windowHeight: element.scrollHeight
+        }).then(canvas => {
+            // Ẩn loading
+            loadingOverlay.style.display = 'none';
+            
+            // Tạo link download
+            const link = document.createElement('a');
+            link.download = `banpick_result_lobby_{{ lobby.id }}_{{ now().strftime('%Y%m%d_%H%M%S') }}.png`;
+            link.href = canvas.toDataURL('image/png');
+            link.click();
+            
+            // Hiển thị thông báo
+            alert('✅ Đã lưu kết quả thành công!');
+        }).catch(error => {
+            loadingOverlay.style.display = 'none';
+            console.error('Lỗi khi chụp ảnh:', error);
+            alert('❌ Có lỗi khi lưu ảnh. Vui lòng thử lại!');
+        });
+    }
+    
+    // Tự động chụp ảnh và lưu (tùy chọn)
+    function autoSave() {
+        if (confirm('Bạn có muốn lưu kết quả này không?')) {
+            saveAsImage();
+        }
+    }
+    
+    // Gọi autoSave sau 1 giây (có thể bỏ comment nếu muốn)
+    // setTimeout(autoSave, 1000);
+</script>
+{% endblock %}
+

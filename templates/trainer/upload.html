@@ -1,0 +1,24 @@
+{% extends "base.html" %}
+
+{% block title %}Upload ảnh{% endblock %}
+
+{% block content %}
+<div style="display: flex; justify-content: center; align-items: center; min-height: 70vh;">
+    <div style="background: white; padding: 2.5rem; border-radius: 20px; box-shadow: 0 20px 60px rgba(0,0,0,0.3); width: 100%; max-width: 520px;">
+        <h1 style="color: #333; margin-bottom: 0.75rem;">Upload ảnh mã nương</h1>
+        <p style="color: #666; margin-bottom: 1.5rem;">Chấp nhận: png, jpg, jpeg, gif (tối đa 16MB)</p>
+
+        <form method="POST" enctype="multipart/form-data">
+            <div style="margin-bottom: 1.25rem;">
+                <input type="file" name="image" accept="image/*" required
+                       style="width: 100%; padding: 0.75rem; border: 2px dashed #cbd5e0; border-radius: 12px; background: #f7fafc;">
+            </div>
+            <button type="submit" class="btn btn-block">Upload</button>
+        </form>
+
+        <div style="margin-top: 1.25rem; display: flex; gap: 0.75rem; justify-content: space-between;">
+            <a href="{{ url_for('trainer_page') }}" class="nav-link" style="background: #f7fafc; border-radius: 10px;">⬅ Về trang Trainer</a>
+        </div>
+    </div>
+</div>
+{% endblock %}

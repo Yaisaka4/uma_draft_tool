@@ -1,0 +1,147 @@
+{% extends "base.html" %}
+
+{% block title %}Home{% endblock %}
+
+{% block content %}
+<div style="background: linear-gradient(135deg, var(--f1-dark), #000); border-radius: 20px; padding: 4rem 2rem; margin-bottom: 2rem; position: relative; overflow: hidden; border: 1px solid rgba(225,6,0,0.3);">
+    <!-- Background Image Effect -->
+    <div style="position: absolute; top: 0; left: 0; right: 0; bottom: 0; background: url('https://www.formula1.com/etc/designs/fom-website/images/f1_logo.svg') repeat; opacity: 0.05; background-size: 200px;"></div>
+    
+    <!-- Racing Cars Animation -->
+    <div style="position: absolute; bottom: 20px; left: 0; width: 100%; height: 60px; overflow: hidden;">
+        <div style="display: flex; gap: 30px; animation: raceCar 20s linear infinite;">
+            <i class="fas fa-car" style="font-size: 2rem; color: var(--f1-red); opacity: 0.2;"></i>
+            <i class="fas fa-car" style="font-size: 2.5rem; color: var(--f1-red); opacity: 0.2;"></i>
+            <i class="fas fa-car" style="font-size: 2rem; color: var(--f1-red); opacity: 0.2;"></i>
+            <i class="fas fa-car" style="font-size: 3rem; color: var(--f1-red); opacity: 0.2;"></i>
+        </div>
+    </div>
+    
+    <style>
+        @keyframes raceCar {
+            0% { transform: translateX(-100%); }
+            100% { transform: translateX(100%); }
+        }
+    </style>
+    
+    <!-- Content -->
+    <div style="position: relative; z-index: 2; text-align: center;">
+        <i class="fas fa-flag-checkered" style="font-size: 5rem; color: var(--f1-red); margin-bottom: 1rem;"></i>
+        <h1 style="font-size: 4rem; margin-bottom: 1rem; background: linear-gradient(135deg, white, var(--f1-silver)); -webkit-background-clip: text; -webkit-text-fill-color: transparent;">
+            F1 UMAMUSUME
+        </h1>
+        <p style="color: var(--f1-silver); font-size: 1.3rem; margin-bottom: 2rem; letter-spacing: 2px;">BANPICK CHAMPIONSHIP</p>
+        
+        {% if not session.user_id %}
+        <a href="{{ url_for('login') }}" class="btn btn-red" style="padding: 1rem 3rem; font-size: 1.2rem;">
+            <i class="fas fa-flag-checkered"></i> VÀO PIT LANE
+        </a>
+        {% endif %}
+    </div>
+</div>
+
+<!-- Stats Section với hình ảnh -->
+<div class="stats-grid" style="margin-bottom: 2rem;">
+    <div class="stat-card">
+        <i class="fas fa-users" style="font-size: 2rem; color: var(--f1-red); margin-bottom: 0.5rem;"></i>
+        <div class="label">TOTAL USERS</div>
+        <div class="value">{{ users|length if users else 0 }}</div>
+    </div>
+    <div class="stat-card">
+        <i class="fas fa-flag" style="font-size: 2rem; color: var(--f1-red); margin-bottom: 0.5rem;"></i>
+        <div class="label">ACTIVE LOBBIES</div>
+        <div class="value">{{ lobbies|selectattr('status', 'equalto', 'banpick')|list|length if lobbies else 0 }}</div>
+    </div>
+    <div class="stat-card">
+        <i class="fas fa-trophy" style="font-size: 2rem; color: var(--f1-red); margin-bottom: 0.5rem;"></i>
+        <div class="label">FINISHED</div>
+        <div class="value">{{ lobbies|selectattr('status', 'equalto', 'finished')|list|length if lobbies else 0 }}</div>
+    </div>
+    <div class="stat-card">
+        <i class="fas fa-clock" style="font-size: 2rem; color: var(--f1-red); margin-bottom: 0.5rem;"></i>
+        <div class="label">WAITING</div>
+        <div class="value">{{ lobbies|selectattr('status', 'equalto', 'waiting')|list|length if lobbies else 0 }}</div>
+    </div>
+</div>
+
+<!-- Features Grid -->
+<div class="grid grid-3" style="margin-bottom: 2rem;">
+    <div class="card" style="text-align: center;">
+        <div style="background: rgba(225,6,0,0.1); width: 80px; height: 80px; border-radius: 50%; margin: 0 auto 1rem; display: flex; align-items: center; justify-content: center;">
+            <i class="fas fa-helmet-safety" style="font-size: 2.5rem; color: var(--f1-red);"></i>
+        </div>
+        <h3>TRAINER</h3>
+        <p style="color: var(--f1-silver);">4 drivers • 1 ban • 3 picks each</p>
+    </div>
+    <div class="card" style="text-align: center;">
+        <div style="background: rgba(225,6,0,0.1); width: 80px; height: 80px; border-radius: 50%; margin: 0 auto 1rem; display: flex; align-items: center; justify-content: center;">
+            <i class="fas fa-whistle" style="font-size: 2.5rem; color: var(--f1-red);"></i>
+        </div>
+        <h3>REFEREE</h3>
+        <p style="color: var(--f1-silver);">Race director • Seed system</p>
+    </div>
+    <div class="card" style="text-align: center;">
+        <div style="background: rgba(225,6,0,0.1); width: 80px; height: 80px; border-radius: 50%; margin: 0 auto 1rem; display: flex; align-items: center; justify-content: center;">
+            <i class="fas fa-crown" style="font-size: 2.5rem; color: var(--f1-red);"></i>
+        </div>
+        <h3>ADMIN</h3>
+        <p style="color: var(--f1-silver);">Team management • Control</p>
+    </div>
+</div>
+
+<!-- Track Map -->
+<div class="card" style="background: linear-gradient(90deg, var(--f1-dark), #000); position: relative; overflow: hidden;">
+    <div style="position: absolute; top: 0; left: 0; right: 0; height: 2px; background: linear-gradient(90deg, transparent, var(--f1-red), transparent);"></div>
+    <div style="display: flex; justify-content: space-between; align-items: center;">
+        <div>
+            <h2 style="margin-bottom: 0.5rem;">SEASON {{ now().year }}</h2>
+            <p style="color: var(--f1-silver);">4 trainers • 16 picks • Seed system</p>
+        </div>
+        <div style="display: flex; gap: 1rem;">
+            <span class="badge">BAN</span>
+            <span class="badge">PICK</span>
+            <span class="badge">SEED</span>
+        </div>
+    </div>
+</div>
+<div class="card" style="text-align: center; padding: 4rem 2rem;">
+    <i class="fas fa-flag-checkered" style="font-size: 4rem; color: var(--f1-red); margin-bottom: 1rem;"></i>
+    <h1 style="font-size: 3rem; margin-bottom: 1rem;">F1 UMAMUSUME</h1>
+    <p style="color: var(--f1-silver); font-size: 1.2rem; margin-bottom: 2rem;">Banpick System</p>
+    
+    {% if not session.user_id %}
+    <a href="{{ url_for('login') }}" class="btn btn-red" style="padding: 1rem 3rem; font-size: 1.1rem;">
+        BẮT ĐẦU
+    </a>
+    {% else %}
+    <div style="display: flex; gap: 1rem; justify-content: center;">
+        {% if session.role == 'admin' %}
+        <a href="{{ url_for('admin_page') }}" class="btn">ADMIN PANEL</a>
+        <a href="{{ url_for('admin_users') }}" class="btn">USER MANAGEMENT</a>
+        {% elif session.role == 'referee' %}
+        <a href="{{ url_for('referee_page') }}" class="btn">REFEREE PANEL</a>
+        {% else %}
+        <a href="{{ url_for('trainer_page') }}" class="btn">TRAINER DASHBOARD</a>
+        {% endif %}
+    </div>
+    {% endif %}
+</div>
+
+<div class="grid grid-3" style="margin-top: 2rem;">
+    <div class="card">
+        <i class="fas fa-user" style="font-size: 2rem; color: var(--f1-red); margin-bottom: 1rem;"></i>
+        <h3>TRAINER</h3>
+        <p style="color: var(--f1-silver);">Đăng nhập, upload ảnh, tham gia ban pick</p>
+    </div>
+    <div class="card">
+        <i class="fas fa-whistle" style="font-size: 2rem; color: var(--f1-red); margin-bottom: 1rem;"></i>
+        <h3>REFEREE</h3>
+        <p style="color: var(--f1-silver);">Theo dõi 4 lobby, phân seed, bắt đầu ban pick</p>
+    </div>
+    <div class="card">
+        <i class="fas fa-crown" style="font-size: 2rem; color: var(--f1-red); margin-bottom: 1rem;"></i>
+        <h3>ADMIN</h3>
+        <p style="color: var(--f1-silver);">Quản lý users, tạo lobby, phân hạn</p>
+    </div>
+</div>
+{% endblock %}

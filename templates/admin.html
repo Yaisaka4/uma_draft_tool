@@ -1,0 +1,81 @@
+{% extends "base.html" %}
+
+{% block title %}Admin Dashboard{% endblock %}
+
+{% block content %}
+<!-- Racing Banner -->
+<div style="background: linear-gradient(135deg, var(--f1-red), #990000); padding: 2rem; border-radius: 12px; margin-bottom: 2rem; position: relative; overflow: hidden;">
+    <div style="position: absolute; top: -20px; right: -20px; font-size: 10rem; color: rgba(255,255,255,0.1); transform: rotate(15deg);">
+        <i class="fas fa-flag-checkered"></i>
+    </div>
+    <div style="position: relative; z-index: 2;">
+        <h2 style="color: white; font-size: 2.5rem; margin-bottom: 0.5rem;">RACE CONTROL</h2>
+        <p style="color: rgba(255,255,255,0.9);">Admin Dashboard • Season {{ now().year }}</p>
+    </div>
+</div>
+    <!-- Header -->
+    <div class="dashboard-header">
+        <h1><i class="fas fa-crown" style="color: var(--f1-red); margin-right: 10px;"></i> ADMIN PANEL</h1>
+        <div style="display: flex; gap: 1rem;">
+            <a href="{{ url_for('admin_users') }}" class="btn">
+                <i class="fas fa-users"></i> USER MANAGEMENT
+            </a>
+            <button class="btn btn-red" onclick="toggleCreateLobby()">
+                <i class="fas fa-plus"></i> TẠO LOBBY
+            </button>
+        </div>
+    </div>
+
+    <!-- Create Lobby Form -->
+    <div id="createLobbyForm" style="display: none; margin-bottom: 2rem;">
+        <div style="background: var(--f1-gray); padding: 1.5rem; border-radius: 8px;">
+            <h3 style="margin-bottom: 1rem;">TẠO LOBBY MỚI</h3>
+            <form method="POST" action="{{ url_for('create_lobby') }}" style="display: flex; gap: 1rem;">
+                <input type="text" name="name" placeholder="Tên lobby" required style="flex: 2;">
+                <select name="max_players" style="flex: 1;">
+                    <option value="2">2 người</option>
+                    <option value="4" selected>4 người</option>
+                    <option value="6">6 người</option>
+                    <option value="8">8 người</option>
+                </select>
+                <button type="submit" class="btn btn-red">Tạo</button>
+            </form>
+        </div>
+    </div>
+
+    <!-- Lobbies List -->
+    <h2 style="margin: 2rem 0 1rem;">DANH SÁCH LOBBIES</h2>
+    
+    <div class="grid grid-3">
+        {% for lobby in lobbies %}
+        <div style="background: var(--f1-gray); border-radius: 8px; padding: 1rem;">
+            <div style="display: flex; justify-content: space-between; margin-bottom: 1rem;">
+                <h3 style="color: var(--f1-red);">{{ lobby.name }}</h3>
+                <span class="badge">{{ lobby_counts[lobby.id] }}/{{ lobby.max_players }}</span>
+            </div>
+            <p style="color: var(--f1-silver); margin-bottom: 0.5rem;">{{ lobby.created_at[:10] }}</p>
+            <div style="display: flex; gap: 0.5rem;">
+                <a href="{{ url_for('assign_teams', lobby_id=lobby.id) }}" class="btn btn-sm">
+                    <i class="fas fa-users"></i> TEAM
+                </a>
+                <form method="POST" action="{{ url_for('delete_lobby', lobby_id=lobby.id) }}" onsubmit="return confirm('Xóa lobby?')">
+                    <button type="submit" class="btn btn-sm" style="background: #dc2626;">
+                        <i class="fas fa-trash"></i> XÓA
+                    </button>
+                </form>
+            </div>
+        </div>
+        {% endfor %}
+    </div>
+</div>
+
+<script>
+function toggleCreateLobby() {
+    const form = document.getElementById('createLobbyForm');
+    form.style.display = form.style.display === 'none' ? 'block' : 'none';
+}
+</script>
+<div class="card">
+    <!-- ... existing content ... -->
+</div>
+{% endblock %}

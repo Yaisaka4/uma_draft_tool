@@ -1,0 +1,121 @@
+{% extends "base.html" %}
+
+{% block title %}User Management{% endblock %}
+
+{% block content %}
+<div class="card">
+    <!-- Header -->
+    <div class="dashboard-header">
+        <h1><i class="fas fa-users" style="color: var(--f1-red); margin-right: 10px;"></i> USER MANAGEMENT</h1>
+        <a href="{{ url_for('admin_add_user') }}" class="btn btn-red">
+            <i class="fas fa-plus"></i> THÊM USER
+        </a>
+    </div>
+
+    <!-- Stats -->
+    <div class="stats-grid">
+        <div class="stat-card">
+            <div class="label">TỔNG SỐ</div>
+            <div class="value">{{ users|length }}</div>
+        </div>
+        <div class="stat-card">
+            <div class="label">ADMIN</div>
+            <div class="value">{{ users|selectattr('role', 'equalto', 'admin')|list|length }}</div>
+        </div>
+        <div class="stat-card">
+            <div class="label">REFEREE</div>
+            <div class="value">{{ users|selectattr('role', 'equalto', 'referee')|list|length }}</div>
+        </div>
+        <div class="stat-card">
+            <div class="label">TRAINER</div>
+            <div class="value">{{ users|selectattr('role', 'equalto', 'trainer')|list|length }}</div>
+        </div>
+    </div>
+
+    <!-- Filter Tabs -->
+    <div class="filter-tabs">
+        <button class="filter-tab active" onclick="filterUsers('all')">TẤT CẢ ({{ users|length }})</button>
+        <button class="filter-tab" onclick="filterUsers('admin')">ADMIN ({{ users|selectattr('role', 'equalto', 'admin')|list|length }})</button>
+        <button class="filter-tab" onclick="filterUsers('referee')">REFEREE ({{ users|selectattr('role', 'equalto', 'referee')|list|length }})</button>
+        <button class="filter-tab" onclick="filterUsers('trainer')">TRAINER ({{ users|selectattr('role', 'equalto', 'trainer')|list|length }})</button>
+    </div>
+
+    <!-- Users Grid -->
+    <div class="grid grid-3" id="usersGrid">
+        {% for user in users %}
+        <div class="user-card" data-role="{{ user.role }}" style="background: var(--f1-gray); border-radius: 8px; overflow: hidden;">
+            <div style="padding: 1rem; border-bottom: 1px solid var(--f1-light);">
+                <div style="display: flex; align-items: center; gap: 1rem;">
+                    <div style="width: 40px; height: 40px; border-radius: 50%; background: var(--f1-light); display: flex; align-items: center; justify-content: center;">
+                        {% if user.image_path %}
+                        <img src="{{ url_for('static', filename=user.image_path.replace('static/', '')) }}" style="width: 40px; height: 40px; border-radius: 50%; object-fit: cover;">
+                        {% else %}
+                        <i class="fas fa-user" style="color: var(--f1-silver);"></i>
+                        {% endif %}
+                    </div>
+                    <div>
+                        <div style="font-weight: 600;">{{ user.display_name or 'Chưa có tên' }}</div>
+                        <div style="color: var(--f1-silver); font-size: 0.85rem;">ID: {{ user.id }}</div>
+                    </div>
+                </div>
+            </div>
+            
+            <div style="padding: 1rem;">
+                <div style="margin-bottom: 0.75rem;">
+                    <i class="fab fa-facebook" style="color: #1877f2; width: 20px; margin-right: 8px;"></i>
+                    <span style="color: var(--f1-silver); font-size: 0.9rem;">{{ user.facebook_link }}</span>
+                </div>
+                <div style="margin-bottom: 0.75rem;">
+                    <i class="fas fa-tag" style="color: var(--f1-red); width: 20px; margin-right: 8px;"></i>
+                    <span style="color: var(--f1-silver); font-size: 0.9rem;">{{ user.role | upper }}</span>
+                </div>
+                <div>
+                    <i class="fas fa-calendar" style="color: var(--f1-silver); width: 20px; margin-right: 8px;"></i>
+                    <span style="color: var(--f1-silver); font-size: 0.9rem;">{{ user.created_at[:10] if user.created_at else 'N/A' }}</span>
+                </div>
+            </div>
+            
+            <div style="padding: 1rem; border-top: 1px solid var(--f1-light); display: flex; gap: 0.5rem;">
+                <a href="{{ url_for('admin_edit_user', user_id=user.id) }}" class="btn btn-sm">
+                    <i class="fas fa-edit"></i> SỬA
+                </a>
+                {% if user.id != session.user_id %}
+                <form method="POST" action="{{ url_for('admin_delete_user', user_id=user.id) }}" onsubmit="return confirm('Xóa user này?')">
+                    <button type="submit" class="btn btn-sm" style="background: #dc2626;">
+                        <i class="fas fa-trash"></i> XÓA
+                    </button>
+                </form>
+                {% endif %}
+            </div>
+        </div>
+        {% endfor %}
+    </div>
+</div>
+
+<style>
+.user-card {
+    transition: transform 0.2s;
+}
+.user-card:hover {
+    transform: translateY(-2px);
+    box-shadow: 0 5px 15px rgba(225, 6, 0, 0.2);
+}
+</style>
+
+<script>
+function filterUsers(role) {
+    const cards = document.querySelectorAll('.user-card');
+    
+    document.querySelectorAll('.filter-tab').forEach(btn => btn.classList.remove('active'));
+    event.target.classList.add('active');
+    
+    cards.forEach(card => {
+        if (role === 'all' || card.dataset.role === role) {
+            card.style.display = '';
+        } else {
+            card.style.display = 'none';
+        }
+    });
+}
+</script>
+{% endblock %}
